@@ -3,10 +3,10 @@
   <channel>
     <title>Siddhartha S. Srinivasa</title>
     <description>Research notes, papers, and robot videos</description>
-    <link>https://homes.cs.washington.edu/~siddh/</link>
-    <atom:link href="https://homes.cs.washington.edu/~siddh/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Aug 2018 20:40:59 +0000</pubDate>
-    <lastBuildDate>Fri, 17 Aug 2018 20:40:59 +0000</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 17 Aug 2018 20:49:21 +0000</pubDate>
+    <lastBuildDate>Fri, 17 Aug 2018 20:49:21 +0000</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -97,7 +97,7 @@ While this Jekyll theme supports more specific headings, if you feel the urge to
 
 &lt;h3 id=&quot;margin-figures&quot;&gt;Margin Figures&lt;/h3&gt;
 
-&lt;p&gt;&lt;label for=&quot;mf-id-1&quot; class=&quot;margin-toggle&quot;&gt;⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mf-id-1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;img class=&quot;fullwidth&quot; src=&quot;https://homes.cs.washington.edu/~siddh/assets/img/rhino.png&quot; /&gt;&lt;br /&gt;F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zoological Literature,” &lt;em&gt;Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice&lt;/em&gt; (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s &lt;em&gt;Visual Explanations&lt;/em&gt;.&lt;/span&gt;Images and graphics play an integral role in Tufte’s work. To place figures in the margin, use the custom margin figure liquid tag included in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_plugins&lt;/code&gt; directory like so:&lt;/p&gt;
+&lt;p&gt;&lt;label for=&quot;mf-id-1&quot; class=&quot;margin-toggle&quot;&gt;⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mf-id-1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;img class=&quot;fullwidth&quot; src=&quot;/assets/img/rhino.png&quot; /&gt;&lt;br /&gt;F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zoological Literature,” &lt;em&gt;Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice&lt;/em&gt; (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s &lt;em&gt;Visual Explanations&lt;/em&gt;.&lt;/span&gt;Images and graphics play an integral role in Tufte’s work. To place figures in the margin, use the custom margin figure liquid tag included in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_plugins&lt;/code&gt; directory like so:&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{% marginfigure 'mf-id-whatever' 'assets/img/rhino.png' 'F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zoological Literature,” *Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice* (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s *Visual Explanations*.'  %}&lt;/code&gt;.&lt;/p&gt;
 
@@ -111,7 +111,7 @@ While this Jekyll theme supports more specific headings, if you feel the urge to
 
 &lt;p&gt;Yields this:&lt;/p&gt;
 
-&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;https://homes.cs.washington.edu/~siddh/assets/img/napoleons-march.png&quot; /&gt;&lt;figcaption&gt;Napoleon's March (Edward Tufte’s English translation)&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/assets/img/napoleons-march.png&quot; /&gt;&lt;figcaption&gt;Napoleon's March (Edward Tufte’s English translation)&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;main-column-figures&quot;&gt;Main Column Figures&lt;/h3&gt;
 
@@ -121,7 +121,7 @@ While this Jekyll theme supports more specific headings, if you feel the urge to
 
 &lt;p&gt;yields this:&lt;/p&gt;
 
-&lt;figure&gt;&lt;figcaption&gt;From Edward Tufte, *Visual Display of Quantitative Information*, page 92&lt;/figcaption&gt;&lt;img src=&quot;https://homes.cs.washington.edu/~siddh/assets/img/exports-imports.png&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;figcaption&gt;From Edward Tufte, *Visual Display of Quantitative Information*, page 92&lt;/figcaption&gt;&lt;img src=&quot;/assets/img/exports-imports.png&quot; /&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;sidenotes-and-margin-notes&quot;&gt;Sidenotes and Margin notes&lt;/h2&gt;
 
@@ -422,8 +422,8 @@ etc..
 
 </description>
         <pubDate>Thu, 19 Feb 2015 21:46:04 +0000</pubDate>
-        <link>https://homes.cs.washington.edu/~siddh/articles/15/tufte-style-jekyll-blog</link>
-        <guid isPermaLink="true">https://homes.cs.washington.edu/~siddh/articles/15/tufte-style-jekyll-blog</guid>
+        <link>/articles/15/tufte-style-jekyll-blog</link>
+        <guid isPermaLink="true">/articles/15/tufte-style-jekyll-blog</guid>
         
         
         <category>jekyll</category>
@@ -607,11 +607,11 @@ D = \left(\begin{matrix}
 
 &lt;p&gt;This code: &lt;code class=&quot;highlighter-rouge&quot;&gt;{% fullwidth &quot;assets/img/rhino.png&quot; &quot;Tufte pet rhino (via &amp;lt;a href=\&quot;//www.edwardtufte.com/tufte/\&quot;&amp;gt;Edward Tufte&amp;lt;/a&amp;gt;)&quot;  %}&lt;/code&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;https://homes.cs.washington.edu/~siddh/assets/img/rhino.png&quot; /&gt;&lt;figcaption&gt;Tufte's pet rhino (via &lt;a href=&quot;//www.edwardtufte.com/tufte/&quot;&gt;Edward Tufte&lt;/a&gt;)&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/assets/img/rhino.png&quot; /&gt;&lt;figcaption&gt;Tufte's pet rhino (via &lt;a href=&quot;//www.edwardtufte.com/tufte/&quot;&gt;Edward Tufte&lt;/a&gt;)&lt;/figcaption&gt;&lt;/figure&gt;
 </description>
         <pubDate>Tue, 17 Feb 2015 11:04:01 +0000</pubDate>
-        <link>https://homes.cs.washington.edu/~siddh/articles/15/Edge-Cases</link>
-        <guid isPermaLink="true">https://homes.cs.washington.edu/~siddh/articles/15/Edge-Cases</guid>
+        <link>/articles/15/Edge-Cases</link>
+        <guid isPermaLink="true">/articles/15/Edge-Cases</guid>
         
         
         <category>post</category>
@@ -635,8 +635,8 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 </description>
         <pubDate>Sun, 08 Feb 2015 13:06:04 +0000</pubDate>
-        <link>https://homes.cs.washington.edu/~siddh/articles/15/welcome-to-jekyll</link>
-        <guid isPermaLink="true">https://homes.cs.washington.edu/~siddh/articles/15/welcome-to-jekyll</guid>
+        <link>/articles/15/welcome-to-jekyll</link>
+        <guid isPermaLink="true">/articles/15/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Siddhartha S. Srinivasa</title>
+  <meta name="description" content="Research notes, papers, and robot videos">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/teaching/">
+
+  <link rel="alternate" type="application/rss+xml" title="Siddhartha S. Srinivasa" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/prl_logo.png" alt="CH"></a>
+	
+		
+  	
+		
+		    
+		      <a href="/bio/">CV</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/">Latest</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/teaching/" class="active">Teaching</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/contact/">Contact</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/publications/">Publications</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
+</header>
+    <article class="group">
+      <p><label for="mf-teaching" class="margin-toggle">⊕</label><input type="checkbox" id="mf-teaching" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/sidd-teaching.jpg" /><br /></span>
+My teaching centers around the core philosophy that I want to develop complete roboticists, expert in theory, algorithms, and 
+real-world implementation. Some of my harshest lessons were learned when I applied my algorithms to real problems.
+The courses I have designed echo this philosophy: theory grounded in the practical application of getting robots 
+to work.</p>
+
+<h2 id="courses-at-carnegie-mellon-university">Courses at Carnegie Mellon University</h2>
+
+<p>At CMU, I created two graduate-level courses from scratch:
+<em>Robot Autonomy</em>, a Masters-level course for the Master of Science in Robotic Systems Development (MRSD), 
+and <em>Manipulation Algorithms</em>, a PhD-level course. These courses have continued to be offered by other faculty after my departure.</p>
+
+<h3 id="robot-autonomy">Robot Autonomy</h3>
+<p><label for="mf-hoops" class="margin-toggle">⊕</label><input type="checkbox" id="mf-hoops" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/MRSD-herb-hoops.jpg" /><br />Teaching HERB to shoot hoops for a class project</span>
+This was the first course of its kind to provide an end-to-end robotics experience:
+from the theory of perception, control, planning and manipulation algorithms, to implementation on 
+real robots, to working prototypes on diverse real-world platforms.
+I designed every single assignment to be implemented in OpenRAVE, a planning framework we have developed, which
+enabled students to appreciate the programming complexity and real-world run-times of the algorithms they were learning.
+I also matched student teams with faculty research mentors for class projects. Each project was mandated
+to implement the learning from the class on real-world hardware platforms, ranging from HERB,
+<label for="mf-hanoi" class="margin-toggle">⊕</label><input type="checkbox" id="mf-hanoi" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/MRSD-herb-hanoi.jpg" /><br /><a href="https://www.youtube.com/watch?v=ceHLvwWDTKQ">MRSD Towers of Hanoi project</a></span> PR2, and Nao robots, to
+quadrotors, and the Gigapan system.</p>
+
+<h3 id="manipulation-algorithms">Manipulation Algorithms</h3>
+<p>This course filled a vital gap in our curriculum, exposing PhD-level students to state of the art 
+algorithms for motion planning and manipulation. Unfortunately, although there have been several recent advances in manipulation, they are often
+drowned out in the avalanche of published work. My course focused on organizing manipulation algorithms in terms 
+of their academic origins, deriving proofs for completeness and optimality, and drawing out their pros and cons
+when applied to real-world robotics problems. Students then applied these learnings in their own
+research in class projects. This was an exciting experience where both the students and I learned about some really
+diverse and creative applications of manipulation algorithms in often completely unrelated fields.</p>
+
+<h2 id="courses-at-university-of-washington">Courses at University of Washington</h2>
+
+<p>At UW, again, I created two courses from scratch:
+<em>Advanced Robotics</em>, a PhD-level course, and  <em>Robotics</em> a brand new and my <em>first</em> undergraduate course in robotics.</p>
+
+<h3 id="advanced-robotics"><a href="https://personalrobotics.cs.washington.edu/courses/manipalg/au17/">Advanced Robotics</a></h3>
+<p>This was <em>Manipulation Algorithms</em> on steroids: a brand new graduate-level robotics course on motion planning algorithms. The course covers the Piano Movers Problem, sampling-based planning, minimum dispersion graphs, efficient search, lazy and anytime planning, planning under uncertainty with application to mobile manipulators and humanoid robots, with a focus on algorithmic foundations and theorem proving. Again, we designed all of the homeworks in OpenRAVE from scratch.</p>
+
+<h3 id="robotics"><a href="https://courses.cs.washington.edu/courses/cse490r/18wi/">Robotics</a></h3>
+<p>In Winter 2018, I decided to take on a <em>very</em> ambitious project of teaching an undergraduate course, also from scratch. We designed and built 14 RACECARs<label for="mf-racecars" class="margin-toggle">⊕</label><input type="checkbox" id="mf-racecars" class="margin-toggle" /><span class="marginnote"><img class="fullwidth" src="/assets/img/RACECARs-v1.jpg" /><br />Our fleet of autonomous RACECARs</span>
+ (autonomous RC cars), created programming assignments, and brand new lecture notes. In 11 weeks, students learned everything that was needed to build an autonomous vehicle, and their final project was to autonomously drive around the 6th floor of CSE and look for hidden ‘gold’. This was the most work that I have ever put in for a class, but it was well worth it. We need to teach hands-on robotics to our undergrads on real robots, and I am committed to doing it. It was a lot of work for the students (58% said they spent &gt;22 hours/week) but well received. I really enjoyed this quote:</p>
+
+<blockquote>
+  <p>It made building your own self-driving racecar feel accessible. It’s the only course in CSE that’s given me the competitive drive I felt from high school FIRST Robotics Competition. It’s one of few courses where I’ve wondered “what would Lab 5 be? what would lab 6 be?”… I wish this was a yearlong course.</p>
+</blockquote>
+
+
+    </article>
+    <span class="print-footer">Teaching - Siddhartha Srinivasa</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:siddh@cs.uw.edu"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/siddhss5"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/siddhss5"><span class="icon-github"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2018 &nbsp;&nbsp;SIDDHARTHA SRINIVASA</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Siddhartha S. Srinivasa</title>
+  <meta name="description" content="I finally updated my website to the 21st century, and decided to go full Computer Scientist on it.I was looking for something that was full-featured (markdow...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/18/an-untangled-web">
+
+  <link rel="alternate" type="application/rss+xml" title="Siddhartha S. Srinivasa" href="/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/prl_logo.png" alt="CH"></a>
+	
+		
+  	
+		
+		    
+		      <a href="/contact/">Contact</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/bio/">CV</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/essays/">Essays</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/teaching/">Teaching</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/">Latest</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/publications/">Publications</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>A Tangled Web, Slightly Untangled</h1>
+<p class="subtitle">August 26, 2018</p>
+
+<p>I finally updated my website to the 21st century, and decided to go full Computer Scientist on it.
+I was looking for something that was full-featured (<a href="https://daringfireball.net/projects/markdown/">markdown</a>, <a href="https://www.mathjax.org/">math</a>), 
+methodical to update (<a href="https://git-scm.com/">git</a>), and customizable (<a href="https://www.w3schools.com/">layout</a>, <a href="https://fonts.google.com/">fonts</a>).
+<!--more--></p>
+
+<p>Having rewritten the <a href="http://rss2017.lids.mit.edu/">RSS 2017</a> website from scratch (later enhanced by the incomparable <a href="http://brianhou.com/">Brian Hou</a>), I developed a fondness for <a href="https://jekyllrb.com/">Jekyll</a> as my base engine. Infinitely flexible, Jekyll empowered us to generate the <em>entire</em> <a href="http://rss2017.lids.mit.edu/program/detailed/">proceedings</a> by piping data from <a href="https://cmt3.research.microsoft.com/">CMT</a> seamlessly.</p>
+
+<p>I’m a big fan of <a href="https://www.edwardtufte.com/">Edward Tufte’s</a> work, especially his advice to <em><a href="https://en.wikipedia.org/wiki/Edward_Tufte">maximize data-ink</a></em>, so the <a href="https://en.wikipedia.org/wiki/Edward_Tufte">Tufte Jekyll theme</a> was a natural layout choice.</p>
+
+<p>I hosted the site source code in a private GitHub repo. Now there were several ways to push the <em>built</em> site out to the world. I considered writing a <em><a href="(https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)">git post-receive hook</a></em> to pipe the site content to the UW CSE web server (works quite well for our <a href="https://personalrobotics.cs.washington.edu/">lab website</a>), but finally decided on something much simpler: <a href="https://help.github.com/articles/adding-a-remote/">point</a> my public <a href="https://pages.github.com/">GitHub pages</a> repository to the built site (remember to add an empty <code class="highlighter-rouge">.nojekyll</code> file), and let GitHub automatically build and host the site.</p>
+
+<p>Then, I setup a <em><a href="https://en.wikipedia.org/wiki/HTTP_301">301 redirect</a></em> from my UW CSE site to my GitHub pages public site. Now I had a stable and working pipeline. Finally, I decided to <a href="https://goodrobot.ai/">buy a domain</a> on <a href="https://www.namecheap.com/">NameCheap</a>, and secured it via SSL certificates from <a href="https://www.cloudflare.com/ssl/">CloudFlare</a>.</p>
+
+
+
+    </article>
+    <span class="print-footer">A Tangled Web, Slightly Untangled - August 26, 2018 - Siddhartha Srinivasa</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:siddh@cs.uw.edu"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/siddhss5"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/siddhss5"><span class="icon-github"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2018 &nbsp;&nbsp;SIDDHARTHA SRINIVASA</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

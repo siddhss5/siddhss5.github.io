@@ -74,7 +74,7 @@ author:
       url: "https://github.com/siddhss5"
     - label: "Contact"
       icon: "far fa-envelope"
-      url: "mailto:siddh@cs.washington.edu"
+      url: "/contact/"
 
 footer:
   links:
@@ -83,7 +83,7 @@ footer:
       url: "https://twitter.com/siddhss5"
     - label: "Contact"
       icon: "far fa-envelope"
-      url: "mailto:siddh@cs.washington.edu"
+      url: "/contact/"
 
 defaults:
   # _posts

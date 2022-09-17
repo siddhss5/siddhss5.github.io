@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: S.S.
-email: siddh@cs.uw.edu
+title: Siddhartha Srinivasa
+email: siddh@cs.washington.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Professor at University of Washington, full-stack roboticist.
 twitter_username: siddhss5
@@ -81,9 +81,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/siddhss5"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/siddhss5"
+    - label: "Contact"
+      icon: "far fa-envelope"
+      url: "mailto:siddh@cs.washington.edu"
 
 defaults:
   # _posts

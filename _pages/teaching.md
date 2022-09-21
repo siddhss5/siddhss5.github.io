@@ -1,7 +1,7 @@
 ---
 permalink: /teaching/
 layout: single
-classes: wide
+toc: true
 ---
 My teaching centers around the core philosophy that I want to develop complete roboticists, expert in theory, algorithms, and 
 real-world implementation. Some of my harshest lessons were learned when I applied my algorithms to real problems.
@@ -16,7 +16,7 @@ _Robot Autonomy_, a Masters-level course for the Master of Science in Robotic Sy
 and _Manipulation Algorithms_, a PhD-level course. These courses have continued to be offered by other faculty after my departure.
 
 ### Robot Autonomy 
-![image-left](/assets/images/MRSD-herb-hoops.jpg){: .align-left}
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/MRSD-herb-hoops.jpg){: .align-left}
 This was the first course of its kind to provide an end-to-end robotics experience:
 from the theory of perception, control, planning and manipulation algorithms, to implementation on 
 real robots, to working prototypes on diverse real-world platforms.

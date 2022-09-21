@@ -18,8 +18,8 @@ and _Manipulation Algorithms_, a PhD-level course. These courses have continued 
 ### Robot Autonomy 
 <figure style="width: 75%; max-width: 400px;" class="align-center">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MRSD-herb-hoops.jpg"
-    alt="HERB shooting hoops"/>
-  <figcaption style="text-align: center; font-size:0.7em;">Image caption.</figcaption>
+    alt="Teaching HERB to shoot hoops for a class project"/>
+  <figcaption style="text-align: center; font-size:0.7em;">Teaching HERB to shoot hoops for a class project</figcaption>
 </figure>
 This was the first course of its kind to provide an end-to-end robotics experience:
 from the theory of perception, control, planning and manipulation algorithms, to implementation on 

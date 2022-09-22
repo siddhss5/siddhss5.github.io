@@ -1,7 +1,11 @@
 ---
+title: "Teaching"
 permalink: /teaching/
 layout: single
 toc: true
+header:
+  overlay_image: /assets/images/sidd-teaching.jpg
+
 ---
 My teaching centers around the core philosophy that I want to develop complete roboticists, expert in theory, algorithms, and 
 real-world implementation. Some of my harshest lessons were learned when I applied my algorithms to real problems.

@@ -1,8 +1,13 @@
 ---
+title: "Contact"
 permalink: /contact/
 layout: single
 classes: wide
+header:
+  overlay_image: /assets/images/herb-interlocked.jpeg
 ---
+I'm usually responsive to email. If that doesn't work, please contact my admin.
+
 ### Email
 siddh [at] cs [dot] washington [dot] edu
 

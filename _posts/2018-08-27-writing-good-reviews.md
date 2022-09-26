@@ -6,6 +6,7 @@ categories:
 tags:
   - reviewing
   - writing
+  - research
 ---
 Reviewing papers is one of the most important roles of an academic. But yet, we provide surprisingly little guidance to our reviewers on the _tone_ of their reviews. I tried to capture some of my thoughts in this email I sent to my reviewers when I ran RSS 2017.
 <!--more-->

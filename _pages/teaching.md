@@ -5,7 +5,6 @@ layout: single
 toc: true
 header:
   overlay_image: /assets/images/sidd-teaching.jpg
-
 ---
 My teaching centers around the core philosophy that I want to develop complete roboticists, expert in theory, algorithms, and 
 real-world implementation. Some of my harshest lessons were learned when I applied my algorithms to real problems.
@@ -52,7 +51,12 @@ _Advanced Robotics_, a PhD-level course, and  _Robotics_ a brand new and my _fir
 This was _Manipulation Algorithms_ on steroids: a brand new graduate-level robotics course on motion planning algorithms. The course covers the Piano Movers Problem, sampling-based planning, minimum dispersion graphs, efficient search, lazy and anytime planning, planning under uncertainty with application to mobile manipulators and humanoid robots, with a focus on algorithmic foundations and theorem proving. Again, we designed all of the homeworks in OpenRAVE from scratch.
 
 ### [Robotics](https://courses.cs.washington.edu/courses/cse490r/18wi/)
-In Winter 2018, I decided to take on a _very_ ambitious project of teaching an undergraduate course, also from scratch. We designed and built 14 RACECARs
+<figure style="width: 75%; max-width: 400px;" class="align-center">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/mushr.jpeg"
+    alt="Teaching HERB to shoot hoops for a class project"/>
+  <figcaption style="text-align: center; font-size:0.7em;"><a href="https://mushr.io/">MuSHR</a>: An Accessible Platform for  Mobile Multi-Agent Robotics</figcaption>
+</figure>
+In Winter 2018, I decided to take on a _very_ ambitious project of teaching an undergraduate course, also from scratch. We designed and built 14 [RACECARs](https://mushr.io/)
  (autonomous RC cars), created programming assignments, and brand new lecture notes. In 11 weeks, students learned everything that was needed to build an autonomous vehicle, and their final project was to autonomously drive around the 6th floor of CSE and look for hidden 'gold'. This was the most work that I have ever put in for a class, but it was well worth it. We need to teach hands-on robotics to our undergrads on real robots, and I am committed to doing it. It was a lot of work for the students (58% said they spent >22 hours/week) but well received. I really enjoyed this quote: 
 
 > It made building your own self-driving racecar feel accessible. It's the only course in CSE that's given me the competitive drive I felt from high school FIRST Robotics Competition. It's one of few courses where I've wondered "what would Lab 5 be? what would lab 6 be?"... I wish this was a yearlong course.

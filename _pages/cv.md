@@ -1,7 +1,10 @@
 ---
+title: "CV"
 permalink: /cv/
 layout: single
 classes: wide
+header:
+  overlay_image: /assets/images/HERB-pose.jpg
 ---
 Here is my [CV](SiddharthaSrinivasaCV.pdf).
 

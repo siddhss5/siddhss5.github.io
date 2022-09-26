@@ -1,7 +1,10 @@
 ---
+title: "Publications"
 permalink: /publications/
 layout: single
 classes: wide
+header:
+  overlay_image: /assets/images/ADA-strawberry.jpg
 ---
 You can find preprints of my publications on my lab's [publications page](https://personalrobotics.cs.washington.edu/publications/).  
 For analytics and reverse citations, please visit my [Google Scholar page](http://scholar.google.com/citations?hl=en&user=RCi98EAAAAAJ).  

@@ -6,7 +6,7 @@ classes: wide
 header:
   overlay_image: /assets/images/HERB-pose.jpg
 ---
-Here is my [CV](SiddharthaSrinivasaCV.pdf).
+Here is my [CV](/assets/SiddharthaSrinivasaCV.pdf).
 
 
 ## Short Bio for Seminars

@@ -17,6 +17,8 @@ Siddhartha Srinivasa is a Professor at The Paul G. Allen School of Computer Scie
 
 | Year(s)   |Award           | Note  |
 |----------:|:---------------|:------|
+|2024|ACM/IEEE HRI Best Demo Award Winner|[An adaptable, safe, and portable robot-assisted feeding system](https://personalrobotics.cs.washington.edu/publications/gordonjenamaninanavati2024demo.pdf)|
+|2023|ACM/IEEE HRI Best Paper Award Winner for Design|[Design principles for robot-assisted feeding in social contexts](https://personalrobotics.cs.washington.edu/publications/nanavati2023designprinciples.pdf)|
 |2019|ICAPS Best Student Paper Award Winner|[Generalized Lazy Search for Robot Motion Planning: Interleaving Search and Edge Evaluation via Event-based Toggles](https://personalrobotics.cs.washington.edu/publications/mandalika2019gls.pdf)|
 |2019|ACM/IEEE HRI Best Paper Award Winner for Technical Advances in HRI|[Transfer depends on Acquisition: Analyzing Manipulation Strategies for Robotic Feeding](https://personalrobotics.cs.washington.edu/publications/gallenberger2019skewering.pdf)|
 |2018       |IEEE Fellow     |[For _contributions to robotic manipulation and human-robot interaction_](https://www.washington.edu/news/2017/11/28/two-uw-professors-elevated-to-ieee-fellows/)|

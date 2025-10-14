@@ -7,15 +7,8 @@ header:
   overlay_image: /assets/images/ADA-strawberry.jpg
 ---
 
-{% assign total_pubs = 0 %}
-{% for year_data in site.data.publications %}
-  {% for category_data in year_data[1] %}
-    {% assign total_pubs = total_pubs | plus: category_data[1].size %}
-  {% endfor %}
-{% endfor %}
 
-<p class="notice--info">
-  <strong>{{ total_pubs }} publications</strong> • 
+<p>
   For analytics and citations, visit my <a href="http://scholar.google.com/citations?hl=en&user=RCi98EAAAAAJ">Google Scholar page</a> • 
   BiBTeX available on <a href="https://github.com/personalrobotics/pubs">GitHub</a>
 </p>

@@ -1,0 +1,17 @@
+# Projects configuration file
+# 
+# Add your research projects here. Each project should have:
+#   - title: Display title for the project
+#   - description: Brief description of the project
+#   - website: Project website URL (optional)
+#   - status: Project status - "active" or "archived"
+#
+# Publications will be automatically associated with projects based on
+# the "project" field in your BibTeX entries.
+#
+robotfeeding:
+  title: "Robot-Assisted Feeding"
+  description: "Our work in robot-assisted feeding focuses on enabling autonomous, safe, and comfortable bite acquisition and delivery for individuals with motor impairments. Our system ADA (Assistive Dexterous Arm) integrates compliant control, multimodal perception, and learned food interaction policies to handle the diversity of everyday meals. We study the fundamental problems of manipulation under uncertainty while advancing assistive robotics for real-world impact."
+  website: "https://robotfeeding.io"
+  status: "active"
+

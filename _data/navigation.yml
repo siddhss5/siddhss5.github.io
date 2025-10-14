@@ -5,11 +5,9 @@ main:
     url: /contact/
   - title: "Publications"
     url: /publications/
+  - title: "Projects"
+    url: /projects/
   - title: "Teaching"
     url: /teaching/
   - title: "Posts"
     url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/

@@ -53,9 +53,17 @@ The server will automatically rebuild when you make changes to files (except `_c
 
 ## Updating Publications & Projects
 
-### Quick Update
+### Automatic Generation
 
-To regenerate publications and projects data from the latest BibTeX files:
+Publications and projects data are **automatically generated** before every Jekyll build via a plugin at `_plugins/generate_publications.rb`. This means:
+
+- When you run `bundle exec jekyll serve`, publications are regenerated automatically
+- No manual step needed for local development
+- Publications are always fresh when viewing the site
+
+### Manual Generation (Optional)
+
+You can also manually regenerate publications and projects data:
 
 ```bash
 python3 scripts/generate_publications.py

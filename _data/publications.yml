@@ -69,7 +69,8 @@
     year: 2025
     pdf_url: https://personalrobotics.cs.washington.edu/publications//zhang2025atk.pdf
     note: null
-    projects: []
+    projects:
+    - dataefficiency
     entry_type: Conference Papers
 2024:
   Journal Papers:
@@ -109,7 +110,8 @@
     year: 2024
     pdf_url: https://personalrobotics.cs.washington.edu/publications//deshpande2024data.pdf
     note: null
-    projects: []
+    projects:
+    - dataefficiency
     entry_type: Conference Papers
   - title: 'Demonstrating HOUND: A Low-cost Research Platform for High-speed Off-road
       Underactuated Nonholonomic Driving'
@@ -137,7 +139,8 @@
     year: 2024
     pdf_url: https://personalrobotics.cs.washington.edu/publications//kay2024ccil.pdf
     note: null
-    projects: []
+    projects:
+    - dataefficiency
     entry_type: Conference Papers
   Other Papers:
   - title: Multiple Ways of Working with Users to Develop Physically Assistive Robots
@@ -319,7 +322,8 @@
     year: 2022
     pdf_url: https://personalrobotics.cs.washington.edu/publications//spencer2022eil.pdf
     note: null
-    projects: []
+    projects:
+    - interventions
     entry_type: Journal Papers
   Conference Papers:
   - title: Dynamic Replanning with Posterior Sampling
@@ -520,7 +524,8 @@
     year: 2020
     pdf_url: https://personalrobotics.cs.washington.edu/publications//spencer2020eil.pdf
     note: null
-    projects: []
+    projects:
+    - interventions
     entry_type: Conference Papers
   - title: Amodal 3D Reconstruction for Robotic Manipulation via Stability and Connectivity
     authors: W. Agnew, C. Xie, A. Walsman, O. Murad, C. Wang, P. Domingos, and S.
@@ -642,7 +647,8 @@
     year: 2019
     pdf_url: https://personalrobotics.cs.washington.edu/publications//ainsworth2019estop.pdf
     note: null
-    projects: []
+    projects:
+    - interventions
     entry_type: Conference Papers
   - title: Improving Robot Success Detection using Static Object Data
     authors: R. Scalise, J. Thomason, Y. Bisk, and S. Srinivasa

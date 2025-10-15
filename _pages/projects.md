@@ -20,7 +20,7 @@ header:
 <span class="btn btn--secondary btn--small" style="margin-left: 0.5em;">{{ project.status | capitalize }}</span>
     {% endif %}
   {% endif %}
-  {% if project.website %}
+  {% if project.website and project.website != "" %}
 <a href="{{ project.website }}" target="_blank" class="btn btn--primary btn--small" style="margin-left: 0.5em;">Website</a>
   {% endif %}
 <span class="btn btn--info btn--small" style="margin-left: 0.5em;">{{ project_name }}</span>

@@ -98,8 +98,28 @@ def generate_projects_yaml():
     
     sorted_projects = dict(sorted(projects_config.items(), key=project_sort_key))
     
-    # Convert to dict using library function
-    yaml_data = projects_to_dict(sorted_projects, project_pubs)
+    # Create simplified structure with only publications
+    yaml_data = {}
+    for project_name, project_info in sorted_projects.items():
+        publications = []
+        if project_name in project_pubs and project_pubs[project_name]:
+            # Convert publications to dict format
+            for pub in project_pubs[project_name]:
+                pub_dict = {
+                    'title': pub.title,
+                    'authors': pub.authors,
+                    'venue': pub.venue,
+                    'year': pub.year,
+                    'pdf_url': pub.pdf_url,
+                    'note': pub.note,
+                    'projects': pub.projects,
+                    'entry_type': pub.entry_type
+                }
+                publications.append(pub_dict)
+        
+        yaml_data[project_name] = {
+            'publications': publications
+        }
     
     # Write to Jekyll _data directory
     output_file = OUTPUT_DIR / "projects.yml"

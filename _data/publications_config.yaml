@@ -2,8 +2,7 @@
 # Used by scripts/generate_publications.py
 
 bibtex:
-  source_url: "https://raw.githubusercontent.com/personalrobotics/pubs/master"
-  cache_dir: "_data/bib"
+  bib_dir: "_data/pubs"
   files:
     - name: "siddpubs-journal.bib"
       category: "Journal Papers"

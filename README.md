@@ -55,19 +55,34 @@ The server will automatically rebuild when you make changes to files (except `_c
 
 ### Quick Update
 
-To fetch the latest publications from BibTeX files and regenerate the data:
+To regenerate publications and projects data from the latest BibTeX files:
 
 ```bash
 python3 scripts/generate_publications.py
 ```
 
 This will:
-- Fetch BibTeX files from the [personalrobotics/pubs](https://github.com/personalrobotics/pubs) repo
-- Cache them locally in `_data/bib/`
+- Read BibTeX files from the Git submodule at `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
 - Generate `_data/publications.yml` with all publications
 - Generate `_data/projects.yml` with project-organized publications
 
 The Jekyll server will automatically pick up the changes if it's running.
+
+### Updating BibTeX Files
+
+The BibTeX files are managed as a Git submodule. To get the latest publications:
+
+```bash
+# Update the submodule to latest commits
+git submodule update --remote _data/pubs
+
+# Regenerate the data
+python3 scripts/generate_publications.py
+
+# Commit the submodule update
+git add _data/pubs
+git commit -m "Update publications submodule"
+```
 
 ### Adding a New Project
 
@@ -98,7 +113,7 @@ The Jekyll server will automatically pick up the changes if it's running.
 ### Configuration
 
 Edit `_data/publications_config.yaml` to configure:
-- BibTeX source URL
+- BibTeX directory (currently `_data/pubs/` from Git submodule)
 - Which BibTeX files to include
 - PDF base URL
 - Projects configuration file location
@@ -128,7 +143,8 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 │   ├── publications_config.yaml # Publications generation config
 │   ├── projects-config.yaml    # Project definitions
 │   ├── publications.yml        # Generated publications data
-│   └── projects.yml            # Generated projects data
+│   ├── projects.yml            # Generated projects data
+│   └── pubs/                   # Git submodule with BibTeX files
 ├── _pages/
 │   ├── publications.md         # Publications page template
 │   ├── projects.md             # Projects page template
@@ -137,8 +153,9 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 │   └── contact.md
 ├── _posts/                     # Blog posts
 ├── assets/                     # Images, PDFs, etc.
-└── scripts/
-    └── generate_publications.py # Publication generator script
+├── scripts/
+│   └── generate_publications.py # Publication generator script
+└── .gitmodules                 # Git submodule configuration
 ```
 
 ---

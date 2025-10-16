@@ -1,4 +1,4 @@
-# Jekyll plugin to automatically generate publications, projects, and videos data before build
+# Jekyll plugin to automatically generate publications and projects data before build
 # This ensures all data is always up-to-date when viewing the site locally
 
 Jekyll::Hooks.register :site, :after_init do |site|
@@ -11,17 +11,6 @@ Jekyll::Hooks.register :site, :after_init do |site|
     Jekyll.logger.info "Publications:", "Generation complete!"
   else
     Jekyll.logger.warn "Publications:", "Generation failed - publications may be out of date"
-  end
-  
-  Jekyll.logger.info "Videos:", "Generating videos data..."
-  
-  # Run the Python script to generate videos.yml
-  result = system("python3 scripts/generate_videos.py > /dev/null 2>&1")
-  
-  if result
-    Jekyll.logger.info "Videos:", "Generation complete!"
-  else
-    Jekyll.logger.warn "Videos:", "Generation failed - videos may be out of date"
   end
 end
 

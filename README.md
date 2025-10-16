@@ -6,6 +6,7 @@ Personal website built with Jekyll and the [Minimal Mistakes theme](https://gith
 
 - **Publications**: Automatically generated from BibTeX files using [prl_bib2html](https://github.com/siddhss5/prl_bib2html)
 - **Projects**: Research projects with associated publications (collapsible view)
+- **Videos**: YouTube videos from channel and favorites with embedded players and modal popups
 - **Blog Posts**: Technical blog posts and thoughts
 - **CV, Teaching, Contact**: Standard academic pages
 
@@ -51,28 +52,32 @@ The server will automatically rebuild when you make changes to files (except `_c
 
 ---
 
-## Updating Publications & Projects
+## Updating Publications, Projects & Videos
 
 ### Automatic Generation
 
-Publications and projects data are **automatically generated** before every Jekyll build via a plugin at `_plugins/generate_publications.rb`. This means:
+Publications, projects, and videos data are **automatically generated** before every Jekyll build via dedicated plugins. This means:
 
-- When you run `bundle exec jekyll serve`, publications are regenerated automatically
+- When you run `bundle exec jekyll serve`, all data is regenerated automatically
 - No manual step needed for local development
-- Publications are always fresh when viewing the site
+- All content is always fresh when viewing the site
 
 ### Manual Generation (Optional)
 
-You can also manually regenerate publications and projects data:
+You can also manually regenerate publications, projects, and videos data:
 
 ```bash
+# Generate publications and projects
 python3 scripts/generate_publications.py
+
+# Generate videos
+python3 scripts/generate_videos.py
 ```
 
 This will:
-- Read BibTeX files from the Git submodule at `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
-- Generate `_data/publications.yml` with all publications
-- Generate `_data/projects.yml` with project-organized publications
+- **Publications**: Read BibTeX files from the Git submodule at `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
+- **Projects**: Generate `_data/projects.yml` with project-organized publications
+- **Videos**: Fetch videos from YouTube channel and favorites playlist, generate `_data/videos.yml`
 
 The Jekyll server will automatically pick up the changes if it's running.
 
@@ -128,6 +133,51 @@ Edit `_data/publications_config.yaml` to configure:
 
 ---
 
+## YouTube Videos Integration
+
+### Setup
+
+The videos page automatically fetches videos from your YouTube channel and favorites playlist. To set this up:
+
+1. **Get a YouTube Data API v3 key:**
+   - Go to [Google Developer Console](https://console.developers.google.com/)
+   - Create a new project or select existing one
+   - Enable the YouTube Data API v3
+   - Create credentials (API key)
+
+2. **Configure the videos:**
+   Edit `_data/videos_config.yaml`:
+   ```yaml
+   api_key: "YOUR_YOUTUBE_API_KEY_HERE"
+   channel_id: "UCv0BqZMqV5xNa5JOkibxOpw"  # Your channel ID
+   favorites_playlist_id: "FLv0BqZMqV5xNa5JOkibxOpw"  # Your favorites playlist
+   max_videos: 100
+   ```
+
+3. **Test the integration:**
+   ```bash
+   python3 scripts/generate_videos.py
+   ```
+
+### Features
+
+- **Automatic fetching**: Videos are fetched from your YouTube channel and favorites playlist
+- **Chronological sorting**: Videos are sorted by upload date (newest first)
+- **Private video filtering**: Private videos are automatically excluded
+- **Responsive grid**: Clean thumbnail grid layout with hover effects
+- **Modal popups**: Click any video to open a modal with embedded YouTube player
+- **Robust thumbnails**: Fallback system ensures all videos have thumbnails
+
+### Video Data Structure
+
+The script generates `_data/videos.yml` with:
+- Video ID, title, description, upload date
+- Thumbnail URLs with fallback system
+- Channel information
+- Automatic deduplication and sorting
+
+---
+
 ## Deployment
 
 After making changes:
@@ -150,19 +200,26 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 │   ├── navigation.yml          # Site navigation menu
 │   ├── publications_config.yaml # Publications generation config
 │   ├── projects-config.yaml    # Project definitions
+│   ├── videos_config.yaml      # YouTube videos configuration
 │   ├── publications.yml        # Generated publications data
 │   ├── projects.yml            # Generated projects data
+│   ├── videos.yml              # Generated videos data
 │   └── pubs/                   # Git submodule with BibTeX files
 ├── _pages/
 │   ├── publications.md         # Publications page template
 │   ├── projects.md             # Projects page template
+│   ├── videos.md               # Videos page template
 │   ├── cv.md
 │   ├── teaching.md
 │   └── contact.md
 ├── _posts/                     # Blog posts
+├── _plugins/
+│   ├── generate_publications.rb # Auto-generates publications and projects data
+│   └── generate_videos.rb       # Auto-generates videos data
 ├── assets/                     # Images, PDFs, etc.
 ├── scripts/
-│   └── generate_publications.py # Publication generator script
+│   ├── generate_publications.py # Publication generator script
+│   └── generate_videos.py      # YouTube videos generator script
 └── .gitmodules                 # Git submodule configuration
 ```
 

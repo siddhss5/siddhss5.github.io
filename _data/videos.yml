@@ -1,0 +1,970 @@
+- channel_title: Personal Robotics Lab
+  description: 'A robot navigating an outdoor environment with no prior knowledge
+    of the space must rely on its local sensing to perceive its surroundings and plan.
+    This can come in the form of a local metric map or local policy with some fixed
+    horizon. Beyond that, there is a fog of unknown space marked with some fixed cost.
+
+
+    A limited planning horizon can often result in myopic decisions leading the robot
+    off course or worse, into very difficult terrain. Ideally, we would like the robot
+    to have full knowledge that can be orders of magnitude larger than a local cost
+    map. In practice, this is intractable due to sparse sensing information and often
+    computationally expensive.
+
+
+    In this work, we make a key observation that long-range navigation only necessitates
+    identifying good frontier directions for planning instead of full map knowledge.
+    To this end, we propose the Long Range Navigator (LRN), that learns an intermediate
+    affordance representation mapping high-dimensional camera images to affordable
+    frontiers for planning, and then optimizing for maximum alignment with the desired
+    goal. The LRN notably is trained entirely on unlabeled ego-centric videos making
+    it easy to scale and adapt to new platforms. Through extensive off-road experiments
+    on Spot and a Big Vehicle, we find that augmenting existing navigation stacks
+    with LRN reduces human interventions at test-time and leads to faster decision
+    making indicating the relevance of LRN.
+
+
+    Website: https://personalrobotics.github.io/lrn/
+
+    arxiv: https://arxiv.org/abs/2504.13149'
+  id: BSzeBp26aIU
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-04-18T02:53:01Z'
+  thumbnail_url: https://i.ytimg.com/vi/BSzeBp26aIU/hqdefault.jpg
+  title: 'Long Range Navigator: Extending robot planning horizons beyond metric maps'
+- channel_title: Personal Robotics Lab
+  description: "Spotlight video for the paper \"Lessons Learned from Designing and\
+    \ Evaluating a Robot-assisted Feeding System for Out-of-lab Use\" published in\
+    \ HRI'25.\n\nFor more details, see the paper's website: https://robotfeeding.io/publications/hri25a/\n\
+    \nFull Citation: \nNanavati, Amal, Ethan K. Gordon, Taylor A. Kessler Faulkner,\
+    \ Yuxin (Ray) Song, Johnathan Ko, Tyler Schrenk, Vy Nguyen, Bernie Hao Zhu, Haya\
+    \ Bolotski, Atharva Kashyap, Sriram Kutty, Raida Karim, Liander Rainbolt, Rosario\
+    \ Scalise, Hanjun Song, Ramon Qu, Maya Cakmak, and Siddhartha S. Srinivasa. \"\
+    Lessons Learned from Designing and Evaluating a Robot-assisted Feeding System\
+    \ for Out-of-lab Use.\" In Proceedings of the 2025 ACM/IEEE International Conference\
+    \ on Human-Robot Interaction. 2025."
+  id: 0GxLTw5UDt0
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2024-12-30T05:01:03Z'
+  thumbnail_url: https://i.ytimg.com/vi/0GxLTw5UDt0/hqdefault.jpg
+  title: Lessons Learned from Designing and Evaluating a Robot-assisted Feeding System
+    for Out-of-lab Use
+- channel_title: Personal Robotics Lab
+  description: "Selected footage from \"Study 1: Multi-user, Out-of-lab Study\" from\
+    \ the paper \"Lessons Learned from Designing and Evaluating a Robot-assisted Feeding\
+    \ System for Out-of-lab Use\" published in HRI'25.\n\nFor more details, see the\
+    \ paper's website: https://robotfeeding.io/publications/hri25a/\n\nFull Citation:\
+    \ \nNanavati, Amal, Ethan K. Gordon, Taylor A. Kessler Faulkner, Yuxin (Ray) Song,\
+    \ Johnathan Ko, Tyler Schrenk, Vy Nguyen, Bernie Hao Zhu, Haya Bolotski, Atharva\
+    \ Kashyap, Sriram Kutty, Raida Karim, Liander Rainbolt, Rosario Scalise, Hanjun\
+    \ Song, Ramon Qu, Maya Cakmak, and Siddhartha S. Srinivasa. \"Lessons Learned\
+    \ from Designing and Evaluating a Robot-assisted Feeding System for Out-of-lab\
+    \ Use.\" In Proceedings of the 2025 ACM/IEEE International Conference on Human-Robot\
+    \ Interaction. 2025."
+  id: c1cnZrnBHo4
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2024-12-30T05:00:47Z'
+  thumbnail_url: https://i.ytimg.com/vi/c1cnZrnBHo4/hqdefault.jpg
+  title: Multi-user, Out-of-lab Study of a Robot-assisted Feeding System for People
+    with Motor Impairments
+- channel_title: Personal Robotics Lab
+  description: "Selected footage from \"Study 2: Single-user, In-home Deployment\"\
+    \ from the paper \"Lessons Learned from Designing and Evaluating a Robot-assisted\
+    \ Feeding System for Out-of-lab Use\" published in HRI'25.\n\nFor more details,\
+    \ see the paper's website: https://robotfeeding.io/publications/hri25a/\n\nFull\
+    \ Citation: \nNanavati, Amal, Ethan K. Gordon, Taylor A. Kessler Faulkner, Yuxin\
+    \ (Ray) Song, Johnathan Ko, Tyler Schrenk, Vy Nguyen, Bernie Hao Zhu, Haya Bolotski,\
+    \ Atharva Kashyap, Sriram Kutty, Raida Karim, Liander Rainbolt, Rosario Scalise,\
+    \ Hanjun Song, Ramon Qu, Maya Cakmak, and Siddhartha S. Srinivasa. \"Lessons Learned\
+    \ from Designing and Evaluating a Robot-assisted Feeding System for Out-of-lab\
+    \ Use.\" In Proceedings of the 2025 ACM/IEEE International Conference on Human-Robot\
+    \ Interaction. 2025."
+  id: BETpbTbmZhc
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2024-12-30T05:00:37Z'
+  thumbnail_url: https://i.ytimg.com/vi/BETpbTbmZhc/hqdefault.jpg
+  title: In-home Deployment of a Robot-assisted Feeding System for People with Motor
+    Impairments
+- channel_title: Personal Robotics Lab
+  description: 'Video presentation for the paper "Data Efficient Behavior Cloning
+    for Fine Manipulation via Continuity-based Corrective Labels", presented at IROS
+    2024.
+
+
+    Paper: https://arxiv.org/pdf/2405.19307
+
+    Website: https://personalrobotics.github.io/CCIL/'
+  id: ssNdkjla9Bk
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2024-10-09T01:57:49Z'
+  thumbnail_url: https://i.ytimg.com/vi/ssNdkjla9Bk/hqdefault.jpg
+  title: Data Efficient Behavior Cloning for Fine Manipulation via Continuity-based
+    Corrective Labels
+- channel_title: Personal Robotics Lab
+  description: 'To Appear in the ACM/IEEE Conference on Human-Robot Interaction, March
+    2024, Boulder, CO
+
+
+    Joint work with the Personal Robotics Lab at the University of Washington, Seattle,
+    WA, and EmPRISE at Cornell University, Ithaca, NY
+
+
+    Abstract:
+
+    We demonstrate a robot-assisted feeding system that enables
+
+    people with mobility impairments to feed themselves. Our system design embodies
+    Safety, Portability, and User Control, with comprehensive full-stack safety checks,
+    the ability to be mounted on and powered by any powered wheelchair, and a custom
+    web-app allowing care-recipients to leverage their own assistive devices for robot
+    control. For bite acquisition, we leverage multi-modal online learning to tractably
+    adapt to unseen food types. For bite transfer, we leverage real-time mouth perception
+    and interaction-aware control. Co-designed with community researchers, our system
+    has been validated through multiple end-user studies.'
+  id: 5GNKUKMbOv0
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2024-01-23T19:49:59Z'
+  thumbnail_url: https://i.ytimg.com/vi/5GNKUKMbOv0/hqdefault.jpg
+  title: An Adaptive, Safe, and Portable Robot-Assisted Feeding System
+- channel_title: Personal Robotics Lab
+  description: 'Demonstration of 11 human-informed actions utilizing the schema and
+    human extraction scheme from our submission to the 2023 Conference on Robot-Learning
+    (CoRL)
+
+
+    Please use the citation found at: https://openreview.net/forum?id=UZpWSDA3tZJ
+
+
+    See the human trajectory processing procedure at: https://github.com/personalrobotics/corl23_towards_general_food_acquisition
+
+
+    See the action implementation on the Kinova Gen2 (JACO) arm at: https://github.com/personalrobotics/ada_feeding'
+  id: 6j2ymtDI8LI
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2023-10-17T02:13:25Z'
+  thumbnail_url: https://i.ytimg.com/vi/6j2ymtDI8LI/hqdefault.jpg
+  title: 'Demonstration: Towards General Single-Utensil Food Acquisition with Human-Informed
+    Actions'
+- channel_title: Personal Robotics Lab
+  description: "Video citation:\nAmal Nanavati, Patrícia Alves-Oliveira, Tyler Schrenk,\
+    \ Ethan K. Gordon,\r Maya Cakmak, and Siddhartha S. Srinivasa. 2023. Unintended\
+    \ Failures \rof Robot-Assisted Feeding in Social Contexts. In Companion of the\
+    \ 2023\r ACM/IEEE International Conference on Human-Robot Interaction (HRI ’23\r\
+    \ Companion), March 13–16, 2023, Stockholm, Sweden. ACM, New York, NY,\r USA,\
+    \ 3 pages. https://doi.org/10.1145/3568294.3580209\n\nSee the full paper here:\n\
+    Amal Nanavati, Patrícia Alves-Oliveira, Tyler Schrenk, Ethan K. Gordon, Maya Cakmak,\
+    \ and Siddhartha S. Srinivasa. 2023. Design Principles for Robot-Assisted Feeding\
+    \ in Social Contexts. In Proceedings of the 2023 ACM/IEEE International Conference\
+    \ on Human-Robot Interaction (HRI ’23), March 13–16, 2023, Stockholm, Sweden.\
+    \ ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3568162.3576988"
+  id: 02LYORrcN7M
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2023-02-18T03:39:15Z'
+  thumbnail_url: https://i.ytimg.com/vi/02LYORrcN7M/hqdefault.jpg
+  title: Unintended Failures of Robot-Assisted Feeding in Social Contexts
+- channel_title: Personal Robotics Lab
+  description: 'Full citation:
+
+    Amal Nanavati, Patrícia Alves-Oliveira, Tyler Schrenk, Ethan K. Gordon, Maya Cakmak,
+    and Siddhartha S. Srinivasa. 2023. Design Principles for Robot-Assisted Feeding
+    in Social Contexts. In Proceedings of the 2023 ACM/IEEE International Conference
+    on Human-Robot Interaction (HRI ’23), March 13–16, 2023, Stockholm, Sweden. ACM,
+    New York, NY, USA, 10 pages. https://doi.org/10.1145/3568162.3576988'
+  id: m2ySmeHgT-k
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2023-02-18T03:38:44Z'
+  thumbnail_url: https://i.ytimg.com/vi/m2ySmeHgT-k/hqdefault.jpg
+  title: Design Principles for Robot-Assisted Feeding in Social Contexts
+- channel_title: Personal Robotics Lab
+  description: 'Short video presentation of our paper "Analyzing Multiagent Interactions
+    in Traffic Scenes via Topological Braids.
+
+    " by C. Mavrogiannis, J. DeCastro, and S. S. Srinivasa that appeared at the IEEE
+    International Conference on Robotics and Automation (ICRA) in 2022. You can read
+    our full paper at: https://arxiv.org/abs/2109.07060.'
+  id: LNLuSZqG0n4
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2022-11-08T19:12:06Z'
+  thumbnail_url: https://i.ytimg.com/vi/LNLuSZqG0n4/hqdefault.jpg
+  title: Analyzing Multiagent Interactions in Traffic Scenes via Topological Braids
+- channel_title: Personal Robotics Lab
+  description: 'Lab experiments from the paper "Winding Through: Crowd Navigation
+    via Topological Invariance" by C. Mavrogiannis, K. Balasubramanian, S. Poddar,
+    A. Gandra, and S. S. Srinivasa which appears in RA-L. You can read our full paper
+    here: https://arxiv.org/abs/2109.05084.'
+  id: rlXUozl_dAk
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2022-11-08T19:04:23Z'
+  thumbnail_url: https://i.ytimg.com/vi/rlXUozl_dAk/hqdefault.jpg
+  title: 'Winding Through: Crowd Navigation via Topological Invariance'
+- channel_title: Personal Robotics Lab
+  description: 'Video for the ICRA 2021 paper titled "Grasping with Chopsticks: Combating
+    Covariate Shift in Model-free Imitation Learning for Fine Manipulation". You can
+    read the paper at https://arxiv.org/abs/2011.06719'
+  id: z8SfRrUvQ_4
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2021-06-01T20:32:14Z'
+  thumbnail_url: https://i.ytimg.com/vi/z8SfRrUvQ_4/hqdefault.jpg
+  title: Grasping with Chopsticks | Model Free Imitation Learning for Fine Manipulation
+    Challenge
+- channel_title: Personal Robotics Lab
+  description: Read our paper on arXiv 🖇️ https://arxiv.org/abs/2011.06719
+  id: Mnw68ngkUlE
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-11-18T03:42:02Z'
+  thumbnail_url: https://i.ytimg.com/vi/Mnw68ngkUlE/hqdefault.jpg
+  title: Combating covariate shift ⚔️ for fine manipulation 🥢
+- channel_title: Personal Robotics Lab
+  description: 'Paper Under Review: https://arxiv.org/abs/2011.02604
+
+
+    Autonomous robot-assisted feeding requires the ability to acquire a wide variety
+    of food items. However, it is impossible for such a system to be trained on all
+    types of food in existence. Therefore, a key challenge is choosing a manipulation
+    strategy for a previously unseen food item. Previous work showed that the problem
+    can be represented as a linear contextual bandit on visual information. However,
+    food has a wide variety of multi-modal properties relevant to manipulation that
+    can be hard to distinguish visually. Our key insight is that we can leverage the
+    haptic information we collect during manipulation to learn some of these properties
+    and more quickly adapt our visual model to previously unseen food. In general,
+    we propose a modified linear contextual bandit framework augmented with post hoc
+    context observed after action selection to empirically increase learning speed
+    (as measured by cross-validation mean square error) and reduce cumulative regret.
+    Experiments on synthetic data demonstrate that this effect is more pronounced
+    when the dimensionality of the context is large relative to the post hoc context
+    or when the post hoc context model is particularly easy to learn. Finally, we
+    apply this framework to the bite acquisition problem and demonstrate the acquisition
+    of 8 previously unseen types of food with 21% fewer failures across 64 attempts.'
+  id: GNvIcPV0Wrs
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-11-06T19:34:05Z'
+  thumbnail_url: https://i.ytimg.com/vi/GNvIcPV0Wrs/hqdefault.jpg
+  title: Leveraging Post Hoc Context for Faster Learning in Bandit Settings applied
+    to Robot-Assisted Feeding
+- channel_title: Personal Robotics Lab
+  description: Humans are remarkably good at using chopsticks. The Guinness World
+    Record witnessed a person using chopsticks to pick up 65 M&Ms in just a minute.
+    We are to collect demonstrations from humans and to teach robot to use chopsticks
+    ...
+  id: 32Q2xVl5j_I
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-10-09T21:57:04Z'
+  thumbnail_url: https://i.ytimg.com/vi/32Q2xVl5j_I/hqdefault.jpg
+  title: 'Chopsticks Robot: The Beginning of a Journey'
+- channel_title: Personal Robotics Lab
+  description: As presented in IROS 2020
+  id: f_mLCibfqpk
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-09-18T18:44:06Z'
+  thumbnail_url: https://i.ytimg.com/vi/f_mLCibfqpk/hqdefault.jpg
+  title: 'Adaptive Robot-Assisted Feeding: An Online Learning Framework for Acquiring
+    Previously Unseen Food'
+- channel_title: Personal Robotics Lab
+  description: "New Connections between Motion Planning and Machine Learning - Sidd\
+    \ Srinivasa (UW)\n\nAbstract: Any time a robot needs to move, a motion needs to\
+    \ be planned. But yet roboticists often treat motion planning as a black box,\
+    \ and barely understand fundamental algorithms like A*. In this talk, I’ll start\
+    \ with some intuition about search, via the absurd analogy of amoebas. I’ll use\
+    \ the analogy to describe the first-ever edge-optimal A*-like search algorithm\
+    \ we invented. I’ll then cast anytime search with experience (what we call the\
+    \ Experienced Piano Movers’ Problem) as an instance of Bayesian Reinforcement\
+    \ Learning, enabling us to derive the first-ever sublinear regret bounds for anytime\
+    \ motion planning. I’ll end with some open problems I want you all to solve, so\
+    \ I can retire in peace.\n\nBiography: Siddhartha Srinivasa is the Boeing Endowed\
+    \ Professor at The Paul G. Allen School of Computer Science and Engineering at\
+    \ the University of Washington, and an IEEE Fellow. He is a full-stack roboticist,\
+    \ with the goal of enabling robots to perform complex manipulation tasks under\
+    \ uncertainty and clutter, with and around people. To this end, he founded the\
+    \ Personal Robotics Lab in 2005. He was a PI on the Quality of Life Technologies\
+    \ NSF ERC, DARPA ARM-S. RCTA and the DARPA Robotics Challenge, has built several\
+    \ robots (HERB, ADA, CHIMP, MuSHR), and has written software frameworks (OpenRAVE,\
+    \ DART) and best-paper award winning algorithms (CBiRRT, CHOMP, BIT*, Legibility)\
+    \ used extensively by roboticists around the world. Sidd received a B.Tech in\
+    \ Mechanical Engineering from the Indian Institute of Technology Madras in 1999,\
+    \ and a PhD in 2005 from the Robotics Institute at Carnegie Mellon University.\
+    \ He played badminton and tennis for IIT Madras, captained the CMU squash team,\
+    \ and lately runs competitively.\n\n\n“Robotics Today - A series of technical\
+    \ talks” is a new virtual robotics seminar series. The goal of the series is to\
+    \ bring the robotics community together during these challenging times.The seminars\
+    \ are scheduled on Fridays at 1PM EDT (10AM PDT) are open to the public. The format\
+    \ of the seminar consists of a technical talk live captioned and streamed via\
+    \ Web (https://roboticstoday.github.io/watch...) and Twitter (@RoboticsSeminar),\
+    \ followed by an interactive discussion between the speaker and a panel of faculty,\
+    \ postdocs, and students that will moderate audience questions. \n\nWebsite: https://roboticstoday.github.io/\n\
+    Twitter: https://twitter.com/RoboticsSeminar\nCalendar: https://calendar.google.com/calendar/embed?src=roboticstodayseminar%40gmail.com&ctz=America%2FNew_York\n\
+    \nOutline\n0:00 Introduction\n4:20 Sidd's Talk \n1:01:35 Panel Discussion\n1:22:33\
+    \ Concluding Remarks"
+  id: adrVlZegiR0
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-07-27T21:31:37Z'
+  thumbnail_url: https://i.ytimg.com/vi/adrVlZegiR0/hqdefault.jpg
+  title: '"New Connections between Motion Planning and Machine Learning" - Sidd Srinivasa'
+- channel_title: Personal Robotics Lab
+  description: https://arxiv.org/abs/2002.11853
+  id: 1DYZ_mseL3c
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-05-22T18:04:05Z'
+  thumbnail_url: https://i.ytimg.com/vi/1DYZ_mseL3c/hqdefault.jpg
+  title: Posterior Sampling for Anytime Motion Planning (ICRA 2020)
+- channel_title: Personal Robotics Lab
+  description: 'In this work, we explore user preferences for different modes of autonomy
+    for robot-assisted feeding given perceived error risks and also analyze the effect
+    of input modalities on technology acceptance.
+
+
+    Specifically, we tested:
+
+    * Speed (Fast vs. Slow)
+
+    * Interface (Web-based vs. Voice-based)
+
+    * Environment (Social vs. Individual)
+
+    * Level of Autonomy: Full vs. Partial vs. Low'
+  id: mLDyIWNGsy0
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-01-13T18:36:51Z'
+  thumbnail_url: https://i.ytimg.com/vi/mLDyIWNGsy0/hqdefault.jpg
+  title: Evaluating an Assistive-Feeding Robot with Users with Mobility Limitations
+- channel_title: Personal Robotics Lab
+  description: The MuSHR platform was designed in the Personal Robotics Lab at the
+    University of Washington's Paul G. Allen School of Computer Science & Engineering.
+    Taking inspiration from the MIT RACECAR platform, we set out to create an affordable
+    full-stack robotics system which not only can support our own research and teaching
+    demands, but those of the community at-large. The acronym MuSHR is inspired by
+    dog-sled racing, “mushing”, where dogs (most commonly Alaskan Huskies) work together
+    pull a sled. As the UW mascot is the Husky, we found this name especially fitting.
+  id: N_ntS3ywYuM
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2020-01-07T21:39:29Z'
+  thumbnail_url: https://i.ytimg.com/vi/N_ntS3ywYuM/hqdefault.jpg
+  title: 'MuSHR: Multiagent System for NonHolonomic Racing'
+- channel_title: Personal Robotics Lab
+  description: This video shows how a robot can learn to skewer previously-unseen
+    food items with different action distributions using online learning with a contextual
+    bandit formulation.
+  id: YI6hSol2oR4
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2019-09-27T16:54:19Z'
+  thumbnail_url: https://i.ytimg.com/vi/YI6hSol2oR4/hqdefault.jpg
+  title: Online Learning for Food Manipulation
+- channel_title: Personal Robotics Lab
+  description: This video summarizes our work on SPANet framework and shows demonstrations
+    of the robot's skewering trials generalized across food items.
+  id: AFpmoqvx6Ug
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2019-09-04T23:45:17Z'
+  thumbnail_url: https://i.ytimg.com/vi/AFpmoqvx6Ug/hqdefault.jpg
+  title: Generalizing Skewering Strategies across Food Items
+- channel_title: Personal Robotics Lab
+  description: The video shows calibration of FingerVision and Fingertip GelSight
+    sensors for food manipulation application. The sensitivity of the sensors increase
+    with low gripping force. In addition, it shows a control policy using which a
+    robot can change the range and sensitivity of these tactile sensors by controlling
+    gripping forces.
+  id: udUZAARTE94
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2019-09-04T23:37:31Z'
+  thumbnail_url: https://i.ytimg.com/vi/udUZAARTE94/hqdefault.jpg
+  title: Bite Acquisition with Tactile Sensing
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: rK5jau8jBaM
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2019-01-19T05:21:11Z'
+  thumbnail_url: https://i.ytimg.com/vi/rK5jau8jBaM/hqdefault.jpg
+  title: 'Towards Robotic Feeding: Role of Haptics in Fork-based Food Manipulation'
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: XY3QoGT3YcA
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2019-01-13T02:53:16Z'
+  thumbnail_url: https://i.ytimg.com/vi/XY3QoGT3YcA/hqdefault.jpg
+  title: 'Transfer depends on Acquisition: Analyzing Manipulation Strategies for Robotic
+    Feeding'
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: t2eO4CD-0WY
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2018-12-13T02:42:41Z'
+  thumbnail_url: https://i.ytimg.com/vi/t2eO4CD-0WY/hqdefault.jpg
+  title: Autonomous Robot Feeding with Assistive Dexterous Arm (ADA)
+- channel_title: Personal Robotics Lab
+  description: "HERB, the Home Exploring Robot Butler created by Carnegie Mellon University's\
+    \ Robotics Institute, is the star of the latest video in Oreo's ongoing \"Cookie\
+    \ vs. Creme\" campaign: http://www.youtube.com/watch?v=gBgfpl0lcIo \n\nGo behind\
+    \ the scenes with HERB and his creators, associate professor Siddhartha Srinivasa,\
+    \ Ph.D. student Jennifer King and project scientist Pras Velagapudi, to see how\
+    \ this robot star is born.\n\nHERB serves as the research platform of the Personal\
+    \ Robotics Lab and is a testbed for algorithms, software and other technology\
+    \ that will enable robots to perform challenging manipulation tasks in places\
+    \ where people live and work.\n\nVisit HERB's homepage: http://www.cmu.edu/herb-robot"
+  id: IxyrD-l5e8I
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2018-08-30T20:26:13Z'
+  thumbnail_url: https://i.ytimg.com/vi/IxyrD-l5e8I/hqdefault.jpg
+  title: HERB the Robot Stars in Oreo Video
+- channel_title: Personal Robotics Lab
+  description: The MICO robot (sold by Kinova Robotics) is programmed with an attached
+    RGBD sensor to autonomously detect and collect bites of food for people with disabilities.
+    This video shows a "skewering" motion used on broccoli pieces.
+  id: deP7Gw5JbTU
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2017-11-16T02:20:29Z'
+  thumbnail_url: https://i.ytimg.com/vi/deP7Gw5JbTU/hqdefault.jpg
+  title: Automated Feeding with Assistive Robot Arm
+- channel_title: Personal Robotics Lab
+  description: Full paper available at https://www.ri.cmu.edu/publications/nonprehensile-whole-arm-rearrangement-planning-on-physics-manifolds/
+  id: v4fadiZ75kI
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2017-10-19T17:01:22Z'
+  thumbnail_url: https://i.ytimg.com/vi/v4fadiZ75kI/hqdefault.jpg
+  title: Nonprehensile Whole Arm Rearrangement Planning on Physics Manifolds
+- channel_title: Personal Robotics Lab
+  description: A demo of a robotic arm, ADA, using shared autonomy to assist with
+    eating in the Personal Robotics Lab at the Robotics Institute, Carnegie Mellon
+    University.
+  id: DZqcO6TRXKQ
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2017-04-14T21:06:19Z'
+  thumbnail_url: https://i.ytimg.com/vi/DZqcO6TRXKQ/hqdefault.jpg
+  title: Eating Assistance Through Shared Autonomy with An Intelligent Robotic Arm
+- channel_title: Personal Robotics Lab
+  description: "HERB, of Carnegie Mellon's Personal Robotics Lab, and CURI, of Georgia\
+    \ Tech's Socially Intelligent Machines Lab, use trajectory optimization to follow\
+    \ paths in task space. \n\nFor more information, see our 2016 IROS paper: http://www.ri.cmu.edu/publication_view.html?pub_id=8187"
+  id: uEXJCiET3Nw
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2016-08-27T21:29:22Z'
+  thumbnail_url: https://i.ytimg.com/vi/uEXJCiET3Nw/hqdefault.jpg
+  title: Distance Metrics and Algorithms for Task Space Path Optimization
+- channel_title: Personal Robotics Lab
+  description: 'Video accompanying the the 2016 Robotics: Science and Systems paper
+    ''Functional Gradient Motion Planning in Reproducing Kernel Hilbert Spaces'' found
+    at http://www.roboticsproceedings.org/rss12/p46.pdf'
+  id: 7STSkCnuKSA
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2016-07-12T16:49:44Z'
+  thumbnail_url: https://i.ytimg.com/vi/7STSkCnuKSA/hqdefault.jpg
+  title: Functional Gradient Motion Planning in Reproducing Kernel Hilbert Spaces
+- channel_title: Personal Robotics Lab
+  description: "Video showing convergent planning results on HERB for a tabletop rearrangement\
+    \ planning task. \n\nPaper: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7409985\n\
+    \nA. M. Johnson, J. King and S. Srinivasa, \"Convergent Planning,\" in IEEE Robotics\
+    \ and Automation Letters, vol. 1, no. 2, pp. 1044-1051, July 2016.\n\ndoi: 10.1109/LRA.2016.2530864\n\
+    \nAbstract—We propose a number of \"divergence metrics\" to quantify the robustness\
+    \ of a trajectory to state uncertainty for under-actuated or under-sensed systems.\
+    \ These metrics are inspired by contraction analysis and we demonstrate their\
+    \ use to guide randomized planners towards more convergent trajectories through\
+    \ three extensions to the kinodynamic RRT. The first strictly thresholds action\
+    \ selection based on these metrics, forcing the planner to find a solution that\
+    \ lies within a contraction region over which all initial conditions converge\
+    \  exponentially to a single trajectory. However, finding such a monotonically\
+    \ contracting plan is not always possible. Thus, we propose a second method that\
+    \ relaxes these strict requirements to find \"convergent\" (i.e. low-divergence)\
+    \ plans. The third algorithm uses these metrics for post-planning path selection.\
+    \ Two examples test the ability of these metrics to lead the planners to more\
+    \ robust trajectories: a mobile robot climbing a hill and a manipulator rearranging\
+    \ objects on a table."
+  id: bC1ATPrPPJc
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2016-05-10T20:24:42Z'
+  thumbnail_url: https://i.ytimg.com/vi/bC1ATPrPPJc/hqdefault.jpg
+  title: Convergent Planning
+- channel_title: Personal Robotics Lab
+  description: "Our human-robot collaboration research aims to\nimprove the fluency\
+    \ and efficiency of interactions between\nhumans and robots when executing a set\
+    \ of tasks in a shared\nworkspace. During human-robot collaboration, a robot and\n\
+    a user must often complete a disjoint set of tasks that use\nan overlapping set\
+    \ of objects, without using the same object\nsimultaneously. A key challenge is\
+    \ deciding what task the robot\nshould perform next in order to facilitate fluent\
+    \ and efficient\ncollaboration. Most prior work does so by first predicting the\n\
+    human’s intended goal, and then selecting actions given that\ngoal. However, it\
+    \ is often difficult, and sometimes impossible,\nto infer the human’s exact goal\
+    \ in real time, and this serial\npredict-then-act method is not adaptive to changes\
+    \ in human\ngoals. In this paper, we present a system for inferring a probability\n\
+    distribution over human goals, and producing assistance\nactions given that distribution\
+    \ in real time. The aim is to\nminimize the disruption caused by the nature of\
+    \ human-robot\nshared workspace. We extend recent work utilizing Partially\nObservable\
+    \ Markov Decision Processes (POMDPs) for shared\nautonomy in order to provide\
+    \ assistance without knowing\nthe exact goal. We evaluate our system in a study\
+    \ with 28\nparticipants, and show that our POMDP model outperforms\nstate of the\
+    \ art predict-then-act models by producing fewer\nhuman-robot collisions and less\
+    \ human idling time. \n\nIROS 2016 - Human-Robot SharedWorkspace Collaboration\
+    \ via Hindsight Optimization"
+  id: Ye_l4tgSr8s
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2016-05-03T14:08:27Z'
+  thumbnail_url: https://i.ytimg.com/vi/Ye_l4tgSr8s/hqdefault.jpg
+  title: On-line human-robot cooperation
+- channel_title: Personal Robotics Lab
+  description: HERB completes a YCB task of pouring a glass of water. HERB is a lab
+    from Carnegie Mellon's Robotics Institute Personal Robotics Lab.
+  id: 4RpDYtp_rDY
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-12-21T21:20:07Z'
+  thumbnail_url: https://i.ytimg.com/vi/4RpDYtp_rDY/hqdefault.jpg
+  title: HERB Pours a Glass of Water
+- channel_title: Personal Robotics Lab
+  description: HERB completes a YCB task of stacking cups. HERB is a lab from Carnegie
+    Mellon's Robotics Institute Personal Robotics Lab.
+  id: GQ37vPs8gps
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-12-21T21:19:21Z'
+  thumbnail_url: https://i.ytimg.com/vi/GQ37vPs8gps/hqdefault.jpg
+  title: HERB Stacks Cups
+- channel_title: Personal Robotics Lab
+  description: HERB completes a YCB task of sorting colored blocks. HERB is a lab
+    from Carnegie Mellon's Robotics Institute Personal Robotics Lab.
+  id: hoO9brudboY
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-09-18T18:53:50Z'
+  thumbnail_url: https://i.ytimg.com/vi/hoO9brudboY/hqdefault.jpg
+  title: HERB Sorts Colored Blocks
+- channel_title: Personal Robotics Lab
+  description: HERB, of Carnegie Mellon's Personal Robotics Lab, and CURI, of Georgia
+    Tech's Socially Intelligent Machines Lab, learn trajectory constraints from demonstrations.
+  id: aV7lcPjhvE8
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-07-29T16:05:33Z'
+  thumbnail_url: https://i.ytimg.com/vi/aV7lcPjhvE8/hqdefault.jpg
+  title: Learning Trajectory Constraints from Demonstrations
+- channel_title: Personal Robotics Lab
+  description: 'Video accompanying the the 2014 Robotics: Science and Systems paper
+    ''Analysis of Deceptive Robot Motion'' found at http://www.ri.cmu.edu/pub_files/2014/7/deception.pdf'
+  id: AIiaa2WKt5Y
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-07-02T22:01:54Z'
+  thumbnail_url: https://i.ytimg.com/vi/AIiaa2WKt5Y/hqdefault.jpg
+  title: An Analysis of Deceptive Robot Motion
+- channel_title: Personal Robotics Lab
+  description: A demo of a robot enabled dining scenario with ADA in the Personal
+    Robotics Lab at the Robotics Institute, Carnegie Mellon University.
+  id: ucD3YM_JhmM
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-04-17T14:40:54Z'
+  thumbnail_url: https://i.ytimg.com/vi/ucD3YM_JhmM/hqdefault.jpg
+  title: Automated Dining via an Intelligent Robot Arm
+- channel_title: Personal Robotics Lab
+  description: or_rviz is an OpenRAVE viewer plugin which allows visualization of
+    OpenRAVE environments in RVIZ with interactive markers.
+  id: DUA3jc7CAoI
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2015-02-25T20:21:50Z'
+  thumbnail_url: https://i.ytimg.com/vi/DUA3jc7CAoI/hqdefault.jpg
+  title: or_rviz Viewer Plugin
+- channel_title: Personal Robotics Lab
+  description: 'Final project for 16:831 Statistical Techniques in Robotics.
+
+
+    Authors: Jen King, Michael Koval, Annie Holladay
+
+    Presenter: Jen King'
+  id: rQqoKncGdvg
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-12-11T23:33:32Z'
+  thumbnail_url: https://i.ytimg.com/vi/rQqoKncGdvg/hqdefault.jpg
+  title: Robust Push Planning Under Uncertainty
+- channel_title: Personal Robotics Lab
+  description: 'or_ompl provides OpenRAVE bindings for the OMPL suite of motion planning
+    algorithms.
+
+
+    See: https://github.com/personalrobotics/or_ompl'
+  id: 6qRRbvNzHG8
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-10-27T23:35:42Z'
+  thumbnail_url: https://i.ytimg.com/vi/6qRRbvNzHG8/hqdefault.jpg
+  title: or_ompl - OpenRAVE bindings for OMPL
+- channel_title: Personal Robotics Lab
+  description: Herb solves reconfiguration planning problems using a kinodynamic RRT.  A
+    physics model is embedded and used to understand evolution of state during tree
+    extension.
+  id: wG9n3VNrd-U
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-10-22T19:13:40Z'
+  thumbnail_url: https://i.ytimg.com/vi/wG9n3VNrd-U/hqdefault.jpg
+  title: Reconfiguration planning using physics models
+- channel_title: Personal Robotics Lab
+  description: Basic demonstration of a robot-mounted projector-camera (ProCam) system
+    on HERB tracking an AprilTag and marking it's location on a moving surface.  June
+    5, 2014.
+  id: SItLI9pXfVE
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-06-06T19:11:05Z'
+  thumbnail_url: https://i.ytimg.com/vi/SItLI9pXfVE/hqdefault.jpg
+  title: HERB ProCam Test
+- channel_title: Personal Robotics Lab
+  description: At the Personal Robotics Lab at Carnegie Mellon's Robotics Institute,
+    we have been developing the Assistive Dexterous Arm (ADA) in collaboration with
+    the Rehabilitation Institute in Chicago. ADA is built upon the joystick controlled
+    assistive robot arm MICO manufactured by Kinova Robotics. We augment the arm with
+    multi-modal perception and world modeling capabilities, in-house developed state-of-the-art
+    motion planning algorithms, and a sliding autonomy based novel control and decision
+    making framework. The grand vision of the project is to have ADA continuously
+    learn about the daily routines of the users as well as their personalities and
+    preferences while accumulating perception, manipulation, and task execution experience.
+  id: glpCAdKEWAA
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-05-15T19:40:43Z'
+  thumbnail_url: https://i.ytimg.com/vi/glpCAdKEWAA/hqdefault.jpg
+  title: ADA autonomous manipulation
+- channel_title: Personal Robotics Lab
+  description: "The Robotics Institute's Home Exploring Robot Butler, better known\
+    \ as HERB, was featured in Oreo's \"Cookie vs. Creme\" campaign. \n\nHERB, a two-armed,\
+    \ mobile robot, twists an Oreo apart and scrapes off what it terms \"the precious\
+    \ crème\" in the video, the fourth and final \"Oreo Separator\" machine in the\
+    \ online series. The video also features two of HERB's creators, Sidd Srinivasa,\
+    \ associate professor of robotics, and Pras Velagapudi, project scientist.\n\n\
+    \"Cookie vs. Creme\" was launched with the \"Whisper Fight\" commercial during\
+    \ this year's Superbowl broadcast. Three machines were custom-made for the humorous,\
+    \ online \"Oreo Separator\" series; HERB was the only research robot re-purposed\
+    \ for the videos.\n\nHERB serves as the research platform of the Personal Robotics\
+    \ Lab and is a testbed for algorithms, software and other technology that will\
+    \ enable robots to perform challenging manipulation tasks in places where people\
+    \ live and work.\n\nWatch behind the scenes video: \nVisit HERB's homepage: www.cmu.edu/herb-robot"
+  id: Rh-xRIgcfUM
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-04-28T01:58:58Z'
+  thumbnail_url: https://i.ytimg.com/vi/Rh-xRIgcfUM/hqdefault.jpg
+  title: HERB Separates OREO Cookie
+- channel_title: Personal Robotics Lab
+  description: Our robot HERB works out his dramatic poses preparing for his new role
+    as an actor in "All in the Timing."
+  id: pELAnSbeY-0
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-04-24T00:09:59Z'
+  thumbnail_url: https://i.ytimg.com/vi/pELAnSbeY-0/hqdefault.jpg
+  title: 'HERB-Drama: Trailer 1 for "All in the Timing"'
+- channel_title: Personal Robotics Lab
+  description: 'As assistive robots become popular in factories and homes, there is
+    greater need for natural, multi-channel communication during collaborative manipulation
+    tasks. Non-verbal communication such as eye gaze can provide information without
+    overloading more taxing channels like speech. However, certain collaborative tasks
+    may draw attention away from these subtle communication modalities. For instance,
+    robot-to-human handovers are primarily manual tasks, and human attention is therefore
+    drawn to robot hands rather than to robot faces during handovers. In this paper,
+    we show that a simple manipulation of a robot''s handover behavior can significantly
+    increase both awareness of the robot''s eye gaze and compliance with that gaze.
+    When eye gaze communication occurs during the robot''s release of an object, delaying
+    object release until the gaze is finished draws attention back to the robot''s
+    head, which increases conscious perception of the robot''s communication. Furthermore,
+    the handover delay increases peoples'' compliance with the robot''s communication
+    over a non-delayed handover, even when compliance results in counterintuitive
+    behavior.
+
+
+    This is a video abstract of a paper published in HRI 2014. More information can
+    be found at: http://hennyadmoni.com/publications.php#hri2014'
+  id: 1icSdZv5kno
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2014-03-25T14:49:19Z'
+  thumbnail_url: https://i.ytimg.com/vi/1icSdZv5kno/hqdefault.jpg
+  title: Deliberate Delays During Robot-To-Human Handovers Improve Compliance With
+    Gaze Communication
+- channel_title: Personal Robotics Lab
+  description: 'Pose Estimation for Contact Manipulation with Manifold Particle Filters
+
+    Michael C. Koval, Mehmet R. Dogar, Nancy S. Pollard, Siddhartha S. Srinivasa
+
+    2013 IEEE/RSJ International Conference on Intelligent Robots and Systems'
+  id: 280ps-LZ3-I
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2013-08-14T19:46:29Z'
+  thumbnail_url: https://i.ytimg.com/vi/280ps-LZ3-I/hqdefault.jpg
+  title: Pose Estimation for Contact Manipulation with Manifold Particle Filters
+- channel_title: Personal Robotics Lab
+  description: 'HERB is searching for a battery pack on a cluttered desk. The video
+    compares a greedy algorithm and the connected-components algorithm proposed in
+    the paper:
+
+    "Object Search by Manipulation", Mehmet Dogar, Michael Koval, Abhijeet Tallavajhula,
+    and Siddhartha Srinivasa, IEEE International Conference on Robotics and Automation,
+    May, 2013.'
+  id: i06GBj1iDOo
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2013-03-08T04:32:26Z'
+  thumbnail_url: https://i.ytimg.com/vi/i06GBj1iDOo/hqdefault.jpg
+  title: Object Search by Manipulation
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: Bq5sblkoflM
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-12-19T18:04:26Z'
+  thumbnail_url: https://i.ytimg.com/vi/Bq5sblkoflM/hqdefault.jpg
+  title: HERB manages a library
+- channel_title: Personal Robotics Lab
+  description: 'Efﬁcient Touch Based Localization through Submodularity
+
+    Shervin Javdani, Matthew Klingensmith, J. Andrew (Drew) Bagnell, Nancy Pollard,
+    and Siddhartha Srinivasa'
+  id: _HiyKKDStBE
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-12-11T22:02:21Z'
+  thumbnail_url: https://i.ytimg.com/vi/_HiyKKDStBE/hqdefault.jpg
+  title: Efﬁcient Touch Based Localization through Submodularity
+- channel_title: Personal Robotics Lab
+  description: '"Physics-Based Grasp Planning through Clutter", Mehmet Dogar, Kaijen
+    Hsiao, Matei Ciocarlie, Siddhartha Srinivasa. Robotics: Science and Systems (RSS)
+    2012.'
+  id: QLvgEDFE68Y
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-12-10T23:06:46Z'
+  thumbnail_url: https://i.ytimg.com/vi/QLvgEDFE68Y/hqdefault.jpg
+  title: Physics-Based Grasp Planning through Clutter
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: qgbLTn5JKo8
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-07-19T16:50:50Z'
+  thumbnail_url: https://i.ytimg.com/vi/qgbLTn5JKo8/hqdefault.jpg
+  title: Robotiq Hand Tests
+- channel_title: Personal Robotics Lab
+  description: 'Siddhartha Srinivasa of The Robotics Institute''s Personal Robotics
+    Lab at CMU demonstrates how Herb is the closest thing we have to the Jetsons Rosey
+    the Robot in 2012.
+
+
+    http://www.ri.cmu.edu/research_lab_group_detail.html?lab_id=89&menu_id=263'
+  id: k715Rd9mJJw
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-05-05T22:39:10Z'
+  thumbnail_url: https://i.ytimg.com/vi/k715Rd9mJJw/hqdefault.jpg
+  title: Robot Microwaves a Meal
+- channel_title: Personal Robotics Lab
+  description: "We taught HERB the robot to draw on a white board based on Input from\
+    \ an iPAD.\nthis is the final project of the 2012 Robot Autonomy course, in the\
+    \ Robotics Institute's MRSD program. \n\nCreated By Jimmy Coyne, Anant Rao, and\
+    \ Subu Subramanian"
+  id: RCi3aEB8c9s
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-05-05T22:38:41Z'
+  thumbnail_url: https://i.ytimg.com/vi/RCi3aEB8c9s/hqdefault.jpg
+  title: HERB Draws based on iPAD interface.
+- channel_title: Personal Robotics Lab
+  description: Herb Stacking Blocks
+  id: kXKUtcHZK5E
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-05-05T22:38:21Z'
+  thumbnail_url: https://i.ytimg.com/vi/kXKUtcHZK5E/hqdefault.jpg
+  title: HerbSemifinal.wmv
+- channel_title: Personal Robotics Lab
+  description: 'Team 2''s Robot Autonomy Project for 16-669 S12.
+
+    HERB plays tic tac toe over an interactive user interface against a human user.'
+  id: Svl7pCh17tI
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-05-05T22:38:13Z'
+  thumbnail_url: https://i.ytimg.com/vi/Svl7pCh17tI/hqdefault.jpg
+  title: The Tick bot project
+- channel_title: Personal Robotics Lab
+  description: "Team 1's submission for CMU's 16-662 SP12 Robot Autonomy Final Project\n\
+    \nThe goal of this project was to create a simple, gesture based, interface for\
+    \ a human to command HERB to solve the Towers of Hanoi puzzle.\n\nTeam 1: \nCarl\
+    \ Darukhanavala\nAndrew Lycas\nArpit Mittal\nAswinram Suresh\n\nMusic: A Wave\
+    \ of Reason by Symphony of Science"
+  id: ceHLvwWDTKQ
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-05-05T22:38:02Z'
+  thumbnail_url: https://i.ytimg.com/vi/ceHLvwWDTKQ/hqdefault.jpg
+  title: Solving Towers of Hanoi with HERB
+- channel_title: Personal Robotics Lab
+  description: A demo of a meal preparation scenario in the kitchen HERB shares with
+    the members of the Personal Robotics Lab at the Robotics Institute, Carnegie Mellon
+    University.
+  id: 9Oav3JajR7Q
+  playlist_id: UUv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-04-26T15:41:39Z'
+  thumbnail_url: https://i.ytimg.com/vi/9Oav3JajR7Q/hqdefault.jpg
+  title: HERB Prepares a Meal
+- channel_title: Personal Robotics Lab
+  description: Intel Herb robot. Copyrighted.
+  id: FbCBnCW_yxM
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-03-18T02:23:29Z'
+  thumbnail_url: https://i.ytimg.com/vi/FbCBnCW_yxM/hqdefault.jpg
+  title: The delivery robot
+- channel_title: Personal Robotics Lab
+  description: 'An interview with me about some components of HERB from the Personal
+    Robotics project at Intel, Carnegie Mellon University, and Quality of Life Technology
+    Center. Original video: http://www.rocketboom.com/rbtech-intel-labs-pittsburgh/'
+  id: bZ9YDq8Ksvc
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-03-18T02:22:38Z'
+  thumbnail_url: https://i.ytimg.com/vi/bZ9YDq8Ksvc/hqdefault.jpg
+  title: HERB clip from Rocketboom's "Technology and Innovation by Intel, Pittsburgh
+    Labs"
+- channel_title: Personal Robotics Lab
+  description: "M. Cakmak, S.S. Srinivasa, M.K. Lee, S. Kiesler and J. Forlizi. \n\
+    Using Spatial and Temporal Contrast for Fluent Robot-Human Hand-overs. \nInternational\
+    \ Conference on Human-Robot Interaction (HRI), 2011."
+  id: VsuxPwhQS0I
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-03-18T02:13:49Z'
+  thumbnail_url: https://i.ytimg.com/vi/VsuxPwhQS0I/hqdefault.jpg
+  title: Improving Fluency in Human-Robot Handovers
+- channel_title: Personal Robotics Lab
+  description: 'IROS 2011 paper
+
+    M. Cakmak, S.S. Srinivasa, M.K. Lee, S. Kiesler and J. Forlizi'
+  id: _P9Q9b6LV20
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-03-18T02:13:28Z'
+  thumbnail_url: https://i.ytimg.com/vi/_P9Q9b6LV20/hqdefault.jpg
+  title: Human Preferences for Robot-Human Hand-over Configurations
+- channel_title: Personal Robotics Lab
+  description: 'Goal sets are omnipresent on manipulation: manipulation tasks are
+    usually described by an entire region of allowable goals, as opposed to a particular
+    goal configuration. In this work, we propose a way to take advantage of goal sets
+    during manipulation planning using constrained trajectory optimization.'
+  id: noJQceF2VrI
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-03-16T22:59:01Z'
+  thumbnail_url: https://i.ytimg.com/vi/noJQceF2VrI/hqdefault.jpg
+  title: Manipulation Planning with Goal Sets Using Constrained Trajectory Optimization
+- channel_title: Personal Robotics Lab
+  description: We demonstrate a data driven grasp planner that indexes partial sensor
+    data into a database of 3D models with known grasps and transfers grasps from
+    those models to novel objects. We show how to construct such a database and also
+    demonstrate matching into it, aligning the matched models with the known sensor
+    data of the object to be grasped, and selecting an appropriate grasp to use.
+  id: CKHb8ejDvJY
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2012-02-08T15:33:31Z'
+  thumbnail_url: https://i.ytimg.com/vi/CKHb8ejDvJY/hqdefault.jpg
+  title: Columbia Grasp Database
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: E0n0mz88Rvs
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2011-07-06T10:50:12Z'
+  thumbnail_url: https://i.ytimg.com/vi/E0n0mz88Rvs/hqdefault.jpg
+  title: HERB imitates Anca
+- channel_title: Personal Robotics Lab
+  description: The story of HERB from the Personal Robotics Lab at Carnegie Mellon,
+    a fun video by (in alphabetical order) Chris Dellin, Mehmet Dogar, Nursel Dogar,
+    Anca Dragan, Vincenzo Micelli and Kyle Strabala.
+  id: dfHqHkQoG7Y
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2011-06-03T17:33:10Z'
+  thumbnail_url: https://i.ytimg.com/vi/dfHqHkQoG7Y/hqdefault.jpg
+  title: The Story of HERB
+- channel_title: Personal Robotics Lab
+  description: Overview of the paper "Grasp Planning in Complex Scenes" by Dmitry
+    Berenson, Rosen Diankov, Koichi Nishiwaki, Satoshi Kagami, and James Kuffner,
+    IEEE-RAS International Conference on Humanoid Robots (Humanoids07), December,
+    2007.
+  id: MgniShDtHFI
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-12-17T23:15:33Z'
+  thumbnail_url: https://i.ytimg.com/vi/MgniShDtHFI/hqdefault.jpg
+  title: Grasp Planning in Complex Scenes
+- channel_title: Personal Robotics Lab
+  description: '"Grasp Synthesis in Cluttered Environments for Dexterous Hands" by
+    Dmitry Berenson and Siddhartha Srinivasa, IEEE-RAS International Conference on
+    Humanoid Robots (Humanoids08), December, 2008.'
+  id: rUeI7T9HD4Y
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-12-17T23:15:28Z'
+  thumbnail_url: https://i.ytimg.com/vi/rUeI7T9HD4Y/hqdefault.jpg
+  title: Grasp Synthesis in Cluttered Environments for Dexterous Hands
+- channel_title: Personal Robotics Lab
+  description: "A summary of the paper: \"Manipulation Planning on Constraint Manifolds\"\
+    \ by \nDmitry Berenson, Siddhartha Srinivasa, David Ferguson, and James Kuffner\n\
+    IEEE International Conference on Robotics and Automation (ICRA '09), May, 2009."
+  id: APAhs7GC090
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-12-17T23:15:07Z'
+  thumbnail_url: https://i.ytimg.com/vi/APAhs7GC090/hqdefault.jpg
+  title: Manipulation Planning on Constraint Manifolds
+- channel_title: Personal Robotics Lab
+  description: 'Results from the paper: "Pose-Constrained Whole-Body Planning using
+    Task Space Region Chains" by Dmitry Berenson, Joel Chestnutt, Siddhartha Srinivasa,
+    James Kuffner, and Satoshi Kagami, IEEE-RAS International Conference on Humanoid
+    Robots (Humanoids09), December, 2009.'
+  id: xIBRMNrutQc
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-12-17T23:14:46Z'
+  thumbnail_url: https://i.ytimg.com/vi/xIBRMNrutQc/hqdefault.jpg
+  title: Pose-Constrained Whole-Body Planning using Task Space Region Chains
+- channel_title: Personal Robotics Lab
+  description: "http://rocketboom.com/rbtech-intel-labs-pittsburgh\r\nClick on the\
+    \ link above for more info on today's episode!\r\n\r\nRocketboom Tech's Ellie\
+    \ Rountree visits the Intel Labs in Pittsburgh.\r\n\r\nThis episode was made in\
+    \ collaboration with Intel!\r\n\r\nFollow us on Twitter for the latest updates!\r\
+    \nhttp://twitter.com/rocketboomtech\r\nhttp://twitter.com/elspethjane\r\nhttp://twitter.com/intel\r\
+    \n\r\nJoin us on Facebook for behind the scenes pics and videos!\r\nhttp://facebook.com/rocketboom\r\
+    \n\r\nJoin us at rocketboom.com for an ad free experience. **Update May 20, 2014:\n\
+    This video will be removed from YouTube in the near future. Would you like to\
+    \ host a copy on your channel? Soon, Rocketboom will be starting anew and all\
+    \ archives from 2004 through 2013 will be deleted. If this is an episode you would\
+    \ like to see remain free and openly available to the public, we'll consider sending\
+    \ you a free copy to host on your YouTube channel with a simple agreement. Please\
+    \ contact us at licensing@rocketboom.com for more information."
+  id: ERNe0ofPehU
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-11-25T16:55:56Z'
+  thumbnail_url: https://i.ytimg.com/vi/ERNe0ofPehU/hqdefault.jpg
+  title: Technology and Innovation by Intel, Pittsburgh Labs
+- channel_title: Personal Robotics Lab
+  description: ''
+  id: nnTcyAhN4gQ
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-11-25T16:53:50Z'
+  thumbnail_url: https://i.ytimg.com/vi/nnTcyAhN4gQ/hqdefault.jpg
+  title: People helping robots helping people
+- channel_title: Personal Robotics Lab
+  description: "Herb is a robot from the Intel Personal Robotics Lab and a research\
+    \ platform for Carnegie Mellon's Quality of Life Technology Research Center. \
+    \ During Intel Pittsburgh's 2010 open house, Herb greeted guests by demonstrating\
+    \ his abilities to pick up different bottles and cans, travel while avoiding obstacles,\
+    \ offer the object to someone and then put it back or in a recycle bin.  During\
+    \ the video you can see how the arm is able to be manipulated by someone and then\
+    \ it resumes doing the task it was doing.  Herb's computer vision - his view of\
+    \ the world in data point clouds - was on display too being projected for all\
+    \ to see.\r\n\r\nTo learn more visit these links:\r\nhttp://personalrobotics.intel-research.net/projects/herb.php\r\
+    \n\r\nhttp://www.cmu.edu/qolt/"
+  id: PEg9ay-Wy-M
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2010-10-05T17:56:40Z'
+  thumbnail_url: https://i.ytimg.com/vi/PEg9ay-Wy-M/hqdefault.jpg
+  title: 'Herb: Robot Butler'
+- channel_title: Personal Robotics Lab
+  description: Simple demo of autonomously putting cups in a dish rack. The cups are
+    tracked using a ceiling camera.
+  id: gySlayBF3v4
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2009-03-11T23:50:57Z'
+  thumbnail_url: https://i.ytimg.com/vi/gySlayBF3v4/hqdefault.jpg
+  title: Loading Cups in Dishrack
+- channel_title: Personal Robotics Lab
+  description: WAM autonomously opens a cabinet, puts a cup inside, and closes it.
+  id: NMDLxIm8SUs
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2009-03-11T23:50:52Z'
+  thumbnail_url: https://i.ytimg.com/vi/NMDLxIm8SUs/hqdefault.jpg
+  title: Manipulation Planning with Door Opening
+- channel_title: Personal Robotics Lab
+  description: Intel Research Pittsburgh Open House 2008 demo that had a mobile robot
+    manipulation various objects in the kitchen throughout the entire day. This is
+    powered by Robot Operating System (ROS) and OpenRAVE.
+  id: Nhx9KZwl_5A
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2009-03-11T23:50:47Z'
+  thumbnail_url: https://i.ytimg.com/vi/Nhx9KZwl_5A/hqdefault.jpg
+  title: Autonomous Manipulation (IRP2008)
+- channel_title: Personal Robotics Lab
+  description: 'Covariant functional gradient techniques for motion planning via optimization.  Experimental
+    platforms: Barrett Technologies WAM arm, Boston Dynamics LittleDog'
+  id: HVRbEa6px4Y
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2009-03-11T23:50:36Z'
+  thumbnail_url: https://i.ytimg.com/vi/HVRbEa6px4Y/hqdefault.jpg
+  title: 'CHOMP: Covariant Hamiltonian Optimization for Motion Planning'
+- channel_title: Personal Robotics Lab
+  description: Intel Research / CMU - BiSpace planning
+  id: icGHehxtTcc
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2009-03-11T23:50:25Z'
+  thumbnail_url: https://i.ytimg.com/vi/icGHehxtTcc/hqdefault.jpg
+  title: Intel Research / CMU - BiSpace planning

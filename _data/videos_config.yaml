@@ -1,0 +1,30 @@
+# YouTube Videos Configuration
+# This file contains settings for fetching videos from your YouTube channel and favorites
+
+# YouTube Data API v3 key
+# Get your API key from: https://console.developers.google.com/
+# Make sure to enable the YouTube Data API v3
+api_key: "AIzaSyA1qsmCM-owrsty7xrrcvGUGona_sSwWZg"
+
+# Your YouTube channel ID
+# You can find this in your YouTube channel URL or by using the YouTube API
+# For @PRL_HERB channel, you'll need to get the actual channel ID
+channel_id: "UCv0BqZMqV5xNa5JOkibxOpw"
+
+# Your favorites playlist ID
+# This is the playlist ID from your favorites URL
+favorites_playlist_id: "FLv0BqZMqV5xNa5JOkibxOpw"
+
+# Maximum number of videos to fetch (total across channel + favorites)
+max_videos: 100
+
+# Video display settings
+display:
+  # Whether to show video descriptions
+  show_descriptions: false
+  
+  # Maximum length of description to show (characters)
+  max_description_length: 200
+  
+  # Whether to show channel information
+  show_channel_info: true

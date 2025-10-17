@@ -1,3 +1,6 @@
 [submodule "_data/pubs"]
 	path = _data/pubs
 	url = https://github.com/personalrobotics/pubs.git
+[submodule "prl_bib2html"]
+	path = prl_bib2html
+	url = https://github.com/siddhss5/prl_bib2html.git

@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 # Add prl_bib2html to the path
-prl_bib2html_path = Path(__file__).parent.parent.parent / "prl_bib2html"
+prl_bib2html_path = Path(__file__).parent.parent / "prl_bib2html"
 sys.path.insert(0, str(prl_bib2html_path))
 
 from prl_bib2html import (

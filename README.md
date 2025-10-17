@@ -4,7 +4,7 @@ Personal website built with Jekyll and the [Minimal Mistakes theme](https://gith
 
 ## Features
 
-- **Publications**: Automatically generated from BibTeX files using [prl_bib2html](https://github.com/siddhss5/prl_bib2html)
+- **Publications**: Automatically generated from BibTeX files using [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (integrated as Git submodule)
 - **Projects**: Research projects with associated publications (collapsible view)
 - **Videos**: YouTube videos from channel and favorites with embedded players and modal popups
 - **Blog Posts**: Technical blog posts and thoughts
@@ -67,7 +67,7 @@ Publications, projects, and videos data are **automatically generated** before e
 You can also manually regenerate publications, projects, and videos data:
 
 ```bash
-# Generate publications and projects
+# Generate publications and projects (using prl_bib2html)
 python3 scripts/generate_publications.py
 
 # Generate videos
@@ -75,8 +75,8 @@ python3 scripts/generate_videos.py
 ```
 
 This will:
-- **Publications**: Read BibTeX files from the Git submodule at `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
-- **Projects**: Generate `_data/projects.yml` with project-organized publications
+- **Publications**: Use [prl_bib2html](https://github.com/siddhss5/prl_bib2html) to process BibTeX files from the Git submodule at `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
+- **Projects**: Generate `_data/projects.yml` with project-organized publications using prl_bib2html's advanced features
 - **Videos**: Fetch videos from YouTube channel and favorites playlist, generate `_data/videos.yml`
 
 The Jekyll server will automatically pick up the changes if it's running.
@@ -130,6 +130,49 @@ Edit `_data/publications_config.yaml` to configure:
 - Which BibTeX files to include
 - PDF base URL
 - Projects configuration file location
+
+---
+
+## prl_bib2html Integration
+
+### Overview
+
+This site uses [prl_bib2html](https://github.com/siddhss5/prl_bib2html/) as a Git submodule for advanced publication processing. The library provides:
+
+- **Advanced BibTeX Processing**: Rich academic metadata formatting
+- **LaTeX Support**: Automatic conversion of LaTeX formatting to HTML
+- **Author Formatting**: Intelligent author name formatting and abbreviation
+- **Project Organization**: Group publications by research projects
+- **Framework Agnostic**: Clean separation between data processing and presentation
+
+### Submodule Management
+
+The prl_bib2html library is integrated as a Git submodule:
+
+```bash
+# Update to latest version of prl_bib2html
+git submodule update --remote prl_bib2html
+
+# Initialize submodule (for new clones)
+git submodule update --init --recursive
+```
+
+### Configuration
+
+The publications generation uses the library's advanced configuration system via `_data/publications_config.yaml`. This provides:
+
+- **BibTeX File Management**: Automatic processing of multiple BibTeX files
+- **Project Metadata**: YAML-based project configuration
+- **Output Formatting**: Customizable publication display options
+- **PDF Integration**: Support for both local and remote PDF links
+
+### Advanced Features
+
+- **LaTeX Conversion**: Mathematical expressions, accents, and formatting
+- **Smart Author Handling**: Proper author name formatting and affiliations
+- **Year Grouping**: Automatic organization by publication year and type
+- **URL Support**: Publication URLs, video links, and external resources
+- **Project Tags**: BibTeX-based project association with YAML metadata
 
 ---
 
@@ -217,8 +260,12 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 │   ├── generate_publications.rb # Auto-generates publications and projects data
 │   └── generate_videos.rb       # Auto-generates videos data
 ├── assets/                     # Images, PDFs, etc.
+├── prl_bib2html/               # Git submodule - prl_bib2html library
+│   ├── prl_bib2html/           # Core library code
+│   ├── demos/                  # Example applications
+│   └── ...
 ├── scripts/
-│   ├── generate_publications.py # Publication generator script
+│   ├── generate_publications.py # Publication generator script (uses prl_bib2html)
 │   └── generate_videos.py      # YouTube videos generator script
 └── .gitmodules                 # Git submodule configuration
 ```
@@ -228,4 +275,5 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 ## Credits
 
 - Theme: [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose
-- Publications Generator: [prl_bib2html](https://github.com/siddhss5/prl_bib2html)
+- Publications Generator: [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (integrated as Git submodule)
+- YouTube Integration: Custom Python scripts with YouTube Data API v3

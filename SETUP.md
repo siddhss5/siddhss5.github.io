@@ -10,8 +10,12 @@ This Jekyll site uses automated GitHub Actions to build and deploy, with secure 
 # Ruby dependencies
 bundle install
 
-# Python dependencies
-pip install pyyaml requests
+# Python dependencies (includes prl_bib2html from git)
+# Option 1: Using uv (recommended - faster)
+uv pip install -r requirements.txt
+
+# Option 2: Using pip
+pip install -r requirements.txt
 ```
 
 ### 2. Configure API Keys
@@ -39,10 +43,10 @@ pip install pyyaml requests
 
 ```bash
 # Generate publications and projects
-python scripts/generate_publications.py
+uv run python scripts/generate_publications.py
 
 # Generate videos (requires API key)
-python scripts/generate_videos.py
+uv run python scripts/generate_videos.py
 ```
 
 ### 4. Run Jekyll Locally

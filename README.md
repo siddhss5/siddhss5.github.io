@@ -4,7 +4,7 @@ Personal website built with Jekyll and the [Minimal Mistakes theme](https://gith
 
 ## Features
 
-- **Publications**: Automatically generated from BibTeX files using [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (integrated as Git submodule)
+- **Publications**: Automatically generated from BibTeX files using [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (installed from git)
 - **Projects**: Research projects with associated publications (collapsible view)
 - **Videos**: YouTube videos from channel and favorites with embedded players and modal popups
 - **Blog Posts**: Technical blog posts and thoughts
@@ -16,8 +16,9 @@ Personal website built with Jekyll and the [Minimal Mistakes theme](https://gith
 
 ### Prerequisites
 
-You need Ruby 3.4+ installed via Homebrew (macOS):
+You need Ruby 3.4+ and Python 3.8+ installed:
 
+**Ruby (macOS with Homebrew):**
 ```bash
 brew install ruby
 ```
@@ -30,6 +31,15 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 ```
 
+**Python (recommended with uv):**
+```bash
+# Install uv (fast Python package manager)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Or with pip
+pip install uv
+```
+
 Then reload your shell or run `source ~/.zshrc`.
 
 ### Setup
@@ -37,7 +47,12 @@ Then reload your shell or run `source ~/.zshrc`.
 1. **Install dependencies:**
    ```bash
    cd /Users/siddh/code/siddhss5.github.io
+   
+   # Ruby dependencies
    bundle install
+   
+   # Python dependencies (includes prl_bib2html from git)
+   uv pip install -r requirements.txt
    ```
 
 2. **Start the Jekyll server:**
@@ -68,14 +83,14 @@ You can also manually regenerate publications, projects, and videos data:
 
 ```bash
 # Generate publications and projects (using prl_bib2html)
-python3 scripts/generate_publications.py
+uv run python scripts/generate_publications.py
 
 # Generate videos
-python3 scripts/generate_videos.py
+uv run python scripts/generate_videos.py
 ```
 
 This will:
-- **Publications**: Use [prl_bib2html](https://github.com/siddhss5/prl_bib2html) to process BibTeX files from the Git submodule at `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
+- **Publications**: Use [prl_bib2html](https://github.com/siddhss5/prl_bib2html) to process BibTeX files from `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
 - **Projects**: Generate `_data/projects.yml` with project-organized publications using prl_bib2html's advanced features
 - **Videos**: Fetch videos from YouTube channel and favorites playlist, generate `_data/videos.yml`
 
@@ -90,7 +105,7 @@ The BibTeX files are managed as a Git submodule. To get the latest publications:
 git submodule update --remote _data/pubs
 
 # Regenerate the data
-python3 scripts/generate_publications.py
+uv run python scripts/generate_publications.py
 
 # Commit the submodule update
 git add _data/pubs
@@ -120,7 +135,7 @@ git commit -m "Update publications submodule"
 
 3. **Regenerate the data:**
    ```bash
-   python3 scripts/generate_publications.py
+   uv run python scripts/generate_publications.py
    ```
 
 ### Configuration
@@ -137,7 +152,7 @@ Edit `_data/publications_config.yaml` to configure:
 
 ### Overview
 
-This site uses [prl_bib2html](https://github.com/siddhss5/prl_bib2html/) as a Git submodule for advanced publication processing. The library provides:
+This site uses [prl_bib2html](https://github.com/siddhss5/prl_bib2html/) installed from git for advanced publication processing. The library provides:
 
 - **Advanced BibTeX Processing**: Rich academic metadata formatting
 - **LaTeX Support**: Automatic conversion of LaTeX formatting to HTML
@@ -145,17 +160,16 @@ This site uses [prl_bib2html](https://github.com/siddhss5/prl_bib2html/) as a Gi
 - **Project Organization**: Group publications by research projects
 - **Framework Agnostic**: Clean separation between data processing and presentation
 
-### Submodule Management
+### Installation
 
-The prl_bib2html library is integrated as a Git submodule:
+The prl_bib2html library is automatically installed from git when you run:
 
 ```bash
-# Update to latest version of prl_bib2html
-git submodule update --remote prl_bib2html
-
-# Initialize submodule (for new clones)
-git submodule update --init --recursive
+# Install all dependencies (including prl_bib2html from git)
+uv pip install -r requirements.txt
 ```
+
+This installs the latest version directly from the git repository, ensuring you always have the most up-to-date features.
 
 ### Configuration
 
@@ -199,7 +213,7 @@ The videos page automatically fetches videos from your YouTube channel and favor
 
 3. **Test the integration:**
    ```bash
-   python3 scripts/generate_videos.py
+   uv run python scripts/generate_videos.py
    ```
 
 ### Features
@@ -221,17 +235,52 @@ The script generates `_data/videos.yml` with:
 
 ---
 
-## Deployment
+## Automated Build & Deployment
 
-After making changes:
+This site uses **GitHub Actions** for automated builds and deployment:
+
+### Features
+- **Automatic builds** on every push to `main` or `minimal-mistakes` branches
+- **Secure API key handling** using GitHub repository secrets
+- **Fast dependency installation** with `uv` (10-100x faster than pip)
+- **Automatic GitHub Pages deployment**
+
+### Setup for Automated Builds
+
+1. **Set up GitHub repository secrets:**
+   - Go to your repository → Settings → Secrets and variables → Actions
+   - Add `YOUTUBE_API_KEY` with your YouTube Data API v3 key
+
+2. **Push changes:**
+   ```bash
+   git add .
+   git commit -m "Update site"
+   git push origin minimal-mistakes
+   ```
+
+3. **Monitor the build:**
+   - Go to the "Actions" tab in your GitHub repository
+   - Watch the automated build and deployment process
+
+The site will be automatically deployed to https://siddhss5.github.io
+
+### Manual Deployment
+
+You can also build and deploy manually:
 
 ```bash
-git add .
-git commit -m "Update site"
+# Generate all data
+uv run python scripts/generate_publications.py
+uv run python scripts/generate_videos.py
+
+# Build the site
+bundle exec jekyll build
+
+# Deploy (if using manual deployment)
+git add _data/
+git commit -m "Update site data"
 git push origin minimal-mistakes
 ```
-
-GitHub Pages will automatically rebuild and deploy your site to https://siddhss5.github.io
 
 ---
 
@@ -260,14 +309,13 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 │   ├── generate_publications.rb # Auto-generates publications and projects data
 │   └── generate_videos.rb       # Auto-generates videos data
 ├── assets/                     # Images, PDFs, etc.
-├── prl_bib2html/               # Git submodule - prl_bib2html library
-│   ├── prl_bib2html/           # Core library code
-│   ├── demos/                  # Example applications
-│   └── ...
 ├── scripts/
 │   ├── generate_publications.py # Publication generator script (uses prl_bib2html)
 │   └── generate_videos.py      # YouTube videos generator script
-└── .gitmodules                 # Git submodule configuration
+├── requirements.txt            # Python dependencies (includes prl_bib2html from git)
+├── .github/workflows/          # GitHub Actions for automated builds
+│   └── build.yml              # Build and deploy workflow
+└── .gitmodules                 # Git submodule configuration (for _data/pubs only)
 ```
 
 ---
@@ -275,5 +323,5 @@ GitHub Pages will automatically rebuild and deploy your site to https://siddhss5
 ## Credits
 
 - Theme: [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose
-- Publications Generator: [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (integrated as Git submodule)
+- Publications Generator: [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (installed from git)
 - YouTube Integration: Custom Python scripts with YouTube Data API v3

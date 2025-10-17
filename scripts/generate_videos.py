@@ -19,6 +19,7 @@ import os
 import sys
 import yaml
 import requests
+import re
 from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any
@@ -32,6 +33,15 @@ OUTPUT_DIR = SITE_ROOT / "_data"
 YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3"
 
 
+def substitute_env_vars(text: str) -> str:
+    """Substitute environment variables in text like ${VAR_NAME}."""
+    def replace_var(match):
+        var_name = match.group(1)
+        return os.getenv(var_name, match.group(0))  # Return original if env var not found
+    
+    return re.sub(r'\$\{([^}]+)\}', replace_var, text)
+
+
 def load_config() -> Dict[str, Any]:
     """Load videos configuration from YAML file."""
     if not CONFIG_FILE.exists():
@@ -40,7 +50,12 @@ def load_config() -> Dict[str, Any]:
         sys.exit(1)
     
     with open(CONFIG_FILE, 'r') as f:
-        config = yaml.safe_load(f)
+        content = f.read()
+    
+    # Substitute environment variables
+    content = substitute_env_vars(content)
+    
+    config = yaml.safe_load(content)
     
     # Check for required fields
     required_fields = ['api_key', 'channel_id', 'favorites_playlist_id']
@@ -48,6 +63,12 @@ def load_config() -> Dict[str, Any]:
         if field not in config:
             print(f"❌ Missing required field '{field}' in {CONFIG_FILE}")
             sys.exit(1)
+    
+    # Check if API key is still a placeholder
+    if config['api_key'] == '${YOUTUBE_API_KEY}':
+        print("⚠️  YouTube API key not found in environment variables")
+        print("   Set YOUTUBE_API_KEY environment variable or update videos_config.yaml")
+        return None
     
     return config
 
@@ -147,6 +168,10 @@ def generate_videos_yaml():
     
     # Load configuration
     config = load_config()
+    if config is None:
+        print("⚠️  Skipping videos generation due to missing API key")
+        return []
+    
     api_key = config['api_key']
     channel_id = config['channel_id']
     favorites_playlist_id = config['favorites_playlist_id']

@@ -1,5 +1,5 @@
-# YouTube Videos Configuration
-# This file contains settings for fetching videos from your YouTube channel and favorites
+# YouTube Videos Configuration Template
+# Copy this file to videos_config.yaml and fill in your values
 
 # YouTube Data API v3 key
 # Get your API key from: https://console.developers.google.com/

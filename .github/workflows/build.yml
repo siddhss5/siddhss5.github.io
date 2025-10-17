@@ -1,0 +1,76 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches: [ main, minimal-mistakes ]
+  pull_request:
+    branches: [ main, minimal-mistakes ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
+        
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml requests
+        
+    - name: Generate site data
+      env:
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      run: |
+        # Generate publications and projects
+        python scripts/generate_publications.py
+        
+        # Generate videos (only if API key is available)
+        if [ -n "$YOUTUBE_API_KEY" ]; then
+          python scripts/generate_videos.py
+        else
+          echo "⚠️  No YouTube API key found, skipping videos generation"
+        fi
+        
+    - name: Build Jekyll site
+      run: |
+        bundle exec jekyll build
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: jekyll-site
+        path: _site/
+        
+  deploy:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/minimal-mistakes'
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: jekyll-site
+        path: _site/
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site

@@ -218,6 +218,12 @@ alumni:
     Finish: '2011'
     NowAt: Associate Professor @ Michigan
   ms_students:
+  - Name: Atharva Pradhan
+    Coadvisor: ''
+    Title: Insights from Developing a Robotic Bimanual Manipulation System
+    Start: '2023'
+    Finish: '2025'
+    NowAt: Engineer @ Third Wave Automation
   - Name: Jeongseok Lee
     Coadvisor: ''
     Title: A Linear-Time Variational Integrator for Multibody Systems

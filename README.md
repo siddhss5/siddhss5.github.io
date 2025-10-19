@@ -83,6 +83,9 @@ Publications, projects, awards, and videos data are **automatically generated** 
 You can also manually regenerate publications, projects, awards, and videos data:
 
 ```bash
+# Update CV from submodule to assets
+uv run python scripts/update_cv.py
+
 # Generate publications and projects (using prl_bib2html)
 uv run python scripts/generate_publications.py
 
@@ -94,6 +97,7 @@ uv run python scripts/generate_videos.py
 ```
 
 This will:
+- **CV**: Copy latest CV PDF from `_data/cv_data/sidd-cv.pdf` to `assets/SiddharthaSrinivasaCV.pdf`
 - **Publications**: Use [prl_bib2html](https://github.com/siddhss5/prl_bib2html) to process BibTeX files from `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
 - **Projects**: Generate `_data/projects.yml` with project-organized publications using prl_bib2html's advanced features
 - **Awards**: Process CSV data from `_data/cv_data/data/awards.csv` and generate `_data/awards.yml` with publication links
@@ -253,6 +257,8 @@ This site integrates with the [sidd-cv repository](https://github.com/siddhss5/s
 - **Publication Linking**: Awards automatically linked to publications via citation keys
 - **Dynamic CV Page**: CV page displays awards in table format with publication links
 - **Git Submodule Integration**: CV data stays in sync via git submodule
+- **Automatic Updates**: Website automatically updates when CV or Publications change
+- **Dynamic CV File**: Latest CV PDF automatically copied from submodule to assets
 
 ### Setup
 
@@ -305,6 +311,36 @@ The awards generator uses:
 - **Publications**: `_data/publications.yml` (for citation key lookup)
 - **Output**: `_data/awards.yml` (clean awards data with publication links)
 
+### Automatic Updates
+
+The website automatically stays in sync with your data repositories:
+
+#### **Scheduled Updates**
+- **Frequency**: Every 6 hours via GitHub Actions
+- **Monitors**: Both CV (`sidd-cv`) and Publications (`personalrobotics/pubs`) repositories
+- **Automatic**: No manual intervention required
+- **Smart**: Only rebuilds when changes are detected
+
+#### **Update Process**
+1. **Check for changes** in both submodules
+2. **Update submodules** to latest commits
+3. **Commit changes** with descriptive messages
+4. **Trigger rebuild** of the website
+5. **Deploy updated site** with latest data
+
+#### **Manual Trigger**
+You can manually trigger updates:
+1. Go to **Actions** tab in your repository
+2. Click **"Check for CV and Publications updates"** workflow
+3. Click **"Run workflow"** button
+
+#### **Local Development**
+When running locally (`bundle exec jekyll serve`):
+- ✅ Automatically updates CV from submodule
+- ✅ Updates all submodules to latest
+- ✅ Regenerates all data (publications, awards, etc.)
+- ✅ Always shows latest content
+
 ---
 
 ## Automated Build & Deployment
@@ -342,6 +378,7 @@ You can also build and deploy manually:
 
 ```bash
 # Generate all data
+uv run python scripts/update_cv.py
 uv run python scripts/generate_publications.py
 uv run python scripts/generate_awards.py
 uv run python scripts/generate_videos.py
@@ -350,7 +387,7 @@ uv run python scripts/generate_videos.py
 bundle exec jekyll build
 
 # Deploy (if using manual deployment)
-git add _data/
+git add _data/ assets/
 git commit -m "Update site data"
 git push origin minimal-mistakes
 ```
@@ -387,10 +424,12 @@ git push origin minimal-mistakes
 ├── scripts/
 │   ├── generate_publications.py # Publication generator script (uses prl_bib2html)
 │   ├── generate_awards.py      # Awards generator script (processes CV CSV data)
+│   ├── update_cv.py            # CV update script (copies latest CV from submodule)
 │   └── generate_videos.py      # YouTube videos generator script
 ├── requirements.txt            # Python dependencies (includes prl_bib2html from git)
 ├── .github/workflows/          # GitHub Actions for automated builds
-│   └── build.yml              # Build and deploy workflow
+│   ├── build.yml              # Build and deploy workflow
+│   └── check-cv-updates.yml   # Automatic CV and Publications update workflow
 └── .gitmodules                 # Git submodule configuration (pubs and cv_data)
 ```
 

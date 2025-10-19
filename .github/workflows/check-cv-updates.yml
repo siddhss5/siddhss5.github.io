@@ -1,4 +1,4 @@
-name: Check for CV updates
+name: Check for CV and Publications updates
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-cv:
+  check-updates:
     runs-on: ubuntu-latest
     
     steps:
@@ -17,23 +17,50 @@ jobs:
         submodules: recursive
         token: ${{ secrets.GITHUB_TOKEN }}
     
-    - name: Check for CV updates
+    - name: Check for CV and Publications updates
       run: |
-        # Get current commit hash
-        CURRENT_HASH=$(git submodule status _data/cv_data | cut -d' ' -f1)
+        echo "🔍 Checking for updates to CV and Publications..."
         
-        # Update submodule
+        # Check CV updates
+        echo "📄 Checking CV updates..."
+        CV_CURRENT_HASH=$(git submodule status _data/cv_data | cut -d' ' -f1)
         git submodule update --remote _data/cv_data
+        CV_NEW_HASH=$(git submodule status _data/cv_data | cut -d' ' -f1)
         
-        # Get new commit hash
-        NEW_HASH=$(git submodule status _data/cv_data | cut -d' ' -f1)
+        # Check Publications updates
+        echo "📚 Checking Publications updates..."
+        PUBS_CURRENT_HASH=$(git submodule status _data/pubs | cut -d' ' -f1)
+        git submodule update --remote _data/pubs
+        PUBS_NEW_HASH=$(git submodule status _data/pubs | cut -d' ' -f1)
         
-        # If there are changes, commit and push
-        if [ "$CURRENT_HASH" != "$NEW_HASH" ]; then
-          echo "CV has been updated! Committing changes..."
+        # Check if any updates were found
+        UPDATES_FOUND=false
+        COMMIT_MESSAGE="Auto-update from submodules:"
+        
+        if [ "$CV_CURRENT_HASH" != "$CV_NEW_HASH" ]; then
+          echo "✅ CV has been updated! (${CV_NEW_HASH:0:7})"
           git add _data/cv_data
-          git commit -m "Auto-update CV from sidd-cv repository (${NEW_HASH:0:7})"
-          git push origin minimal-mistakes
+          COMMIT_MESSAGE="$COMMIT_MESSAGE CV(${CV_NEW_HASH:0:7})"
+          UPDATES_FOUND=true
         else
-          echo "No CV updates found."
+          echo "ℹ️  No CV updates found."
+        fi
+        
+        if [ "$PUBS_CURRENT_HASH" != "$PUBS_NEW_HASH" ]; then
+          echo "✅ Publications have been updated! (${PUBS_NEW_HASH:0:7})"
+          git add _data/pubs
+          COMMIT_MESSAGE="$COMMIT_MESSAGE Pubs(${PUBS_NEW_HASH:0:7})"
+          UPDATES_FOUND=true
+        else
+          echo "ℹ️  No Publications updates found."
+        fi
+        
+        # Commit and push if updates were found
+        if [ "$UPDATES_FOUND" = true ]; then
+          echo "🚀 Updates found! Committing and pushing changes..."
+          git commit -m "$COMMIT_MESSAGE"
+          git push origin minimal-mistakes
+          echo "✅ Website will be rebuilt with latest data!"
+        else
+          echo "ℹ️  No updates found. Website is up to date."
         fi

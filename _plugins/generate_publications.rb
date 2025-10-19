@@ -12,6 +12,16 @@ Jekyll::Hooks.register :site, :after_init do |site|
     Jekyll.logger.warn "CV:", "CV update failed - using existing CV"
   end
   
+  # Update submodules to latest
+  Jekyll.logger.info "Submodules:", "Updating submodules to latest..."
+  submodule_result = system("git submodule update --remote > /dev/null 2>&1")
+  
+  if submodule_result
+    Jekyll.logger.info "Submodules:", "Submodules updated to latest!"
+  else
+    Jekyll.logger.warn "Submodules:", "Submodule update failed - using existing data"
+  end
+  
   Jekyll.logger.info "Publications:", "Generating publications and projects data..."
   
   # Run the Python script to generate publications.yml and projects.yml

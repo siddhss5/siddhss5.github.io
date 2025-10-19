@@ -2,6 +2,16 @@
 # This ensures all data is always up-to-date when viewing the site locally
 
 Jekyll::Hooks.register :site, :after_init do |site|
+  # Update CV from submodule to assets
+  Jekyll.logger.info "CV:", "Updating CV from submodule..."
+  cv_result = system("uv run python scripts/update_cv.py > /dev/null 2>&1")
+  
+  if cv_result
+    Jekyll.logger.info "CV:", "CV update complete!"
+  else
+    Jekyll.logger.warn "CV:", "CV update failed - using existing CV"
+  end
+  
   Jekyll.logger.info "Publications:", "Generating publications and projects data..."
   
   # Run the Python script to generate publications.yml and projects.yml

@@ -40,6 +40,9 @@ jobs:
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       run: |
+        # Update CV from submodule to assets
+        uv run python scripts/update_cv.py
+        
         # Generate publications and projects
         uv run python scripts/generate_publications.py
         

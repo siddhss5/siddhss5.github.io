@@ -1,0 +1,39 @@
+name: Check for CV updates
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  check-cv:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Check for CV updates
+      run: |
+        # Get current commit hash
+        CURRENT_HASH=$(git submodule status _data/cv_data | cut -d' ' -f1)
+        
+        # Update submodule
+        git submodule update --remote _data/cv_data
+        
+        # Get new commit hash
+        NEW_HASH=$(git submodule status _data/cv_data | cut -d' ' -f1)
+        
+        # If there are changes, commit and push
+        if [ "$CURRENT_HASH" != "$NEW_HASH" ]; then
+          echo "CV has been updated! Committing changes..."
+          git add _data/cv_data
+          git commit -m "Auto-update CV from sidd-cv repository (${NEW_HASH:0:7})"
+          git push origin minimal-mistakes
+        else
+          echo "No CV updates found."
+        fi

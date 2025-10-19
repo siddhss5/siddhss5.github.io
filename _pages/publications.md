@@ -26,7 +26,8 @@ header:
 ### {{ category }}
 
     {% for pub in publications %}
-<div class="publication-entry" style="margin-bottom: 1.5em;">
+{% assign citation_key = pub.pdf_url | split: '/' | last | remove: '.pdf' %}
+<div class="publication-entry" style="margin-bottom: 1.5em;"{% if citation_key %} id="{{ citation_key }}"{% endif %}>
 
   <div class="publication-title" style="margin-bottom: 0.3em;">
     {% if pub.pdf_url %}

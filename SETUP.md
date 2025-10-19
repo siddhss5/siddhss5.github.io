@@ -93,3 +93,49 @@ Go to your GitHub repository → Settings → Secrets and variables → Actions,
 1. Check that the `YOUTUBE_API_KEY` secret is set in repository settings
 2. Look at the Actions tab for detailed error logs
 3. The workflow will continue even if videos generation fails
+
+## CV Data Integration
+
+This Jekyll site integrates with the [sidd-cv repository](https://github.com/siddhss5/sidd-cv) as a git submodule to maintain a single source of truth for CV data.
+
+### Git Submodule Setup
+
+The sidd-cv repository is included as a submodule in `_data/cv_data/`. To initialize it:
+
+```bash
+# Initialize and update submodule (run once)
+git submodule update --init --recursive
+
+# Update submodule to latest version
+git submodule update --remote _data/cv_data
+```
+
+### Data Synchronization
+
+CSV files from the sidd-cv repository are automatically processed by Jekyll:
+
+- **Awards**: `_data/awards.csv` → `_data/awards.yml` (with publication links)
+- **Publications**: Linked to awards via citation keys
+- **Automatic Updates**: Jekyll plugins regenerate data on every build
+
+### Updating CV Data
+
+1. **Update submodule to latest**:
+   ```bash
+   git submodule update --remote _cv_data
+   ```
+
+2. **Move updated CSV files to _data**:
+   ```bash
+   mv _cv_data/data/*.csv _data/
+   ```
+
+3. **Regenerate site data**:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+The Jekyll plugins will automatically:
+- Generate `_data/awards.yml` from `_data/awards.csv`
+- Link awards to publications using citation keys
+- Add anchor IDs to publications for direct linking

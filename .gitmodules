@@ -1,3 +1,6 @@
 [submodule "_data/pubs"]
 	path = _data/pubs
 	url = https://github.com/personalrobotics/pubs.git
+[submodule "_data/cv_data"]
+	path = _data/cv_data
+	url = https://github.com/siddhss5/sidd-cv.git

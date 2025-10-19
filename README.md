@@ -6,9 +6,10 @@ Personal website built with Jekyll and the [Minimal Mistakes theme](https://gith
 
 - **Publications**: Automatically generated from BibTeX files using [prl_bib2html](https://github.com/siddhss5/prl_bib2html) (installed from git)
 - **Projects**: Research projects with associated publications (collapsible view)
+- **Awards**: Dynamic awards data with automatic publication linking from CSV sources
 - **Videos**: YouTube videos from channel and favorites with embedded players and modal popups
 - **Blog Posts**: Technical blog posts and thoughts
-- **CV, Teaching, Contact**: Standard academic pages
+- **CV, Teaching, Contact**: Standard academic pages with integrated CV data
 
 ---
 
@@ -67,11 +68,11 @@ The server will automatically rebuild when you make changes to files (except `_c
 
 ---
 
-## Updating Publications, Projects & Videos
+## Updating Publications, Projects, Awards & Videos
 
 ### Automatic Generation
 
-Publications, projects, and videos data are **automatically generated** before every Jekyll build via dedicated plugins. This means:
+Publications, projects, awards, and videos data are **automatically generated** before every Jekyll build via dedicated plugins. This means:
 
 - When you run `bundle exec jekyll serve`, all data is regenerated automatically
 - No manual step needed for local development
@@ -79,11 +80,14 @@ Publications, projects, and videos data are **automatically generated** before e
 
 ### Manual Generation (Optional)
 
-You can also manually regenerate publications, projects, and videos data:
+You can also manually regenerate publications, projects, awards, and videos data:
 
 ```bash
 # Generate publications and projects (using prl_bib2html)
 uv run python scripts/generate_publications.py
+
+# Generate awards (from CV CSV data)
+uv run python scripts/generate_awards.py
 
 # Generate videos
 uv run python scripts/generate_videos.py
@@ -92,6 +96,7 @@ uv run python scripts/generate_videos.py
 This will:
 - **Publications**: Use [prl_bib2html](https://github.com/siddhss5/prl_bib2html) to process BibTeX files from `_data/pubs/` (from [personalrobotics/pubs](https://github.com/personalrobotics/pubs))
 - **Projects**: Generate `_data/projects.yml` with project-organized publications using prl_bib2html's advanced features
+- **Awards**: Process CSV data from `_data/cv_data/data/awards.csv` and generate `_data/awards.yml` with publication links
 - **Videos**: Fetch videos from YouTube channel and favorites playlist, generate `_data/videos.yml`
 
 The Jekyll server will automatically pick up the changes if it's running.
@@ -235,6 +240,73 @@ The script generates `_data/videos.yml` with:
 
 ---
 
+## CV Data Integration
+
+### Overview
+
+This site integrates with the [sidd-cv repository](https://github.com/siddhss5/sidd-cv) as a git submodule to maintain a single source of truth for CV data. Awards are automatically generated from CSV files and linked to publications.
+
+### Features
+
+- **Single Source of Truth**: CV data managed in dedicated [sidd-cv repository](https://github.com/siddhss5/sidd-cv)
+- **Automatic Awards Generation**: Awards data automatically generated from CSV files
+- **Publication Linking**: Awards automatically linked to publications via citation keys
+- **Dynamic CV Page**: CV page displays awards in table format with publication links
+- **Git Submodule Integration**: CV data stays in sync via git submodule
+
+### Setup
+
+The CV data is automatically integrated via git submodule:
+
+```bash
+# Initialize submodule (run once)
+git submodule update --init --recursive
+
+# Update CV data to latest version
+git submodule update --remote _data/cv_data
+```
+
+### Data Structure
+
+The integration processes CSV files from `_data/cv_data/data/`:
+- **awards.csv**: Award data with citation keys for publication linking
+- **grants.csv**: Research grants and funding information
+- **students-*.csv**: Student information (PhD, MS, postdocs, interns)
+- **press.csv**: Press coverage and media mentions
+
+### Automatic Generation
+
+Awards data is automatically generated on every Jekyll build:
+- **CSV Processing**: Awards data read from `_data/cv_data/data/awards.csv`
+- **Publication Linking**: Citation keys matched to publications for automatic linking
+- **YAML Generation**: Clean awards data generated in `_data/awards.yml`
+- **Dynamic Display**: CV page automatically displays awards with publication links
+
+### Manual Updates
+
+To update CV data:
+
+```bash
+# Update submodule to latest
+git submodule update --remote _data/cv_data
+
+# Regenerate awards data
+uv run python scripts/generate_awards.py
+
+# Commit changes
+git add _data/awards.yml
+git commit -m "Update awards data"
+```
+
+### Configuration
+
+The awards generator uses:
+- **Input**: `_data/cv_data/data/awards.csv` (from git submodule)
+- **Publications**: `_data/publications.yml` (for citation key lookup)
+- **Output**: `_data/awards.yml` (clean awards data with publication links)
+
+---
+
 ## Automated Build & Deployment
 
 This site uses **GitHub Actions** for automated builds and deployment:
@@ -271,6 +343,7 @@ You can also build and deploy manually:
 ```bash
 # Generate all data
 uv run python scripts/generate_publications.py
+uv run python scripts/generate_awards.py
 uv run python scripts/generate_videos.py
 
 # Build the site
@@ -296,7 +369,9 @@ git push origin minimal-mistakes
 │   ├── publications.yml        # Generated publications data
 │   ├── projects.yml            # Generated projects data
 │   ├── videos.yml              # Generated videos data
-│   └── pubs/                   # Git submodule with BibTeX files
+│   ├── awards.yml              # Generated awards data
+│   ├── pubs/                   # Git submodule with BibTeX files
+│   └── cv_data/                # Git submodule with CV CSV data
 ├── _pages/
 │   ├── publications.md         # Publications page template
 │   ├── projects.md             # Projects page template
@@ -311,11 +386,12 @@ git push origin minimal-mistakes
 ├── assets/                     # Images, PDFs, etc.
 ├── scripts/
 │   ├── generate_publications.py # Publication generator script (uses prl_bib2html)
+│   ├── generate_awards.py      # Awards generator script (processes CV CSV data)
 │   └── generate_videos.py      # YouTube videos generator script
 ├── requirements.txt            # Python dependencies (includes prl_bib2html from git)
 ├── .github/workflows/          # GitHub Actions for automated builds
 │   └── build.yml              # Build and deploy workflow
-└── .gitmodules                 # Git submodule configuration (for _data/pubs only)
+└── .gitmodules                 # Git submodule configuration (pubs and cv_data)
 ```
 
 ---

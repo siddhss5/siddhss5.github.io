@@ -1,0 +1,286 @@
+current:
+  postdocs: []
+  phd_students:
+  - Name: Ethan Pronovost
+    Coadvisor: ''
+    Title: ''
+    Start: '2024'
+    Finish: ''
+    NowAt: ''
+  - Name: Yunchu Zhang
+    Coadvisor: Abhishek Gupta
+    Title: ''
+    Start: '2023'
+    Finish: ''
+    NowAt: ''
+  - Name: Sidharth Talia
+    Coadvisor: ''
+    Title: ''
+    Start: '2022'
+    Finish: ''
+    NowAt: ''
+  - Name: Helen Wang
+    Coadvisor: Dieter Fox
+    Title: ''
+    Start: '2022'
+    Finish: ''
+    NowAt: ''
+  ms_students: []
+alumni:
+  postdocs:
+  - Name: Taylor Kessler Faulkner
+    Coadvisor: ''
+    Start: '2022'
+    Finish: '2024'
+    NowAt: Lecturer @ University of Washington
+  - Name: Christoforos Mavrogiannis
+    Coadvisor: ''
+    Start: '2019'
+    Finish: '2023'
+    NowAt: Assistant Professor @ Michigan
+  - Name: Sanjiban Choudhury
+    Coadvisor: ''
+    Start: '2018'
+    Finish: '2019'
+    NowAt: Assistant Professor @ Cornell
+  - Name: Matthew Barnes
+    Coadvisor: ''
+    Start: '2018'
+    Finish: '2019'
+    NowAt: Researcher @ Google
+  - Name: Tapomayukh Bhattacharjee
+    Coadvisor: ''
+    Start: '2017'
+    Finish: '2021'
+    NowAt: Assistant Professor @ Cornell
+  - Name: Oren Salzman
+    Coadvisor: ''
+    Start: '2016'
+    Finish: '2019'
+    NowAt: Assistant Professor @ Technion
+  - Name: Daqing Yi
+    Coadvisor: ''
+    Start: '2016'
+    Finish: '2018'
+    NowAt: Researcher @ Google
+  - Name: Henny Admoni
+    Coadvisor: ''
+    Start: '2015'
+    Finish: '2017'
+    NowAt: Assistant Professor @ CMU
+  - Name: Aaron Johnson
+    Coadvisor: ''
+    Start: '2015'
+    Finish: '2016'
+    NowAt: Assistant Professor @ CMU
+  - Name: Prasanna Velagapudi
+    Coadvisor: ''
+    Start: '2012'
+    Finish: '2014'
+    NowAt: CTO @ Agility
+  phd_students:
+  - Name: Amal Nanavati
+    Coadvisor: Maya Cakmak
+    Title: 'Towards In-Home Deployments of Physically Assistive Robots: Insights from Robot-Assisted Feeding for People with Motor Impairments'
+    Start: '2019'
+    Finish: '2025'
+    NowAt: Researcher @ Zoox
+  - Name: Matthew Schmittle
+    Coadvisor: ''
+    Title: Off-Road Navigation Under Sensing Uncertainty
+    Start: '2018'
+    Finish: '2025'
+    NowAt: Researcher @ Overland AI
+  - Name: Ethan Gordon
+    Coadvisor: ''
+    Title: Tractably Adaptable Food Manipulation for Robot-Assisted Feeding
+    Start: '2018'
+    Finish: '2024'
+    NowAt: Postdoc @ Penn
+  - Name: Liyiming Ke
+    Coadvisor: Abhishek Gupta
+    Title: 'Teach Robot to Use Chopsticks: a Test Bed for Robotic Learning via Fine Manipulation'
+    Start: '2017'
+    Finish: '2024'
+    NowAt: Researcher @ Physical Intelligence
+  - Name: William Agnew
+    Coadvisor: ''
+    Title: Human Priors for Reinforcement Learning
+    Start: '2017'
+    Finish: '2023'
+    NowAt: Postdoc @ CMU
+  - Name: Sherdil Niyaz
+    Coadvisor: ''
+    Title: Optimizing the Design of Robot Environments via Interleaved Optimization and White-Box Motion-Planning
+    Start: '2017'
+    Finish: '2022'
+    NowAt: Researcher @ Motional
+  - Name: Brian Hou
+    Coadvisor: ''
+    Title: Robot Motion Planning with Uncertainty and Urgency
+    Start: '2016'
+    Finish: '2022'
+    NowAt: Researcher @ Aurora
+  - Name: Samuel Ainsworth
+    Coadvisor: ''
+    Title: Perspectives on Policy Learning
+    Start: '2016'
+    Finish: '2022'
+    NowAt: Researcher @ Cruise
+  - Name: Patrick Lancaster
+    Coadvisor: Josh Smith
+    Title: Towards Dexterous In-Hand Manipulation via Electrostatic Braking and Pre-touch Sensing
+    Start: '2014'
+    Finish: '2022'
+    NowAt: Postdoc @ Meta
+  - Name: Aditya Vamsikrishna
+    Coadvisor: ''
+    Title: Efficient Robot Motion Planning in Cluttered Environments
+    Start: '2016'
+    Finish: '2021'
+    NowAt: Researcher @ Aurora
+  - Name: Gilwoo Lee
+    Coadvisor: ''
+    Title: Scalable Bayesian Reinforcement Learning
+    Start: '2015'
+    Finish: '2020'
+    NowAt: Founder @ Zordi
+  - Name: Stefanos Nikolaidis
+    Coadvisor: ''
+    Title: Mathematical Models of Adaptation in Human-Robot Collaboration
+    Start: '2014'
+    Finish: '2018'
+    NowAt: Assistant Professor @ USC
+  - Name: Laura Herlant
+    Coadvisor: ''
+    Title: Algorithms and Implementation and Studies on Eating with a Shared Control Robot Arm
+    Start: '2013'
+    Finish: '2018'
+    NowAt: Senior Robotics Research Scientist @ iRobot
+  - Name: Zita Marinho
+    Coadvisor: Geoff Gordon
+    Title: Moment-based Algorithms for Structured Prediction
+    Start: '2012'
+    Finish: '2018'
+    NowAt: Researcher @ Sacoor Brothers
+  - Name: Shervin Javdani
+    Coadvisor: Drew Bagnell
+    Title: Acting under Uncertainty for Information Gathering and Shared Autonomy
+    Start: '2011'
+    Finish: '2017'
+    NowAt: Robotics Engineer @ Aurora
+  - Name: Matt Klingensmith
+    Coadvisor: Michael Kaess
+    Title: Tracking and Calibrating Robot Arms using SLAM Techniques
+    Start: '2013'
+    Finish: '2016'
+    NowAt: Roboticist @ Boston Dynamics
+  - Name: Jennifer King
+    Coadvisor: ''
+    Title: Robust Rearrangement Planning using Nonprehensile Interaction
+    Start: '2012'
+    Finish: '2016'
+    NowAt: Researcher @ Berkshire Grey
+  - Name: Michael Koval
+    Coadvisor: Nancy Pollard
+    Title: Robust Manipulation via Contact Sensing
+    Start: '2012'
+    Finish: '2016'
+    NowAt: Software Engineer @ Waymo
+  - Name: Christopher Dellin
+    Coadvisor: ''
+    Title: Completing Manipulation Tasks Efficiently in Complex Environments
+    Start: '2009'
+    Finish: '2016'
+    NowAt: Roboticist @ Nuro
+  - Name: Anca Dragan
+    Coadvisor: ''
+    Title: Legible Robot Motion Planning
+    Start: '2009'
+    Finish: '2015'
+    NowAt: Associate Professor @ Berkeley
+  - Name: Mehmet Dogar
+    Coadvisor: ''
+    Title: A Framework for Manipulation in Cluttered Environments
+    Start: '2008'
+    Finish: '2013'
+    NowAt: Associate Professor @ Leeds
+  - Name: Alvaro Collet
+    Coadvisor: Martial Hebert
+    Title: Lifelong Robotic Object Perception
+    Start: '2009'
+    Finish: '2012'
+    NowAt: Engineering Lead @ Facebook
+  - Name: Dmitry Berenson
+    Coadvisor: James Kuffner
+    Title: Constrained Manipulation Planning
+    Start: '2006'
+    Finish: '2011'
+    NowAt: Associate Professor @ Michigan
+  ms_students:
+  - Name: Jeongseok Lee
+    Coadvisor: ''
+    Title: A Linear-Time Variational Integrator for Multibody Systems
+    Start: '2016'
+    Finish: '2018'
+    NowAt: Researcher @ Meta
+  - Name: Pengju Jin
+    Coadvisor: ''
+    Title: Highly Robust Pose Estimation from Single Frame RGBD
+    Start: '2017'
+    Finish: '2017'
+    NowAt: Researcher @ Aurora
+  - Name: Shushman Choudhury
+    Coadvisor: ''
+    Title: Anytime Geometric Motion Planning on Large Dense Roadmaps
+    Start: '2015'
+    Finish: '2017'
+    NowAt: Ph.D. @ Stanford
+  - Name: Rosario Scalise
+    Coadvisor: Stephanie Rosenthal
+    Title: Human-Centered Design of Robot Explanations
+    Start: '2015'
+    Finish: '2017'
+    NowAt: Ph.D. @ UW
+  - Name: Shen Li
+    Coadvisor: Stephanie Rosenthal
+    Title: Automatically Evaluating and Generating Clear Robot Explanations
+    Start: '2015'
+    Finish: '2017'
+    NowAt: Ph.D. @ MIT
+  - Name: Evan Shapiro
+    Coadvisor: ''
+    Title: A Hierarchical Framework for Configuration Space Task Planning
+    Start: '2013'
+    Finish: '2015'
+    NowAt: CEO @ Mina Foundation
+  - Name: Aaron Walsman
+    Coadvisor: ''
+    Title: 'ROCK: Robust Object Constellation for Kinematic Pose'
+    Start: '2013'
+    Finish: '2015'
+    NowAt: Ph.D. @ UW
+  - Name: Elizabeth Cha
+    Coadvisor: Jodi Forlizzi
+    Title: 'Robots in the Home: Qualitative and Quantitative Insights into Kitchen Organization'
+    Start: '2012'
+    Finish: '2014'
+    NowAt: Researcher @ Waymo
+  - Name: Kyle Strabala
+    Coadvisor: ''
+    Title: Learning the Communication of Intent Prior to Physical Collaboration
+    Start: '2010'
+    Finish: '2012'
+    NowAt: Scientist @ Near Earth Autonomy
+  - Name: Martin Herrmann
+    Coadvisor: Dr.-Inf. Uwe Hanebeck @ Universitat Karlsruhe
+    Title: Active scene and object reconstruction for robotic manipulation from vision and laser
+    Start: '2009'
+    Finish: '2009'
+    NowAt: TU Braunschweig
+  - Name: Garratt Gallagher
+    Coadvisor: Drew Bagnell
+    Title: 'GATMO: A Generalized Approach to Tracking Movable Objects'
+    Start: '2007'
+    Finish: '2009'
+    NowAt: Google Robotics

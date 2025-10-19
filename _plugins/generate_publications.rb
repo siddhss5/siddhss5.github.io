@@ -42,5 +42,15 @@ Jekyll::Hooks.register :site, :after_init do |site|
   else
     Jekyll.logger.warn "Awards:", "Awards generation failed - awards may be out of date"
   end
+  
+  # Run the Python script to generate mentoring.yml
+  Jekyll.logger.info "Mentoring:", "Generating mentoring data..."
+  mentoring_result = system("uv run python scripts/generate_mentoring.py > /dev/null 2>&1")
+  
+  if mentoring_result
+    Jekyll.logger.info "Mentoring:", "Mentoring generation complete!"
+  else
+    Jekyll.logger.warn "Mentoring:", "Mentoring generation failed - mentoring data may be out of date"
+  end
 end
 

@@ -49,6 +49,9 @@ jobs:
         # Generate awards from CV data
         uv run python scripts/generate_awards.py
         
+        # Generate mentoring data from CV data
+        uv run python scripts/generate_mentoring.py
+        
         # Generate videos (only if API key is available)
         if [ -n "$YOUTUBE_API_KEY" ]; then
           uv run python scripts/generate_videos.py

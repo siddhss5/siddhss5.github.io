@@ -73,10 +73,53 @@ def load_config() -> Dict[str, Any]:
     return config
 
 
-def get_youtube_videos(api_key: str, playlist_id: str, max_results: int = 50) -> List[Dict[str, Any]]:
+def get_video_details(api_key: str, video_ids: List[str]) -> Dict[str, Dict[str, Any]]:
+    """Fetch detailed information for multiple videos to get original publication dates."""
+    if not video_ids:
+        return {}
+    
+    video_details = {}
+    
+    # YouTube API allows up to 50 video IDs per request
+    for i in range(0, len(video_ids), 50):
+        batch = video_ids[i:i+50]
+        video_ids_str = ','.join(batch)
+        
+        params = {
+            'part': 'snippet',
+            'id': video_ids_str,
+            'key': api_key
+        }
+        
+        try:
+            response = requests.get(f"{YOUTUBE_API_BASE}/videos", params=params)
+            response.raise_for_status()
+            data = response.json()
+            
+            for item in data.get('items', []):
+                snippet = item.get('snippet', {})
+                video_id = item.get('id')
+                
+                if video_id:
+                    video_details[video_id] = {
+                        'published_at': snippet.get('publishedAt'),
+                        'channel_title': snippet.get('channelTitle', ''),
+                        'description': snippet.get('description', ''),
+                        'thumbnails': snippet.get('thumbnails', {})
+                    }
+                    
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Error fetching video details: {e}")
+            continue
+    
+    return video_details
+
+
+def get_youtube_videos(api_key: str, playlist_id: str, max_results: int = 50, get_original_dates: bool = False) -> List[Dict[str, Any]]:
     """Fetch videos from a YouTube playlist."""
     videos = []
     next_page_token = None
+    video_ids = []  # Collect video IDs for batch fetching details
     
     while len(videos) < max_results:
         # Calculate how many videos to fetch in this batch
@@ -107,6 +150,10 @@ def get_youtube_videos(api_key: str, playlist_id: str, max_results: int = 50) ->
                 if not video_id or not title or title == 'Private video':
                     continue
                 
+                # Collect video ID for batch fetching details if needed
+                if get_original_dates:
+                    video_ids.append(video_id)
+                
                 # Get thumbnail URL with fallback
                 thumbnails = snippet.get('thumbnails', {})
                 thumbnail_url = (
@@ -134,6 +181,32 @@ def get_youtube_videos(api_key: str, playlist_id: str, max_results: int = 50) ->
         except requests.exceptions.RequestException as e:
             print(f"❌ Error fetching videos from playlist {playlist_id}: {e}")
             break
+    
+    # If we need original dates (for favorites), fetch video details
+    if get_original_dates and video_ids:
+        print(f"   📅 Fetching original publication dates for {len(video_ids)} videos...")
+        video_details = get_video_details(api_key, video_ids)
+        
+        # Update videos with original publication dates
+        for video in videos:
+            video_id = video['id']
+            if video_id in video_details:
+                details = video_details[video_id]
+                video['published_at'] = details['published_at']
+                video['channel_title'] = details['channel_title']
+                video['description'] = details['description']
+                
+                # Update thumbnail if we got a better one
+                thumbnails = details.get('thumbnails', {})
+                if thumbnails:
+                    new_thumbnail = (
+                        thumbnails.get('high', {}).get('url') or
+                        thumbnails.get('medium', {}).get('url') or
+                        thumbnails.get('default', {}).get('url') or
+                        ''
+                    )
+                    if new_thumbnail:
+                        video['thumbnail_url'] = new_thumbnail
     
     return videos[:max_results]
 
@@ -187,9 +260,9 @@ def generate_videos_yaml():
         all_videos.extend(channel_videos)
         print(f"   Found {len(channel_videos)} channel videos")
     
-    # Get favorites playlist
+    # Get favorites playlist (with original publication dates)
     print(f"⭐ Fetching favorites from playlist {favorites_playlist_id}...")
-    favorites_videos = get_youtube_videos(api_key, favorites_playlist_id, max_videos // 2)
+    favorites_videos = get_youtube_videos(api_key, favorites_playlist_id, max_videos // 2, get_original_dates=True)
     all_videos.extend(favorites_videos)
     print(f"   Found {len(favorites_videos)} favorite videos")
     

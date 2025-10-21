@@ -26,7 +26,7 @@ header:
 
   <div class="video-thumbnail" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background-color: #f0f0f0;">
     {% if video.thumbnail_url and video.thumbnail_url != "" %}
-      <img src="{{ video.thumbnail_url }}" alt="{{ video.title }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+      <img src="{{ video.thumbnail_url | escape }}" alt="{{ video.title | escape }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" loading="lazy">
     {% else %}
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #ddd; display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px; text-align: center; padding: 1em;">
         <div>

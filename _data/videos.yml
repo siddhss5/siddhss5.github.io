@@ -1,4 +1,1070 @@
 - channel_title: Personal Robotics Lab
+  description: 'Presenter: Christoforos Mavrogiannis (http://www.chrismavrogiannis.com)
+
+
+    Title: Leveraging structure for autonomous robot navigation in
+
+    multiagent human spaces
+
+
+    Abstract: Pedestrian scenes pose great challenges for robots due to
+
+    the lack of formal rules regulating traffic and the lack of explicit
+
+    coordination among navigating agents. However, humans navigate with
+
+    ease and comfort through a variety of complex multiagent domains,
+
+    such as busy train stations, crowded malls or academic buildings.
+
+    Human effectiveness in such domains can be largely attributed to
+
+    cooperation which introduces structure to multiagent behavior. In
+
+    this talk, I will discuss how we can uncover this structure through
+
+    the use of representations from low-dimensional topology. I will
+
+    describe how these representations can be used to build prediction
+
+    and planning algorithms for socially compliant navigation in
+
+    pedestrian domains and show how their machinery may transfer to other
+
+    challenging environments such as uncontrolled street intersections.
+
+    Finally, I will discuss how the lessons learned from these
+
+    applications inform ongoing efforts on deploying robots in real-world
+
+    pedestrian spaces.
+
+
+    Bio: Christoforos Mavrogiannis is a postdoctoral research associate
+
+    in the Paul G. Allen School of Computer Science & Engineering at the
+
+    University of Washington, working with Prof. Siddhartha Srinivasa.
+
+    His interests lie at the intersection of motion planning, multiagent
+
+    systems, and algorithmic human-robot interaction, and he often draws
+
+    tools from topology, motion planning, and machine learning. Chris has
+
+    been a best paper award finalist at the ACM/IEEE International
+
+    Conference on Human-Robot Interaction (HRI) and selected as an HRI
+
+    and RSS Pioneer. He has also been an active proponent of open-source
+
+    design, leading initiatives such as MuSHR and Openbionics. He holds
+
+    MS and PhD degrees from Cornell University, and a Diploma in
+
+    mechanical engineering from the National Technical University of Athens.
+
+
+    Organized by the Intelligent Systems Lab at TU Berlin (https://argmin.lis.tu-berlin.de/).
+
+    Moderated by Andreas Orthey (http://aorthey.de/, https://twitter.com/andreas_orthey)
+    and Marc Toussaint (http://www.marc-toussaint.net/). Find us on twitter at https://twitter.com/LIS_TUBerlin.'
+  id: i0ufaoFZkSA
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:14:46Z'
+  thumbnail_url: https://i.ytimg.com/vi/i0ufaoFZkSA/hqdefault.jpg
+  title: 'Chris Mavrogiannis: Leveraging structure for autonomous robot navigation
+    in multiagent human spaces'
+- channel_title: Personal Robotics Lab
+  description: 'Henny Admoni
+
+    Assistant Professor, Robotics Institute at Carnegie Mellon University
+
+
+    Abstract
+
+    Robots can help people live better lives by assisting them with the complex tasks
+    involved in everyday activities. This is especially impactful for people with
+    disabilities, who can benefit from robotic assistance to increase their independence.
+    For example, physically assistive robots can collaborate with people in preparing
+    a meal, enabling people with motor impairments to be self sufficient in cooking
+    and eating. Socially assistive robots can act as tutors, coaches, and partners,
+    to help people with social or learning deficits practice the skills they have
+    learned in a non-threatening environment. Developing effective human-robot interactions
+    in these cases requires a multidisciplinary approach that involves fundamental
+    robotics algorithms, insights from human psychology, and techniques from artificial
+    intelligence and machine learning.
+
+
+    In this talk, I will describe my vision for robots that collaborate with and assist
+    humans on complex tasks. I will explain how we can leverage our understanding
+    of natural, intuitive human behaviors to detect when and how people need assistance,
+    and then apply robotics algorithms to produce effective human-robot interactions.
+    I explain how models of human attention, drawn from cognitive science, can help
+    select robot behaviors that improve human performance on a collaborative task.
+    I detail my work on algorithms that predict people’s mental states based on their
+    eye gaze and provide assistance in response to those predictions. And I show how
+    breaking the seamlessness of an interaction can make robots appear smarter. Throughout
+    the talk, I will describe how techniques and knowledge from cognitive science
+    help us develop robot algorithms that lead to more effective interactions between
+    people and their robot partners.
+
+
+    Bio
+
+    Henny Admoni is an Assistant Professor in the Robotics Institute at Carnegie Mellon
+    University, where she works on assistive robotics and human-robot interaction.
+    Henny develops and studies intelligent robots that improve people’s lives by providing
+    assistance through social and physical interactions. She studies how nonverbal
+    communication, such as eye gaze and pointing, can improve assistive interactions
+    by revealing underlying human intentions and increasing human-robot communication.
+    Previously, Henny was a postdoctoral fellow at CMU with Siddhartha Srinivasa in
+    the Personal Robotics Lab. Henny completed her PhD in Computer Science at Yale
+    University with Professor Brian Scassellati. Her PhD dissertation was about modeling
+    the complex dynamics of nonverbal behavior for socially assistive human-robot
+    interaction. Henny holds an MS in Computer Science from Yale University, and a
+    BA/MA joint degree in Computer Science from Wesleyan University. Henny’s scholarship
+    has been recognized with awards such as the NSF Graduate Research Fellowship,
+    the Google Anita Borg Memorial Scholarship, and the Palantir Women in Technology
+    Scholarship.'
+  id: GlKRXswy9lQ
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:14:31Z'
+  thumbnail_url: https://i.ytimg.com/vi/GlKRXswy9lQ/hqdefault.jpg
+  title: 'RI Seminar: Henny Admoni: Toward Natural Interactions With Assistive Robots'
+- channel_title: Personal Robotics Lab
+  description: "TO USE OR PRINT this presentation click : http://videosliders.com/r/1410\
+    \ \n\n==============================================================\nFormation-Based\
+    \ Multi-Robot Coverage DeWitt T. Latimer IV, Siddhartha Srinivasa, Vincent Lee-Shue,\
+    \ Samuel Sonne, Aaron Hurst, Howie Choset Carnegie Mellon University \n,Coverage\
+    \ Determine a path that passes the robot (or effector) over all points in a target\
+    \ region (volume) \nRandom    Probabilistic    Complete      Optimal \n,Problem\
+    \ Statement Assumptions \nUnknown space \nHomogenous circular robot No marking\
+    \ capability Common coordinate frame Task \nComplete coverage of space \nCoordinated\
+    \ among multiple robots “Minimize” repeat coverage Decentralized planning (yet\
+    \ coordinated) ,Challenges Guaranteeing completeness \nSingle robot: Hert &amp;amp;\
+    \ Lumelsky, Choset &amp;amp; Acar, Cao \nMulti-robot: Butler, Hollis, and Rizzi\
+    \  Minimize repeat coverage Planning in a multi-dimensional configuration space\
+    \ Balch and Arkin, each robot acts independently \nSpace not known a priori Single\
+    \ robot: Hert &amp;amp; Lumelsky, Choset &amp;amp; Acar, Cao \nMulti-robot: Butler,\
+    \ Hollis, and Rizzi Scalability ,Final (current) Demonstration , Reeb graph represents\
+    \ the topology of \n  the cellular decomposition Cell-Decomposition Approach Define\
+    \ Decomposition \nCompleteness \nSensor-based Construction Incrementally construct\
+    \ \nExtend to Multiple Robots ,Slice (Canny and Canny &amp;amp; Lin) h(x,y) =\
+    \ x \n,Rangesensor At a critical point x, Critical Point Sensing slice  At a critical\
+    \ point x of                                   where  M = {x|m(x)=0} \n,Encountering\
+    \ All Critical Points  Conventional back and forth motions are not sufficient\
+    \ \n  (Cao et al.’88, Hert et al.’97, Lumelsky et al.’90) ,NOT Occupancy Grid:\
+    \ Less memory, More meaningful, Minimize  turns, Completeness Complete Coverage\
+    \ \n,Sensor-based Complete Coverage  Goal: Complete coverage of an unknown environment\
+    \ Cell decomposition  Incremental construction  Time-exposure photo of a coverage\
+    \ experiment \n,Characterize Critical Points ,Cover Interior of Cell (one corridor\
+    \ at a time) Wall follow Lap \n,Critical Point Sensing Look for parallel vectors\
+    \ during forward wall following,  but after a reverse wall follow,  lap, and then\
+    \ the forward Look for anti-parallel vectors during reverse wall following Look\
+    \ for parallel vectors during forward wall following Look for parallel vectors\
+    \ during reverse wall following \n,Action at Critical Points Team divides into\
+    \ two  separate teams, each covering a new cell VIRTUAL  FRONTIER (Butler) Team\
+    \ finishes cell and then  looks for a new cell to cover \n,Virtual Frontier As\
+    \ an attempt to minimize repeat coverage, we use the virtual frontier believing\
+    \ that another team will be coming from the “other” cell associated with the forward\
+    \ critical point \n,Team Rejoining (work in progress) Types of encounters \nTwo\
+    \ teams covering in opposite slice directions \nBoth teams finish the current\
+    \ corridor \nTwo teams covering in same slice direction Both teams finish the\
+    \ current corridor \nOne team covering and the other traversing Since robots only\
+    \ traverse through known space, the covering team stops covering and joins traversing\
+    \ team \nTwo teams encountering each other on the border of two cells (very hard\
+    \ case) Combine adjacency graphs ,Example ,Acknowledgements Dave Conner \nErcan\
+    \ Acar Tucker Balch Matt Mason and Mike Erdmann ,Distributed Localization and\
+    \ Mapping"
+  id: 1wSHJIQYQ1E
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:14:20Z'
+  thumbnail_url: https://i.ytimg.com/vi/1wSHJIQYQ1E/hqdefault.jpg
+  title: Formation-Based Multi-Robot Coverage
+- channel_title: Personal Robotics Lab
+  description: 'Assistive robots provide direct, personal help to people to address
+    specific human needs. The mechanisms by which assistive robots provide help can
+    vary widely. Socially assistive robots act as tutors, coaches, or therapy aides
+    to shape human behavior through social interaction. In contrast, physically assistive
+    robots help people through direct manipulation of their environment. While these
+    different types of assistance involve different robot functions, there exist underlying
+    principles that remain constant across all assistive human-robot interactions.
+    For example, robots must be able to recognize people’s goals and intentions in
+    order to assist them, whether that assistance is social or physical.
+
+
+    Identifying human intentions can be challenging, because the mapping from observed
+    human behavior back to the underlying goals and beliefs which generated that behavior
+    if often unclear. However, we can take advantage of findings from psychology,
+    which show that people actually project their intentions in natural and often
+    subconscious ways through their nonverbal behavior, such as eye gazes and gestures.
+
+
+    In this talk, I describe how we can extract human intent from behavior so that
+    robots can assist people in accomplishing their goals. I discuss research across
+    the socially and physically assistive domains, from autonomous robots designed
+    to teach and collaborate with humans on a building task, to a robot arm operated
+    through shared control that helps people with mobility impairments manipulate
+    their environment. Throughout the talk, I show how nonverbal behavior can be incorporated
+    into these systems to improve their understanding of human intentions, which leads
+    to more effective assistance.
+
+
+    Bio:
+
+    Henny Admoni is a postdoctoral fellow at the Robotics Institute at Carnegie Mellon
+    University, where she works on assistive robotics and human-robot interaction
+    with Siddhartha Srinivasa in the Personal Robotics Lab. Henny develops and studies
+    intelligent robots that improve people''s lives by providing assistance through
+    social and physical interactions. Henny completed her PhD in Computer Science
+    at Yale University with Brian Scassellati. Her PhD dissertation was about modeling
+    the complex dynamics of nonverbal behavior for socially assistive human-robot
+    interaction. Henny also holds an MS in Computer Science from Yale University,
+    and a BA/MA joint degree in Computer Science from Wesleyan University. Henny''s
+    scholarship has been recognized with awards such as the NSF Graduate Research
+    Fellowship, the Google Anita Borg Memorial Scholarship, and the Palantir Women
+    in Technology Scholarship.
+
+
+    8 April 2016'
+  id: 4NoWmjG0KGM
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:14:10Z'
+  thumbnail_url: https://i.ytimg.com/vi/4NoWmjG0KGM/hqdefault.jpg
+  title: 'UW CSE Robotics: Henny Admoni, "Recognizing Human Intent for Assistive Robotics"'
+- channel_title: Personal Robotics Lab
+  description: '**Modeling Human Helpfulness with Individual and Contextual Factors
+    for Robot Planning**
+
+    Amal Nanavati (University of Washington); Christoforos Mavrogiannis (University
+    of Washington); Kevin Weatherwax (UC Santa Cruz); Leila Takayama (UC Santa Cruz);
+    Maya Cakmak (University of Washington); Siddhartha Srinivasa (University of Washington)
+
+    Publication: http://www.roboticsproceedings.org/rss17/p016.html
+
+    PDF: http://www.roboticsproceedings.org/rss17/p016.pdf
+
+    Supplementary video: https://youtu.be/PkU5e5lGOKM
+
+
+    **Abstract**
+
+    Robots deployed in human-populated spaces often need human help to effectively
+    complete their tasks. Yet, a robot that asks for help too frequently or at the
+    wrong times may cause annoyance, and a robot that asks too infrequently may be
+    unable to complete its tasks. In this paper, we present a model of humans'' helpfulness
+    towards a robot in an office environment, learnt from online user study data.
+    Our key insight is that effectively planning for a task that involves bystander
+    help requires disaggregating individual and contextual factors and explicitly
+    reasoning about uncertainty over individual factors. Our model incorporates the
+    individual factor of latent helpfulness and the contextual factors of human busyness
+    and robot frequency of asking. We integrate the model into a Bayes-Adaptive Markov
+    Decision Process (BAMDP) framework and run a user study that compares it to baseline
+    models that do not incorporate individual or contextual factors. The results show
+    that our model significantly outperforms baseline models by a factor of 1.5X,
+    and it does so by asking for help more effectively: asking 1.2X times less while
+    still receiving more human help on average.'
+  id: Z7zLNA4V_-o
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:13:58Z'
+  thumbnail_url: https://i.ytimg.com/vi/Z7zLNA4V_-o/hqdefault.jpg
+  title: 'RSS 2021, Spotlight Talk 25: Modeling Human Helpfulness with Individual
+    and Contextual Factors...'
+- channel_title: Personal Robotics Lab
+  description: "Talking Robotics #51 \n\nSpeaker\nTaylor Kessler Faulkner\n\nTitle\n\
+    Enabling Robots to Adapt to and Learn from Real People\n\nSpeaker Bio\nTaylor\
+    \ Kessler Faulkner is a postdoctoral scholar and UW Data Science Postdoctoral\
+    \ Fellow in Siddhartha Srinivasa's Personal Robotics Lab at the University of\
+    \ Washington. She graduated from UT Austin in August 2022 with a PhD in Computer\
+    \ Science, where she worked with Prof. Andrea Thomaz in the Socially Intelligent\
+    \ Machines Lab. Taylor's research focuses on enabling robots to learn and adapt\
+    \ to real people. Her goal is to create algorithms that allow robots to learn\
+    \ from and adapt to potentially inaccurate or inattentive human teachers.\n\n\
+    Speaker Links\nTaylor's Website: https://www.taylorkesslerfaulkner.com/\nTaylor's\
+    \ Google Scholar:https://scholar.google.com/citations?hl=en&user=7cLeliIAAAAJ\n\
+    Taylor's LinkedIn: http://www.linkedin.com/in/taylor-kessler-faulkner-a25263124\n\
+    \nChapters\n00:00  Presenter Introduction\n00:53  Presentation\n34:00  Q&A\n47:42\
+    \  End\n\n/////////////////////////////////////////////\n\nTalking Robotics is\
+    \ a series of virtual seminars about Robotics and its interaction with other relevant\
+    \ fields, such as Artificial Intelligence, Machine Learning, Design Research,\
+    \ Human-Robot Interaction, among others. We aim to promote reflections, dialogues,\
+    \ and a place to network.\n\nOrganized by Silvia Tulli, Kush Desai, Riddhiman\
+    \ Laha, Sooraj Krishna, Nitin Ragothaman\n\nEmail: talkingrobotics at gmail dot\
+    \ com\nWeb Page: https://talking-robotics.github.io\nTwitter: @talkingrobotics\n\
+    Support Talking Robotics: https://www.buymeacoffee.com/talkingrobotics\n\nTalking\
+    \ Robotics is sponsored by ANIMATAS, PAL Robotics (https://pal-robotics.com/)\
+    \ and Semio (https://semio.ai)."
+  id: 5f-FVx8fERo
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:13:44Z'
+  thumbnail_url: https://i.ytimg.com/vi/5f-FVx8fERo/hqdefault.jpg
+  title: Taylor Kessler Faulkner - Enabling Robots to Adapt to and Learn from Real
+    People
+- channel_title: Personal Robotics Lab
+  description: "Speaker:  Ethan Gordon, PhD Candidate, Personal Robotics Lab and Computer\
+    \ Science and Engineering, University of Washington\n \nTitle: Tractably Adaptable\
+    \ Food Manipulation for Robot-Assisted Feeding\n\nIntroduction by: Brenna Argall,\
+    \ Associate Professor of Mechanical Engineering, Computer Science, and Physical\
+    \ Medicine & Rehabilitation at Shirley Ryan AbilityLab and Center for Robotics\
+    \ and Biosystems\n \nDate and Time: Wednesday, November 1, 11:00 AM CT\n \nLocation:\
+    \  Zoom\n\nAbstract:\nAssistive robots can empower those with mobility impairments,\
+    \ engendering feelings of independence. However, to reach the point of actual\
+    \ in-home use, they must manage the trade-off between adaptability, tractability,\
+    \ and comfort. On one hand is the non-stationary distribution of the environment\
+    \ and user preferences; a robot may need to explore to find the best action to\
+    \ take. On the other hand, excessive exploration can make for an uncomfortable\
+    \ experience of failures and unpredictable motion. This is particularly salient\
+    \ for intimate tasks like feeding. In this talk, we focus on the particular problem\
+    \ of food acquisition, with metrics, system design, and assumptions informed by\
+    \ studies with people with upper spinal cord injuries. The problem can be mapped\
+    \ into the well-studied contextual bandit framework to enable online adaptation\
+    \ with theoretical guarantees on performance, though these scale with the size\
+    \ of both the context space (which can be large, set by the variety of food users\
+    \ may want) and the action space. We show how we can leverage haptic information\
+    \ and human expertise to shrink both of these spaces, making this online adaptation\
+    \ tractable. Within the next year, we expect this work to culminate in a system\
+    \ that can be deployed in a user’s home for an extended period of time.\n \nBio:\n\
+    Ethan Gordon is a PhD Candidate in the Personal Robotics Lab at the University\
+    \ of Washington, advised by Prof. Siddhartha Srinivasa. He holds a B.S.E. degree\
+    \ in Electrical Engineering and Engineering Physics from Princeton University,\
+    \ where he studied the control of neuromorphic silicon photonics under Prof. Paul\
+    \ Prucnal. Previously, he has worked at Oculus VR designing variable focus displays\
+    \ for prescription correction and the Honda Research Institute working on in-hand\
+    \ tool manipulation. Ethan’s research interests include physics-based robot manipulation\
+    \ and online learning, especially with applications in human-robot interaction\
+    \ and assistive robotics. He is a full-stack roboticist who is passionate about\
+    \ building end-to-end systems such as ADA, the Assistive Dexterous Arm, used for\
+    \ robot-assisted feeding of those with upper-body mobility impairments."
+  id: CJr5Mn6zRSo
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:13:39Z'
+  thumbnail_url: https://i.ytimg.com/vi/CJr5Mn6zRSo/hqdefault.jpg
+  title: 'Ethan Gordon, Univ. of Washington: Tractably Adaptable Food Manipulation
+    for Robot Assisted Feeding'
+- channel_title: Personal Robotics Lab
+  description: "A look back at the Robotics Institute's Manipulation Lab set to the\
+    \ groovy tune \"Do What You Do\" by Eldridge Gravy & The Court Supreme.  This\
+    \ video was created in a special collaboration with the band and the MLab. Thanks\
+    \ for the Gravy!\r\n\r\nThe video features work from MLab Alumni\r\n\r\nMike Erdmann\r\
+    \nMatt Mason\r\nSiddhartha Srinivasa\r\nIllah Nourbakhsh\r\nHowie Choset\r\nBen\
+    \ Brown\r\nYu (Michael) Wang\r\nRandy Brost\r\nKen Goldberg\r\nAlan Christiansen\r\
+    \nNina Zumel\r\nTammy Abel\r\nSrinivas Akella\r\nKevin Lynch\r\nWes Huang\r\n\
+    Yan-Bin Jia\r\nMark Moll\r\nGarth Zeglin\r\nDevin Balkcom\r\nRavi Balasubramanian\r\
+    \nRoss Knepper\r\nAmir Degani\r\nAlberto Rodriguez\r\nJean Harpley\r\nDan Christian\r\
+    \nTom Wood\r\nDina Berkowitz\r\nMark Maimone\r\nLee Taylor\r\nCosta Nikou\r\n\
+    Scott Robbins\r\nChris Baker\r\nNell Hana Hoffman\r\nBrendan Meeder\r\nGreg Reshko\r\
+    \nYasumichi Aiyama\r\nKenji Kaneko\r\nJoan Aranda\r\nRuss Taylor\r\nAntonio Martinez\r\
+    \nAndres Vazquez\r\nKin Huat Low\r\nThierry Fraichard\r\n\r\nEdited by Brian Staszel\
+    \ @ The Carnegie Mellon Robotics Institute"
+  id: fiGScq8WWFE
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:13:34Z'
+  thumbnail_url: https://i.ytimg.com/vi/fiGScq8WWFE/hqdefault.jpg
+  title: 'Manipulation Lab: Do What You Do by Eldridge Gravy & the Court Supreme'
+- channel_title: Personal Robotics Lab
+  description: "Talking Robotics #20\n\nSpeaker\nChris Mavrogiannis, University of\
+    \ Washington, Seattle, USA\n\nTitle\nFormalizing the Structure of Multiagent Domains\
+    \ for Autonomous Robot Navigation in Human Spaces\n\nSpeaker Bio\nChristoforos\
+    \ (Chris) Mavrogiannis is a postdoctoral research associate in the Paul G. Allen\
+    \ School of Computer Science & Engineering at the University of Washington, working\
+    \ with Prof. Siddhartha Srinivasa. His interests lie at the intersection of motion\
+    \ planning, multiagent systems, and algorithmic human-robot interaction, and he\
+    \ often draws tools from topology, motion planning, and machine learning. In parallel,\
+    \ he is leading MuSHR (mushr.io), the University of Washington’s open-source autonomous\
+    \ racecar project. In the past, Chris has been a best paper award finalist at\
+    \ the ACM/IEEE International Conference on Human-Robot Interaction (HRI), a finalist\
+    \ for the Hackaday Prize and a winner of the Robotdalen International Innovation\
+    \ Award. He has also been selected as Pioneer at the HRI and RSS conferences.\
+    \ Chris holds MS and PhD degrees from Cornell University, and a Diploma in mechanical\
+    \ engineering from the National Technical University of Athens.\n\nSpeaker Links\n\
+    Personal website: https://chrismavrogiannis.com/\nGoogle scholar: https://scholar.google.com/citations?user=dTV6Zj4AAAAJ&hl=en&oi=ao\n\
+    Research Gate: https://www.researchgate.net/profile/Christoforos-Mavrogiannis\n\
+    LinkedIn: https://www.linkedin.com/in/mavrogiannis/\nTwitter: https://twitter.com/mavrojean\n\
+    \nAbstract\nPedestrian scenes pose great challenges for robots due to the lack\
+    \ of formal rules regulating traffic and the lack of explicit coordination among\
+    \ multiple navigating agents. However, humans navigate with ease and comfort through\
+    \ a variety of complex multiagent environments, such as busy train stations, crowded\
+    \ malls or academic buildings.  Human effectiveness in such domains can be largely\
+    \ attributed to cooperation which introduces structure to multiagent behavior.\
+    \ In this talk, I will discuss how we can formalize this structure through the\
+    \ use of representations from low-dimensional topology. I will describe how these\
+    \ representations can be used to build prediction and planning algorithms for\
+    \ socially compliant navigation in pedestrian domains and show how their machinery\
+    \ may transfer to additional challenging environments such as uncontrolled street\
+    \ intersections.  \n\nMaterials\nJ. Roh, C. Mavrogiannis, R. Madan, D. Fox, S.S.\
+    \ Srinivasa, \"Multimodal Trajectory Prediction via Topological Invariance for\
+    \ Navigation at Uncontrolled Intersections\", Conference on Robot Learning (CoRL).\
+    \ 2020.\nC. Mavrogiannis, R. A. Knepper. \"Multi-Agent Path Topology in Support\
+    \ of Socially Competent Navigation Planning\", The International Journal of Robotics\
+    \ Research. 2019. \nC. Mavrogiannis, A. Hutchinson, J. Macdonald, P. Alves-Oliveira,\
+    \ R. A. Knepper. \"Effects of Distinct Robot Navigation Strategies on Human Behavior\
+    \ in a Crowded Environment\". International Conference on Human-Robot Interaction\
+    \ (HRI). 2019.\nC. Mavrogiannis, W. Thomason, R. A. Knepper, \"Social Momentum:\
+    \ A Framework for Legible Navigation in Dynamic Multi-Agent Environments\". International\
+    \ Conference on Human-Robot Interaction (HRI). 2018.\nC. Mavrogiannis and R. A.\
+    \ Knepper, \"Multi-Agent Trajectory Prediction and Generation with Topological\
+    \ Invariants Enforced by Hamiltonian Dynamics\". Algorithmic Foundations of Robotics\
+    \ XIII (WAFR 2018). 2018.\n\nChapters\n00:00  Presenter Introduction\n01:35  Presentation\n\
+    35:30  Q&A\n53:05  End\n\n*Errata: Althought this meeting has an initial slide\
+    \ saying \"Session 21\", the correct number of this session is \"Session 20\"\
+    .\n\n/////////////////////////////////////////////\n\nTalking Robotics is a series\
+    \ of virtual seminars about Robotics and its interaction with other relevant fields,\
+    \ such as Artificial Intelligence, Machine Learning, Design Research, Human-Robot\
+    \ Interaction, among others. We aim to promote reflections, dialogues, and a place\
+    \ to network.\n\nOrganized by Patrícia Alves-Oliveira, Silvia Tulli, Miguel Vasco,\
+    \ and Joana Campos\n\nEmail: talkingrobotics at gmail dot com\nWeb Page: https://talking-robotics.github.io\n\
+    Twitter: @talkingrobotics\nSupport Talking Robotics: https://www.buymeacoffee.com/talkingrobotics"
+  id: LesLpkLNyr8
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:13:22Z'
+  thumbnail_url: https://i.ytimg.com/vi/LesLpkLNyr8/hqdefault.jpg
+  title: Chris Mavrogiannis
+- channel_title: Personal Robotics Lab
+  description: 'ICAPS 2018 talk on the paper
+
+
+    Nika Haghtalab, Simon Mackenzie, Ariel D. Procaccia, Oren Salzman, Siddhartha
+    S. Srinivasa.
+
+    The Provable Virtue of Laziness in Motion Planning.
+
+    Proceedings of the Twenty-Fourth International Conference on Automated
+
+    Planning and Scheduling. pp. 106-113. 2018. AAAI Press
+
+
+    Main Technical Track.
+
+
+    (available online at
+
+    http://www.aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17726)'
+  id: YE941WRsCTo
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:13:01Z'
+  thumbnail_url: https://i.ytimg.com/vi/YE941WRsCTo/hqdefault.jpg
+  title: 'ICAPS 2018: Oren Salzman on "The Provable Virtue of Laziness in Motion Planning"'
+- channel_title: Personal Robotics Lab
+  description: 'ICAPS 2018 talk on the paper
+
+
+    Aditya Mandalika, Oren Salzman, Siddhartha Srinivasa.
+
+    Lazy Receding Horizon A* for Efficient Path Planning in Graphs with Expensive-to-Evaluate
+    Edges.
+
+    Proceedings of the Twenty-Fourth International Conference on Automated
+
+    Planning and Scheduling. pp. 476-484. 2018. AAAI Press
+
+
+    Robotics Track.
+
+
+    (available online at
+
+    http://www.aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17785)'
+  id: Ds4hjKR1jEE
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:12:39Z'
+  thumbnail_url: https://i.ytimg.com/vi/Ds4hjKR1jEE/hqdefault.jpg
+  title: 'ICAPS 2018: Aditya Mandalika on "Lazy Receding Horizon A* for Efficient
+    Path Planning in ..."'
+- channel_title: Personal Robotics Lab
+  description: 'See the longer video for more details: https://www.youtube.com/watch?v=SyTuuUbTFVU
+
+
+    Not All Who Wander Are Lost: A Localization-Free System for In-The-Wild Mobile
+    Robot Deployments
+
+    Amal Nanavati, Nick Walker, Lee Taber, Christoforos Mavrogiannis, Leila Takayama,
+    Maya Cakmak, Siddhartha Srinivasa
+
+
+    HRI 2022
+
+
+    Abstract
+
+    It is difficult to run long-term in-the-wild studies with mobile robots. This
+    is partly because the robots we, as human-robot interaction (HRI) researchers,
+    are interested in deploying prioritize expressivity over navigational capabilities,
+    and making those robots autonomous is often not the focus of our research. One
+    way to address these difficulties is with the Wizard of Oz (WoZ) methodology,
+    where a researcher teleoperates the robot during its deployment. However, the
+    constant attention required for teleoperation limits the duration of WoZ deployments,
+    which in-turn reduces the amount of in-the-wild data we are able to collect. Our
+    key insight is that several types of in-the-wild mobile robot studies can be run
+    without autonomous navigation, using wandering instead. In this paper we present
+    and share code for our wandering robot system, which enabled Kuri, an expressive
+    robot with limited sensor and computational capabilities, to traverse the hallways
+    of a 28,000 ft^2 floor for four days. Our system relies on informed direction
+    selection to avoid obstacles and traverse the space, and periodic human help to
+    charge. After presenting the outcomes from the four-day deployment, we then discuss
+    the benefits of deploying a wandering robot, explore the types of in-the-wild
+    studies that can be run with wandering robots, and share pointers for enabling
+    other robots to wander. Our goal is to add wandering to the toolbox of navigation
+    approaches HRI researchers use, particularly to run in-the-wild deployments with
+    mobile robots.'
+  id: 1KeaFIwp8oQ
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:12:35Z'
+  thumbnail_url: https://i.ytimg.com/vi/1KeaFIwp8oQ/hqdefault.jpg
+  title: 'Not All Who Wander Are Lost: A Localization-Free System for In-the-Wild
+    Mobile Robot Deployments'
+- channel_title: Personal Robotics Lab
+  description: "Calling all robotics enthusiasts! Join 10-year-old Taylor as she interviews\
+    \ roboticist Dr. Siddhartha Srinivasa! Learn about Dr. Sidd's experience coding,\
+    \ the recent robots he's built, and how his robots help people! #KiwiCo #CampKiwiCo\
+    \ \n\nThis video is part of Camp KiwiCo! \n\nLearn more here: https://www.kiwico.com/camp\
+    \ \n\nSubscribe to KiwiCo on YouTube: https://www.youtube.com/c/kiwico \n\nSeriously\
+    \ fun science and art projects, delivered. KiwiCo has projects for every age &\
+    \ interest. Choose from 9 different subscription lines - or - shop the KiwiCo\
+    \ Store for more enriching projects with no subscription needed.\n\nMeet a Roboticist\
+    \ | Small Meets Big | KiwiCo"
+  id: jEyc3p_UgMo
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:12:24Z'
+  thumbnail_url: https://i.ytimg.com/vi/jEyc3p_UgMo/hqdefault.jpg
+  title: Meet a Roboticist | Small Meets Big | KiwiCo
+- channel_title: Personal Robotics Lab
+  description: "https://sites.gatech.edu/learning-caregiving-icra2021/\n\nZoom recording\
+    \ of ICRA 2021 workshop on Learning for Caregiving Robots. \nRecorded on 5/31/2021.\n\
+    \n0:00 Introduction\n10:40 Tomohiro Shibata\n33:17 Yiannis Demiris\n55:36 Tapomayukh\
+    \ Bhattacharjee\n1:23:43 Henny Admoni\n2:00:50 Laurel Riek\n2:32:35 Brenna Argall\n\
+    3:00:50 Antonio Andriella\n3:23:02 Paola Ardón\n3:41:53 Panel Discussion - The\
+    \ role of learning and autonomy in robotic caregiving\n4:13:36 Siddhartha Srinivasa\n\
+    5:03:45 Pieter Abbeel\n5:39:12 Aaron Edsinger - Hello Robot Presentation\n6:00:09\
+    \ C. Karen Liu\n6:37:30 Jeremy Marvel\n7:13:41 Michelle Johnson\n7:56:27 Panel\
+    \ Discussion - Grand challenges in robotic caregiving\n\nInvited Speakers\n===============================\n\
+    Pieter Abbeel, University of California, Berkeley, US\nHenny Admoni, Carnegie\
+    \ Mellon University, US\nBrenna Argall, Northwestern University, US\nMichelle\
+    \ Johnson, University Of Pennsylvania, US\nDongheui Lee, Technical University\
+    \ of Munich, Germany (recording removed per request)\nC. Karen Liu, Stanford University,\
+    \ US\nJeremy Marvel, National Institute of Standards and Technology, US\nLaurel\
+    \ Riek, UC San Diego, US\nSiddhartha Srinivasa, University of Washington, US\n\
+    \nOrganizing Committee\n===============================\nZackory Erickson, Georgia\
+    \ Institute of Technology, US\nTapomayukh Bhattacharjee, University of Washington;\
+    \ Cornell University (Summer 2021), US\nCarme Torras, Professor of Research, Institut\
+    \ de Robòtica I Informàtica Industrial, CSIC-UPC, Spain\nYiannis Demiris, Imperial\
+    \ College London, UK\nCharlie Kemp, Georgia Institute of Technology, US\nTomohiro\
+    \ Shibata, Kyushu Institute of Technology, Japan"
+  id: k0QY_r4hZ7I
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:12:14Z'
+  thumbnail_url: https://i.ytimg.com/vi/k0QY_r4hZ7I/hqdefault.jpg
+  title: Learning for Caregiving Robots - ICRA 2021 Workshop
+- channel_title: Personal Robotics Lab
+  description: 'Support the Northwest Regional SCI System by donating at https://acceleratemed.org/sci
+
+
+    After watching, please complete our two-minute survey! https://redcap.link/scivideos
+
+
+    Presented at the SCI Forum November 8, 2023
+
+
+    Eating is a personal and intricate task that we perform every day. However, approximately
+    1.8 million people in the US alone cannot eat without assistance. In this presentation,
+    Taylor Kessler Faulkner, Ph.D., Postdoctoral Scholar in the Paul G. Allen Center
+    for Computer Science & Engineering at the University of Washington, will discuss
+    the current state of robot-assisted feeding and the continuing research being
+    done at UW in the Personal Robotics Lab (PRL), led by Prof. Siddhartha Srinivasa.
+    She will discuss advances in both the autonomous robotics and the human-robot
+    interaction components of assistive feeding, as well as discussing promising future
+    research avenues.'
+  id: WxKF6iELnyU
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:12:04Z'
+  thumbnail_url: https://i.ytimg.com/vi/WxKF6iELnyU/hqdefault.jpg
+  title: 'Robot-Assisted Feeding: Recent Advances And Future Directions In The Personal
+    Robotics Lab'
+- channel_title: Personal Robotics Lab
+  description: Video of the reaching task with occupancy uncertainty described in
+    the paper "Addressing Cost-Space Chasms for Manipulation Planning" by Dmitry Berenson,
+    Thierry Simeon, and Siddhartha Srinivasa, IEEE International Conference on Robotics
+    and Automation (ICRA '11), May, 2011.
+  id: 4mVKkdnDeCA
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:52Z'
+  thumbnail_url: https://i.ytimg.com/vi/4mVKkdnDeCA/hqdefault.jpg
+  title: Addressing Cost-Space Chasms in Manipulation Planning
+- channel_title: Personal Robotics Lab
+  description: 'Efficient motion planning for problems lacking optimal substructure
+
+    Oren Salzman, Brian Hou and Siddhartha Srinivasa
+
+
+    Motion Planning and Control (Session 1b)
+
+    ICAPS 2017
+
+    Wednesday June 21, 2017
+
+    Proceedings of the Twenty-Seventh International Conference on Automated Planning
+    and Scheduling'
+  id: hIf2txDuQQo
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:46Z'
+  thumbnail_url: https://i.ytimg.com/vi/hIf2txDuQQo/hqdefault.jpg
+  title: 'ICAPS 2017: Efficient motion planning for problems lacking optimal substructure'
+- channel_title: Personal Robotics Lab
+  description: Footage from our experiments from the IROS 2023 paper "From Crowd Motion
+    Prediction to Robot Navigation in Crowds" by Sriyash Poddar, Christoforos Mavrogiannis,
+    and Siddhartha Srinivasa.
+  id: mzFiXg8KsZ0
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:40Z'
+  thumbnail_url: https://i.ytimg.com/vi/mzFiXg8KsZ0/hqdefault.jpg
+  title: From Crowd Motion Prediction to Robot Navigation in Crowds [IROS 2023]
+- channel_title: Personal Robotics Lab
+  description: "Footage from lab experiments from our IROS 2023 paper \"PuSHR: A Multirobot\
+    \ System Nonprehensile Rearrangement\" by Sidharth Talia, Arnav Thareja, Christoforos\
+    \ Mavrogiannis, Matt Schmittle, and Siddhartha Srinivasa. \n\nPreprint: https://arxiv.org/abs/2303.01428."
+  id: nyUn9mHoR8Y
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:36Z'
+  thumbnail_url: https://i.ytimg.com/vi/nyUn9mHoR8Y/hqdefault.jpg
+  title: 'PuSHR: A Multirobot System Nonprehensile Rearrangement [IROS 2023]'
+- channel_title: Personal Robotics Lab
+  description: 'Short video presentation of the paper "Analyzing Multiagent Interactions
+    in Traffic Scenes via Topological Braids.
+
+    " by Christoforos Mavrogiannis, Jonathan DeCastro, and Siddhartha S. Srinivasa
+    that appeared at the IEEE International Conference on Robotics and Automation
+    (ICRA) in 2022.'
+  id: Q7xZPFj52lQ
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:25Z'
+  thumbnail_url: https://i.ytimg.com/vi/Q7xZPFj52lQ/hqdefault.jpg
+  title: Analyzing Multiagent Interactions in Traffic Scenes via Topological Braids
+    [ICRA 2022]
+- channel_title: Personal Robotics Lab
+  description: 'Is More Autonomy Always Better?: Exploring Preferences of Users with
+    Mobility Impairments in Robot-assisted Feeding
+
+    Tapomayukh Bhattacharjee, Ethan K. Gordon, Rosario Scalise, Maria E. Cabrera,
+    Anat Caspi, Maya Cakmak, Siddhartha S. Srinivasa
+
+
+    HRI''20: ACM/IEEE International Conference on Human-Robot Interaction
+
+    Session: Health and Wellness
+
+
+    Abstract
+
+    A robot-assisted feeding system can potentially help a user with upper-body mobility
+    impairments eat independently. However, autonomous assistance in the real world
+    is challenging because of varying user preferences, impairment constraints, and
+    possibility of errors in uncertain and unstructured environments. An autonomous
+    robot-assisted feeding system needs to decide the appropriate strategy to acquire
+    a bite of hard-to-model deformable food items, the right time to bring the bite
+    close to the mouth, and the appropriate strategy to transfer the bite easily.
+    Our key insight is that a system should be designed based on a user''s preference
+    about these various challenging aspects of the task. In this work, we explore
+    user preferences for different modes of autonomy given perceived error risks and
+    also analyze the effect of input modalities on technology acceptance. We found
+    that more autonomy is not always better, as participants did not have a preference
+    to use a robot with partial autonomy over a robot with low autonomy. In addition,
+    participants'' user interface preference changes from voice control during individual
+    dining to web-based during social dining. Finally, we found differences on average
+    ratings when grouping the participants based on their mobility limitations (lower
+    vs. higher) that suggests that ratings from participants with lower mobility limitations
+    are correlated with higher expectations of robot performance.
+
+
+    DOI:: https://doi.org/10.1145/3319502.3374818
+
+    WEB:: https://humanrobotinteraction.org/2020/
+
+
+    Talk for the ACM/IEEE International Conference on Human-Robot Interaction 2020'
+  id: M7Z2MAXbv9c
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:17Z'
+  thumbnail_url: https://i.ytimg.com/vi/M7Z2MAXbv9c/hqdefault.jpg
+  title: 'Is More Autonomy Always Better?: Exploring Preferences of Users with Mobility
+    Impairments in ...'
+- channel_title: Personal Robotics Lab
+  description: Perhaps the most important question one should ask is "What Should
+    I Work On?". In this short talk, I discuss some mechanisms I use to answer this
+    question.
+  id: Zz3bb3OWl68
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:11:09Z'
+  thumbnail_url: https://i.ytimg.com/vi/Zz3bb3OWl68/hqdefault.jpg
+  title: What Should I Work On?
+- channel_title: Personal Robotics Lab
+  description: 'Video accompanying the paper "The Blindfolded Robot: A Bayesian Approach
+    to Planning with Contact Feedback," by Brad Saund, Sanjiban Choudhury, Siddhartha
+    Srinivasa, and Dmitry Berenson, International Symposium on Robotics Research (ISRR),
+    October, 2019.'
+  id: DlNhtBnF6ro
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:59Z'
+  thumbnail_url: https://i.ytimg.com/vi/DlNhtBnF6ro/hqdefault.jpg
+  title: 'The Blindfolded Robot: A Bayesian Approach to Planning with Contact Feedback'
+- channel_title: Personal Robotics Lab
+  description: 'Not All Who Wander Are Lost: A Localization-Free System for In-The-Wild
+    Mobile Robot Deployments
+
+    Amal Nanavati, Nick Walker, Lee Taber, Christoforos Mavrogiannis, Leila Takayama,
+    Maya Cakmak, Siddhartha Srinivasa
+
+
+    HRI 2022
+
+    Session: Sensing and Control
+
+
+    Abstract
+
+    It is difficult to run long-term in-the-wild studies with mobile robots. This
+    is partly because the robots we, as human-robot interaction (HRI) researchers,
+    are interested in deploying prioritize expressivity over navigational capabilities,
+    and making those robots autonomous is often not the focus of our research. One
+    way to address these difficulties is with the Wizard of Oz (WoZ) methodology,
+    where a researcher teleoperates the robot during its deployment. However, the
+    constant attention required for teleoperation limits the duration of WoZ deployments,
+    which in-turn reduces the amount of in-the-wild data we are able to collect. Our
+    key insight is that several types of in-the-wild mobile robot studies can be run
+    without autonomous navigation, using wandering instead. In this paper we present
+    and share code for our wandering robot system, which enabled Kuri, an expressive
+    robot with limited sensor and computational capabilities, to traverse the hallways
+    of a 28,000 ft^2 floor for four days. Our system relies on informed direction
+    selection to avoid obstacles and traverse the space, and periodic human help to
+    charge. After presenting the outcomes from the four-day deployment, we then discuss
+    the benefits of deploying a wandering robot, explore the types of in-the-wild
+    studies that can be run with wandering robots, and share pointers for enabling
+    other robots to wander. Our goal is to add wandering to the toolbox of navigation
+    approaches HRI researchers use, particularly to run in-the-wild deployments with
+    mobile robots.
+
+
+    WEB:: https://humanrobotinteraction.org/2022/
+
+
+    Videos for HRI 2022'
+  id: SyTuuUbTFVU
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:50Z'
+  thumbnail_url: https://i.ytimg.com/vi/SyTuuUbTFVU/hqdefault.jpg
+  title: 'Not All Who Wander Are Lost: A Localization-Free System for In-The-Wild
+    Mobile Robot Deployments'
+- channel_title: Personal Robotics Lab
+  description: "Dr. Siddhartha Srinivasa, Finmeccanica Associate Professor at the\
+    \ Robotics Institute at Carnegie Mellon University, addresses 48 FIRST Robotics\
+    \ Competition Teams (nearly 1000 students & ~300 mentors) at the 2014 Greater\
+    \ Pittsburgh Regional, March 29, 2014.\n\nVideo courtesy of Three River Entertainment\
+    \ & Production\n\nFIRST (U.S. Foundation for Inspiration and Recognition of Science\
+    \ and Technology) is a 501(c)(3) not for profit public charity. Our mission is\
+    \ to inspire young people to be science and technology leaders, by engaging them\
+    \ in exciting mentor-based programs that build science, engineering and technology\
+    \ skills, that inspire innovation, and that foster well-rounded life capabilities\
+    \ including self-confidence, communication, and leadership.\n\nFor more information\
+    \ about FIRST, see www.USFIRST.org. \nTo learn more about programs and events\
+    \ in Western & Central PA, see www.PittsburghFIRST.org.\n\nDr. Siddhartha Srinivasa's\
+    \ research focuses on manipulation, with the goal of enabling robots to robustly\
+    \ and gracefully interact with the world to perform complex manipulation tasks\
+    \ in uncertain, unstructured, and cluttered environments. His current research\
+    \ focuses on physics-based nonprehensile manipulation for reconfiguring clutter,\
+    \ functional gradient methods for motion planning, and formalizing HRI principles\
+    \ using machine learning, motion planning and optimization algorithms. Sidd is\
+    \ a recipient of the HRI Best Paper Award (2010), ONR Young Investigator Award\
+    \ (2012), Okawa Research Award (2012), and a best-paper finalist at RSS (2012,\
+    \ 2013), IEEE ICRA (2009, 2010, 2012), IEEE IROS (2010), and RO-MAN (2012). Sidd\
+    \ also captains the CMU squash team, and dreams of running ultra-marathons.\n\n\
+    The 2014 FIRST Robotics Competition - Greater Pittsburgh Regional was held at\
+    \ the Convocation Center at the California University of Pennsylvania, March 29,\
+    \ 2014."
+  id: 25OQuThxKCc
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:43Z'
+  thumbnail_url: https://i.ytimg.com/vi/25OQuThxKCc/hqdefault.jpg
+  title: Siddhartha Srinivasa at the FIRST Robotics Competition - Greater Pittsburgh
+    Regional 2014
+- channel_title: Personal Robotics Lab
+  description: 'YCB has long been a cornerstone for robotic manipulation and embodied
+    AI research. But the original dataset faced limitations: missing assets, low-quality
+    scans, and limited physics fidelity.
+
+
+    In this conversation, Dr. Steve Xie (CEO, Lightwheel) and Prof. Sidd Srinivasa
+    (University of Washington, co-founder of YCB) discuss the journey of refreshing
+    YCB into Lightwheel-YCB:
+
+
+    - Recreating 125 high-fidelity, simulation-ready assets (rigid, articulated, and
+    deformable)
+
+    - Adding accurate physics properties to shrink the sim-to-real gap
+
+    - Standardizing formats for Isaac Sim, Isaac Lab, and MuJoCo
+
+    - Building a stronger foundation for benchmarking and embodied AI research
+
+
+    Together, they explore the past, present, and future of YCB — and how Lightwheel-YCB
+    enables researchers to build realistic scenes, design complex tasks, and accelerate
+    progress from simulation to reality.'
+  id: 4g8MGeN1mPI
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:33Z'
+  thumbnail_url: https://i.ytimg.com/vi/4g8MGeN1mPI/hqdefault.jpg
+  title: Refreshing YCB for the Next Era of Embodied AI | Steve Xie × Prof. Sidd Srinivasa
+- channel_title: Personal Robotics Lab
+  description: '0:05 Feedback-driven Physics-based Manipulation
+
+
+    32:31 Q&A'
+  id: OI7lZss44S4
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:29Z'
+  thumbnail_url: https://i.ytimg.com/vi/OI7lZss44S4/hqdefault.jpg
+  title: '17:50 - 18:20 Invited Talk: Siddhartha Srinivasa, CMU - Feedback-driven
+    Physics-based Manipulation'
+- channel_title: Personal Robotics Lab
+  description: "On October 6, Siddhartha (Sidd) Srinivasa, director of Amazon Robotics\
+    \ AI, joined Nia Jetter, senior principal technologist, to discuss the field of\
+    \ robotics, Amazon robotics initiatives, where they get their ideas from, and\
+    \ advice on starting a career in robotics. Read the full article: https://www.amazon.science/working-at-amazon/amazon-robotics-ai-leaders-believe-now-is-a-particularly-good-time-to-explore-careers-in-robotics\n\
+    \nSrinivasa joined Amazon as director of Robotics AI in 2018, and since 2017 has\
+    \ been the Boeing Endowed Professor at the School of Computer Science and Engineering\
+    \ at the University of Washington. Prior to that, he was the Finmeccanica Associate\
+    \ Professor at the Robotics Institute at Carnegie Mellon University where he founded\
+    \ the Personal Robotics Lab in December 2005. Srinivasa, who describes himself\
+    \ as “a full-stack roboticist, with a focus on robotic manipulation”, has worked\
+    \ in the robotics field since 1999.\n\nJetter, who earned a bachelor of science\
+    \ degree from MIT in math with computer science, and a master's degree in aeronautical\
+    \ and astronautical engineering from Stanford University, joined Amazon earlier\
+    \ this year. Previously, she spent 20 years in the aerospace Industry, including\
+    \ more than 18 years at Boeing where she rose to become a technical fellow in\
+    \ autonomy and AI.\n\nFollow us: \nWebsite: https://www.amazon.science \nTwitter:\
+    \ https://twitter.com/AmazonScience \nFacebook: https://www.facebook.com/AmazonScience\
+    \ \nInstagram: https://www.instagram.com/AmazonScience \nLinkedIn: https://www.linkedin.com/showcase/AmazonScience\n\
+    Newsletter: https://www.amazon.science/newsletter\n\n#AmazonScience #AmazonRobotics\
+    \ #Robotics"
+  id: EqNSnmVBw6E
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:20Z'
+  thumbnail_url: https://i.ytimg.com/vi/EqNSnmVBw6E/hqdefault.jpg
+  title: Q&A with Sidd Srinivasa, director of Amazon Robotics AI
+- channel_title: Personal Robotics Lab
+  description: '2017 Research Showcase Keynote
+
+    Title: Physics-based Manipulation With and Around People
+
+    Speaker: Siddhartha Srinivasa (Paul G. Allen School of Computer Science & Engineering)
+
+    Date: November 15, 2017
+
+
+    Abstract: Robots manipulate with super-human speed and dexterity on factory floors.
+    But yet they fail even under moderate amounts of clutter or uncertainty. However,
+    human teleoperators perform remarkable acts of manipulation with the same hardware.
+    My research goal is to bridge the gap between what robotic manipulators can do
+    now and what they are capable of doing.
+
+
+    What human operators intuitively possess that robots lack are models of interaction
+    between the manipulator and the world that go beyond pick-and-place. I will describe
+    our work on nonprehensile physics-based manipulation that has produced simple
+    but effective models, integrated with proprioception and perception, that has
+    enabled robots to fearlessly push, pull, and slide objects, and reconfigure clutter
+    that comes in the way of their primary task.
+
+
+    But human environments are also filled with humans. Collaborative manipulation
+    is a dance, demanding the sharing of intentions, inferences, and forces between
+    the robot and the human. I will also describe our work on the mathematics of human-robot
+    interaction that has produced a framework for collaboration using Bayesian inference
+    to model the human collaborator, and trajectory optimization to generate fluent
+    collaborative plans.
+
+
+    Finally, I will talk about our new initiative on assistive care that focuses on
+    marrying physics, human-robot collaboration, control theory, and rehabilitation
+    engineering to build and deploy caregiving systems.
+
+
+    Bio: Siddhartha Srinivasa is the Boeing Endowed Professor at the Paul G. Allen
+    School of Computer Science & Engineering at the University of Washington.
+
+
+    He works on robotic manipulation, with the goal of enabling robots to perform
+    complex manipulation tasks under uncertainty and clutter, with and around people.
+    To this end, he founded the Personal Robotics Lab in 2005. He has been a PI on
+    the Quality of Life Technologies NSF ERC, DARPA ARM-S and the CMU CHIMP team on
+    the DARPA DRC. Sidd is also passionate about building end-to-end systems (HERB,
+    ADA, HRP3, CHIMP, Andy, among others) that integrate perception, planning, and
+    control in the real world. Understanding the interplay between system components
+    has helped produce state of the art algorithms for object recognition and pose
+    estimation (MOPED), and dense 3D modeling (CHISEL, now used by Google Project
+    Tango).
+
+
+    Sidd received a B.Tech in Mechanical Engineering from the Indian Institute of
+    Technology Madras in 1999, an MS in 2001 and a PhD in 2005 from the Robotics Institute
+    at Carnegie Mellon University.
+
+
+    He played badminton and tennis for IIT Madras, captained the CMU squash team,
+    and lately runs competitively.
+
+
+    This video is closed captioned.'
+  id: XN7aYxlE_jw
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:15Z'
+  thumbnail_url: https://i.ytimg.com/vi/XN7aYxlE_jw/hqdefault.jpg
+  title: 'Physics-based Manipulation With and Around People: Siddhartha Srinivasa
+    (Allen School)'
+- channel_title: Personal Robotics Lab
+  description: 'Human collaboration is a delicate dance of prediction, inference,
+    and action. Building robots with the
+
+    capability to interact with humans as equals has potential to improve the daily
+    lives of those who
+
+    require assistive care, such as the elderly or mobility impaired. Learn how researchers
+    are developing
+
+    these robots using mathematical models and physics-based manipulation.
+
+
+    Siddhartha Srinivasa, Boeing Endowed Professor, Paul G. Allen School of Computer
+    Science &
+
+    Engineering
+
+
+    11/18/18
+
+
+    http://uwtv.org'
+  id: CmTUe4LlHNo
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:10Z'
+  thumbnail_url: https://i.ytimg.com/vi/CmTUe4LlHNo/hqdefault.jpg
+  title: 'Building a Robot Butler: Towards Fluent Human Robot Interaction'
+- channel_title: Personal Robotics Lab
+  description: 'ICRA 2021 Workshop "Towards Curious Robots: Modern Approaches for
+    Intrinsically-Motivated Intelligent Behavior" (https://sites.google.com/asu.edu/curiousrobots).'
+  id: 5MPyoLErLSA
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:10:03Z'
+  thumbnail_url: https://i.ytimg.com/vi/5MPyoLErLSA/hqdefault.jpg
+  title: 'ICRA 2021 Curiosity Workshop: Siddhartha Srinivasa'
+- channel_title: Personal Robotics Lab
+  description: Even with 20 years as a robotics researcher with prominent roles in
+    academia and industry, Dr. Sidd Srinivasa finds the U.S. Army's Robotics Collaborative
+    Technology Alliance as a unique opportunity for researchers. Here, he discusses
+    his thoughts on why manipulations in robotics is so hard. You’ll even see his
+    robot Herb pick up an Oreo cookie and try to separate the cookie from cream. Check
+    it out to understand the challenge for roboticists.
+  id: UqgPBCM-jDY
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:09:57Z'
+  thumbnail_url: https://i.ytimg.com/vi/UqgPBCM-jDY/hqdefault.jpg
+  title: Tech Talk with Dr. Sidd Srinivasa
+- channel_title: Personal Robotics Lab
+  description: 'Robotic Manipulation under clutter and uncertainty with and around
+    people
+
+
+    Sidd Srinivasa
+
+    Associate Professor, RI, Carnegie Mellon
+
+
+    Abstract
+
+    Robots manipulate with super-human speed and dexterity on factory floors. But
+    yet they fail even under moderate amounts of clutter or uncertainty. However,
+    human teleoperators perform remarkable acts of manipulation with the same hardware.
+    My research goal is to bridge the gap between what robotic manipulators can do
+    now and what they are capable of doing.
+
+
+    What human operators intuitively possess that robots lack are models of interaction
+    between the manipulator and the world that go beyond pick-and-place. I will describe
+    our work on nonprehensile physics-based manipulation that has produced simple
+    but effective models, integrated with proprioception and perception, that has
+    enabled robots to fearlessly push, pull, and slide objects, and reconfigure clutter
+    that comes in the way of their primary task.
+
+
+    But human environments are also filled with humans. Collaborative manipulation
+    is a dance, demanding the sharing of intentions, inferences, and forces between
+    the robot and the human. I will also describe our work on the mathematics of human-robot
+    interaction that has produced a framework for collaboration using Bayesian inference
+    to model the human collaborator, and trajectory optimization to generate fluent
+    collaborative plans.
+
+
+    Finally, I will talk about our new initiative on assitive care that focuses on
+    marrying physics, human-robot collaboration, control theory, and rehabilitation
+    engineering to build and deploy caregiving systems.
+
+
+    Bio
+
+    Siddhartha Srinivasa is the Finmeccanica Associate Professor at The Robotics Institute
+    at Carnegie Mellon University. He works on robotic manipulation, with the goal
+    of enabling robots to perform complex manipulation tasks under uncertainty and
+    clutter, with and around people. To this end, he founded and directs the Personal
+    Robotics Lab, and co-directs the Manipulation Lab. He has been a PI on the Quality
+    of Life Technologies NSF ERC, DARPA ARM-S and the CMU CHIMP team on the DARPA
+    DRC. Sidd is also passionate about building end-to-end systems (HERB, ADA, HRP3,
+    CHIMP, Andy, among others) that integrate perception, planning, and control in
+    the real world. Understanding the interplay between system components has helped
+    produce state of the art algorithms for object recognition and pose estimation
+    (MOPED), and dense 3D modeling (CHISEL, now used by Google Project Tango).
+
+
+    Sidd received a B.Tech in Mechanical Engineering from the Indian Institute of
+    Technology Madras in 1999, an MS in 2001 and a PhD in
+
+    2005 from the Robotics Institute at Carnegie Mellon University. He played badminton
+    and tennis for IIT Madras, captained the CMU squash team, and lately runs competitively.'
+  id: --PIIkzufaQ
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:09:53Z'
+  thumbnail_url: https://i.ytimg.com/vi/--PIIkzufaQ/hqdefault.jpg
+  title: 'RI Seminar: Sidd Srinivasa: Robotic Manipulation...'
+- channel_title: Personal Robotics Lab
+  description: DescriptionRobotic Manipulation under clutter and uncertainty with
+    and around people
+  id: ppmiRiHcExM
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:09:46Z'
+  thumbnail_url: https://i.ytimg.com/vi/ppmiRiHcExM/hqdefault.jpg
+  title: 'UW CSE Colloquia: Siddhartha Srinivasa (CMU)'
+- channel_title: Personal Robotics Lab
+  description: 'Interactive QnA with Sidd Srinivasa
+
+
+    Robot Manipulation, Spring 2022 - Cornell University'
+  id: S1u3x-AgtK8
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:09:39Z'
+  thumbnail_url: https://i.ytimg.com/vi/S1u3x-AgtK8/hqdefault.jpg
+  title: '[CS 6751] Interactive QnA - Siddhartha Srinivasa (University of Washington
+    / Amazon Robotics)'
+- channel_title: Personal Robotics Lab
+  description: 'Sidd talks about intentions for seamless robot-human collaboration
+    and building care-giving robots for people in need.
+
+
+    http://www.ri.cmu.edu/person.html?person_id=696&type=newsmedia'
+  id: D6uORxe_sfs
+  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
+  published_at: '2025-10-21T16:09:35Z'
+  thumbnail_url: https://i.ytimg.com/vi/D6uORxe_sfs/hqdefault.jpg
+  title: 'Siddhartha Srinivasa : Manipulation, Robots Performing Complex Tasks'
+- channel_title: Personal Robotics Lab
   description: 'A robot navigating an outdoor environment with no prior knowledge
     of the space must rely on its local sensing to perceive its surroundings and plan.
     This can come in the form of a local metric map or local policy with some fixed
@@ -794,177 +1860,3 @@
   thumbnail_url: https://i.ytimg.com/vi/bZ9YDq8Ksvc/hqdefault.jpg
   title: HERB clip from Rocketboom's "Technology and Innovation by Intel, Pittsburgh
     Labs"
-- channel_title: Personal Robotics Lab
-  description: "M. Cakmak, S.S. Srinivasa, M.K. Lee, S. Kiesler and J. Forlizi. \n\
-    Using Spatial and Temporal Contrast for Fluent Robot-Human Hand-overs. \nInternational\
-    \ Conference on Human-Robot Interaction (HRI), 2011."
-  id: VsuxPwhQS0I
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2012-03-18T02:13:49Z'
-  thumbnail_url: https://i.ytimg.com/vi/VsuxPwhQS0I/hqdefault.jpg
-  title: Improving Fluency in Human-Robot Handovers
-- channel_title: Personal Robotics Lab
-  description: 'IROS 2011 paper
-
-    M. Cakmak, S.S. Srinivasa, M.K. Lee, S. Kiesler and J. Forlizi'
-  id: _P9Q9b6LV20
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2012-03-18T02:13:28Z'
-  thumbnail_url: https://i.ytimg.com/vi/_P9Q9b6LV20/hqdefault.jpg
-  title: Human Preferences for Robot-Human Hand-over Configurations
-- channel_title: Personal Robotics Lab
-  description: 'Goal sets are omnipresent on manipulation: manipulation tasks are
-    usually described by an entire region of allowable goals, as opposed to a particular
-    goal configuration. In this work, we propose a way to take advantage of goal sets
-    during manipulation planning using constrained trajectory optimization.'
-  id: noJQceF2VrI
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2012-03-16T22:59:01Z'
-  thumbnail_url: https://i.ytimg.com/vi/noJQceF2VrI/hqdefault.jpg
-  title: Manipulation Planning with Goal Sets Using Constrained Trajectory Optimization
-- channel_title: Personal Robotics Lab
-  description: We demonstrate a data driven grasp planner that indexes partial sensor
-    data into a database of 3D models with known grasps and transfers grasps from
-    those models to novel objects. We show how to construct such a database and also
-    demonstrate matching into it, aligning the matched models with the known sensor
-    data of the object to be grasped, and selecting an appropriate grasp to use.
-  id: CKHb8ejDvJY
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2012-02-08T15:33:31Z'
-  thumbnail_url: https://i.ytimg.com/vi/CKHb8ejDvJY/hqdefault.jpg
-  title: Columbia Grasp Database
-- channel_title: Personal Robotics Lab
-  description: ''
-  id: E0n0mz88Rvs
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2011-07-06T10:50:12Z'
-  thumbnail_url: https://i.ytimg.com/vi/E0n0mz88Rvs/hqdefault.jpg
-  title: HERB imitates Anca
-- channel_title: Personal Robotics Lab
-  description: The story of HERB from the Personal Robotics Lab at Carnegie Mellon,
-    a fun video by (in alphabetical order) Chris Dellin, Mehmet Dogar, Nursel Dogar,
-    Anca Dragan, Vincenzo Micelli and Kyle Strabala.
-  id: dfHqHkQoG7Y
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2011-06-03T17:33:10Z'
-  thumbnail_url: https://i.ytimg.com/vi/dfHqHkQoG7Y/hqdefault.jpg
-  title: The Story of HERB
-- channel_title: Personal Robotics Lab
-  description: Overview of the paper "Grasp Planning in Complex Scenes" by Dmitry
-    Berenson, Rosen Diankov, Koichi Nishiwaki, Satoshi Kagami, and James Kuffner,
-    IEEE-RAS International Conference on Humanoid Robots (Humanoids07), December,
-    2007.
-  id: MgniShDtHFI
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-12-17T23:15:33Z'
-  thumbnail_url: https://i.ytimg.com/vi/MgniShDtHFI/hqdefault.jpg
-  title: Grasp Planning in Complex Scenes
-- channel_title: Personal Robotics Lab
-  description: '"Grasp Synthesis in Cluttered Environments for Dexterous Hands" by
-    Dmitry Berenson and Siddhartha Srinivasa, IEEE-RAS International Conference on
-    Humanoid Robots (Humanoids08), December, 2008.'
-  id: rUeI7T9HD4Y
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-12-17T23:15:28Z'
-  thumbnail_url: https://i.ytimg.com/vi/rUeI7T9HD4Y/hqdefault.jpg
-  title: Grasp Synthesis in Cluttered Environments for Dexterous Hands
-- channel_title: Personal Robotics Lab
-  description: "A summary of the paper: \"Manipulation Planning on Constraint Manifolds\"\
-    \ by \nDmitry Berenson, Siddhartha Srinivasa, David Ferguson, and James Kuffner\n\
-    IEEE International Conference on Robotics and Automation (ICRA '09), May, 2009."
-  id: APAhs7GC090
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-12-17T23:15:07Z'
-  thumbnail_url: https://i.ytimg.com/vi/APAhs7GC090/hqdefault.jpg
-  title: Manipulation Planning on Constraint Manifolds
-- channel_title: Personal Robotics Lab
-  description: 'Results from the paper: "Pose-Constrained Whole-Body Planning using
-    Task Space Region Chains" by Dmitry Berenson, Joel Chestnutt, Siddhartha Srinivasa,
-    James Kuffner, and Satoshi Kagami, IEEE-RAS International Conference on Humanoid
-    Robots (Humanoids09), December, 2009.'
-  id: xIBRMNrutQc
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-12-17T23:14:46Z'
-  thumbnail_url: https://i.ytimg.com/vi/xIBRMNrutQc/hqdefault.jpg
-  title: Pose-Constrained Whole-Body Planning using Task Space Region Chains
-- channel_title: Personal Robotics Lab
-  description: "http://rocketboom.com/rbtech-intel-labs-pittsburgh\r\nClick on the\
-    \ link above for more info on today's episode!\r\n\r\nRocketboom Tech's Ellie\
-    \ Rountree visits the Intel Labs in Pittsburgh.\r\n\r\nThis episode was made in\
-    \ collaboration with Intel!\r\n\r\nFollow us on Twitter for the latest updates!\r\
-    \nhttp://twitter.com/rocketboomtech\r\nhttp://twitter.com/elspethjane\r\nhttp://twitter.com/intel\r\
-    \n\r\nJoin us on Facebook for behind the scenes pics and videos!\r\nhttp://facebook.com/rocketboom\r\
-    \n\r\nJoin us at rocketboom.com for an ad free experience. **Update May 20, 2014:\n\
-    This video will be removed from YouTube in the near future. Would you like to\
-    \ host a copy on your channel? Soon, Rocketboom will be starting anew and all\
-    \ archives from 2004 through 2013 will be deleted. If this is an episode you would\
-    \ like to see remain free and openly available to the public, we'll consider sending\
-    \ you a free copy to host on your YouTube channel with a simple agreement. Please\
-    \ contact us at licensing@rocketboom.com for more information."
-  id: ERNe0ofPehU
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-11-25T16:55:56Z'
-  thumbnail_url: https://i.ytimg.com/vi/ERNe0ofPehU/hqdefault.jpg
-  title: Technology and Innovation by Intel, Pittsburgh Labs
-- channel_title: Personal Robotics Lab
-  description: ''
-  id: nnTcyAhN4gQ
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-11-25T16:53:50Z'
-  thumbnail_url: https://i.ytimg.com/vi/nnTcyAhN4gQ/hqdefault.jpg
-  title: People helping robots helping people
-- channel_title: Personal Robotics Lab
-  description: "Herb is a robot from the Intel Personal Robotics Lab and a research\
-    \ platform for Carnegie Mellon's Quality of Life Technology Research Center. \
-    \ During Intel Pittsburgh's 2010 open house, Herb greeted guests by demonstrating\
-    \ his abilities to pick up different bottles and cans, travel while avoiding obstacles,\
-    \ offer the object to someone and then put it back or in a recycle bin.  During\
-    \ the video you can see how the arm is able to be manipulated by someone and then\
-    \ it resumes doing the task it was doing.  Herb's computer vision - his view of\
-    \ the world in data point clouds - was on display too being projected for all\
-    \ to see.\r\n\r\nTo learn more visit these links:\r\nhttp://personalrobotics.intel-research.net/projects/herb.php\r\
-    \n\r\nhttp://www.cmu.edu/qolt/"
-  id: PEg9ay-Wy-M
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2010-10-05T17:56:40Z'
-  thumbnail_url: https://i.ytimg.com/vi/PEg9ay-Wy-M/hqdefault.jpg
-  title: 'Herb: Robot Butler'
-- channel_title: Personal Robotics Lab
-  description: Simple demo of autonomously putting cups in a dish rack. The cups are
-    tracked using a ceiling camera.
-  id: gySlayBF3v4
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2009-03-11T23:50:57Z'
-  thumbnail_url: https://i.ytimg.com/vi/gySlayBF3v4/hqdefault.jpg
-  title: Loading Cups in Dishrack
-- channel_title: Personal Robotics Lab
-  description: WAM autonomously opens a cabinet, puts a cup inside, and closes it.
-  id: NMDLxIm8SUs
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2009-03-11T23:50:52Z'
-  thumbnail_url: https://i.ytimg.com/vi/NMDLxIm8SUs/hqdefault.jpg
-  title: Manipulation Planning with Door Opening
-- channel_title: Personal Robotics Lab
-  description: Intel Research Pittsburgh Open House 2008 demo that had a mobile robot
-    manipulation various objects in the kitchen throughout the entire day. This is
-    powered by Robot Operating System (ROS) and OpenRAVE.
-  id: Nhx9KZwl_5A
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2009-03-11T23:50:47Z'
-  thumbnail_url: https://i.ytimg.com/vi/Nhx9KZwl_5A/hqdefault.jpg
-  title: Autonomous Manipulation (IRP2008)
-- channel_title: Personal Robotics Lab
-  description: 'Covariant functional gradient techniques for motion planning via optimization.  Experimental
-    platforms: Barrett Technologies WAM arm, Boston Dynamics LittleDog'
-  id: HVRbEa6px4Y
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2009-03-11T23:50:36Z'
-  thumbnail_url: https://i.ytimg.com/vi/HVRbEa6px4Y/hqdefault.jpg
-  title: 'CHOMP: Covariant Hamiltonian Optimization for Motion Planning'
-- channel_title: Personal Robotics Lab
-  description: Intel Research / CMU - BiSpace planning
-  id: icGHehxtTcc
-  playlist_id: FLv0BqZMqV5xNa5JOkibxOpw
-  published_at: '2009-03-11T23:50:25Z'
-  thumbnail_url: https://i.ytimg.com/vi/icGHehxtTcc/hqdefault.jpg
-  title: Intel Research / CMU - BiSpace planning

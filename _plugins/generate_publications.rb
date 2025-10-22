@@ -52,5 +52,15 @@ Jekyll::Hooks.register :site, :after_init do |site|
   else
     Jekyll.logger.warn "Mentoring:", "Mentoring generation failed - mentoring data may be out of date"
   end
+  
+  # Run the Python script to generate press.yml
+  Jekyll.logger.info "Press:", "Generating press data..."
+  press_result = system("uv run python scripts/generate_press.py > /dev/null 2>&1")
+  
+  if press_result
+    Jekyll.logger.info "Press:", "Press generation complete!"
+  else
+    Jekyll.logger.warn "Press:", "Press generation failed - press data may be out of date"
+  end
 end
 

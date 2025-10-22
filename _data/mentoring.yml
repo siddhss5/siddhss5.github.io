@@ -25,7 +25,13 @@ current:
     Start: '2022'
     Finish: ''
     NowAt: ''
-  ms_students: []
+  ms_students:
+  - Name: Jose Jaime
+    Coadvisor: ''
+    Title: ''
+    Start: '2023'
+    Finish: ''
+    NowAt: ''
 alumni:
   postdocs:
   - Name: Taylor Kessler Faulkner
@@ -114,7 +120,7 @@ alumni:
     Title: Optimizing the Design of Robot Environments via Interleaved Optimization and White-Box Motion-Planning
     Start: '2017'
     Finish: '2022'
-    NowAt: Researcher @ Motional
+    NowAt: Researcher @ Waymo
   - Name: Brian Hou
     Coadvisor: ''
     Title: Robot Motion Planning with Uncertainty and Urgency
@@ -126,7 +132,7 @@ alumni:
     Title: Perspectives on Policy Learning
     Start: '2016'
     Finish: '2022'
-    NowAt: Researcher @ Cruise
+    NowAt: Researcher @ Waymo
   - Name: Patrick Lancaster
     Coadvisor: Josh Smith
     Title: Towards Dexterous In-Hand Manipulation via Electrostatic Braking and Pre-touch Sensing
@@ -156,25 +162,25 @@ alumni:
     Title: Algorithms and Implementation and Studies on Eating with a Shared Control Robot Arm
     Start: '2013'
     Finish: '2018'
-    NowAt: Senior Robotics Research Scientist @ iRobot
+    NowAt: Director of Robot Perception @ Robotics and AI Institute
   - Name: Zita Marinho
     Coadvisor: Geoff Gordon
     Title: Moment-based Algorithms for Structured Prediction
     Start: '2012'
     Finish: '2018'
-    NowAt: Researcher @ Sacoor Brothers
+    NowAt: Research Scientist @ DeepMind
   - Name: Shervin Javdani
     Coadvisor: Drew Bagnell
     Title: Acting under Uncertainty for Information Gathering and Shared Autonomy
     Start: '2011'
     Finish: '2017'
-    NowAt: Robotics Engineer @ Aurora
+    NowAt: Researcher @ Aurora
   - Name: Matt Klingensmith
     Coadvisor: Michael Kaess
     Title: Tracking and Calibrating Robot Arms using SLAM Techniques
     Start: '2013'
     Finish: '2016'
-    NowAt: Roboticist @ Boston Dynamics
+    NowAt: Autonomy Engineer @ Wayve
   - Name: Jennifer King
     Coadvisor: ''
     Title: Robust Rearrangement Planning using Nonprehensile Interaction
@@ -186,7 +192,7 @@ alumni:
     Title: Robust Manipulation via Contact Sensing
     Start: '2012'
     Finish: '2016'
-    NowAt: Software Engineer @ Waymo
+    NowAt: Researcher @ Waymo
   - Name: Christopher Dellin
     Coadvisor: ''
     Title: Completing Manipulation Tasks Efficiently in Complex Environments
@@ -241,7 +247,7 @@ alumni:
     Title: Anytime Geometric Motion Planning on Large Dense Roadmaps
     Start: '2015'
     Finish: '2017'
-    NowAt: Ph.D. @ Stanford
+    NowAt: AI Software Engineer @ Google Research
   - Name: Rosario Scalise
     Coadvisor: Stephanie Rosenthal
     Title: Human-Centered Design of Robot Explanations
@@ -265,7 +271,7 @@ alumni:
     Title: 'ROCK: Robust Object Constellation for Kinematic Pose'
     Start: '2013'
     Finish: '2015'
-    NowAt: Ph.D. @ UW
+    NowAt: Postdoc @ Harvard
   - Name: Elizabeth Cha
     Coadvisor: Jodi Forlizzi
     Title: 'Robots in the Home: Qualitative and Quantitative Insights into Kitchen Organization'

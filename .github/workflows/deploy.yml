@@ -34,9 +34,13 @@ jobs:
       run: |
         pip install git+https://github.com/siddhss5/labdata.git
 
+    - name: Sync config from lab.yaml
+      run: |
+        python scripts/sync_config.py
+
     - name: Generate site data with labdata
       run: |
-        labdata generate
+        labdata --config lab.yaml --output site/_data/lab.yml
 
     - name: Build Jekyll site
       run: |

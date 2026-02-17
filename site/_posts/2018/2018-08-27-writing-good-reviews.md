@@ -2,7 +2,7 @@
 title: "Writing Good Reviews"
 excerpt_separator: "<!--more-->"
 categories:
-  - Academic advice
+  - academic-advice
 tags:
   - reviewing
   - writing

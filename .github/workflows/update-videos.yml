@@ -1,0 +1,51 @@
+name: Update YouTube Videos
+
+on:
+  schedule:
+    # Run weekly on Sundays at 3 AM UTC
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+
+jobs:
+  update-videos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install pyyaml requests
+
+    - name: Generate videos data
+      env:
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      run: |
+        if [ -n "$YOUTUBE_API_KEY" ]; then
+          python scripts/generate_videos.py
+          echo "✅ Videos data updated"
+        else
+          echo "⚠️  No YouTube API key found, skipping update"
+          exit 1
+        fi
+
+    - name: Commit and push if changed
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add site/_data/videos.yml
+        if git diff --staged --quiet; then
+          echo "No changes to videos.yml"
+        else
+          git commit -m "Update YouTube videos data"
+          git push
+          echo "✅ Pushed updated videos.yml"
+        fi

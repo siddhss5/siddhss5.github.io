@@ -2,7 +2,7 @@
 title: "The Academic Research Flywheel"
 excerpt_separator: "<!--more-->"
 categories:
-  - Academic advice
+  - academic-advice
 tags:
   - research
   - productivity

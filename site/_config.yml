@@ -1,0 +1,74 @@
+title: Siddhartha Srinivasa
+email: siddh@cs.washington.edu
+description: Professor at University of Washington, full-stack roboticist
+twitter_username: siddhss5
+github_username: siddhss5
+minimal_mistakes_skin: sunrise
+search: true
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+watch: true
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: null
+include:
+- _pages
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jekyll-feed
+- jemoji
+- jekyll-include-cache
+author:
+  name: Siddhartha Srinivasa
+  avatar: /assets/images/siddh-square.jpg
+  bio: Professor at University of Washington, full-stack roboticist
+  links:
+  - label: Lab Website
+    icon: fa fa-users
+    url: https://personalrobotics.cs.washington.edu/
+  - label: Google Scholar
+    icon: fas fa-graduation-cap
+    url: https://scholar.google.com/citations?user=RCi98EAAAAAJ&hl=en
+  - label: Twitter
+    icon: fab fa-fw fa-twitter-square
+    url: https://twitter.com/siddhss5
+  - label: GitHub
+    icon: fab fa-fw fa-github
+    url: https://github.com/siddhss5
+  - label: Contact
+    icon: far fa-envelope
+    url: /contact/
+footer:
+  links:
+  - label: Twitter
+    icon: fab fa-fw fa-twitter-square
+    url: https://twitter.com/siddhss5
+  - label: Contact
+    icon: far fa-envelope
+    url: /contact/
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: single
+    author_profile: true
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

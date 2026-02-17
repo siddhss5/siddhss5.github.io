@@ -2,9 +2,9 @@ name: Build and Deploy Site
 
 on:
   push:
-    branches: [ main, minimal-mistakes, labdata-rebase ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, minimal-mistakes, labdata-rebase ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -48,7 +48,7 @@ jobs:
         bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
-      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/minimal-mistakes')
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

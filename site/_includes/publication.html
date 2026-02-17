@@ -1,4 +1,4 @@
-<div class="pub-entry" style="margin-bottom: 1.5em;" data-searchable="{{ include.pub.title | downcase }} {{ include.pub.authors | map: 'name' | join: ' ' | downcase }} {{ include.pub.venue | downcase }} {{ include.pub.bib_id | downcase }}">
+<div class="pub-entry" id="{{ include.pub.bib_id }}" style="margin-bottom: 1.5em;" data-searchable="{{ include.pub.title | downcase }} {{ include.pub.authors | map: 'name' | join: ' ' | downcase }} {{ include.pub.venue | downcase }} {{ include.pub.bib_id | downcase }}">
   <div style="margin-bottom: 0.3em;">
     {% if include.pub.pdf_url %}
       <a href="{{ include.pub.pdf_url }}"><strong>{{ include.pub.title }}</strong></a>

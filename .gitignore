@@ -4,6 +4,7 @@ site/.sass-cache
 site/.jekyll-metadata
 site/jekyll.log
 site/Gemfile.lock
+jekyll.log
 
 # Generated data files
 site/_data/lab.yml
@@ -15,6 +16,7 @@ site/_data/videos_config.yaml
 .venv
 __pycache__/
 *.pyc
+uv.lock
 
 # System files
 .DS_Store

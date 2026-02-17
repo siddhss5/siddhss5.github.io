@@ -10,7 +10,7 @@ header:
 
 ![PRL Team 2024](/assets/images/PRL-2024.jpg)
 
-{% assign people = site.data.people %}
+{% assign people = site.data.lab.people %}
 {% assign current_postdocs = people | where: "role", "postdoc" | where: "status", "current" %}
 {% assign current_phd = people | where: "role", "phd_student" | where: "status", "current" %}
 {% assign current_ms = people | where: "role", "ms_student" | where: "status", "current" %}

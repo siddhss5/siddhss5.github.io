@@ -1,0 +1,455 @@
+# People data for the lab
+# Format: list of people with id, name, role, status, and other metadata
+
+# Faculty
+- id: srinivasa
+  name: Siddhartha Srinivasa
+  role: professor
+  status: current
+  website: https://goodrobot.ai
+
+# Current PhD Students
+- id: pronovost
+  name: Ethan Pronovost
+  role: phd_student
+  status: current
+  start_year: 2024
+
+- id: yunchu-zhang
+  name: Yunchu Zhang
+  role: phd_student
+  status: current
+  start_year: 2023
+  co_advisor: Abhishek Gupta
+
+- id: talia
+  name: Sidharth Talia
+  role: phd_student
+  status: current
+  start_year: 2022
+
+- id: helen-wang
+  name: Helen Wang
+  role: phd_student
+  status: current
+  start_year: 2022
+  co_advisor: Dieter Fox
+
+# Current MS Students
+- id: jaime
+  name: Jose Jaime
+  role: ms_student
+  status: current
+  start_year: 2023
+
+# Alumni Postdocs
+- id: faulkner
+  name: Taylor Kessler Faulkner
+  role: postdoc
+  status: alumni
+  start_year: 2022
+  end_year: 2024
+  current_position: Lecturer @ University of Washington
+
+- id: mavrogiannis
+  name: Christoforos Mavrogiannis
+  role: postdoc
+  status: alumni
+  start_year: 2019
+  end_year: 2023
+  current_position: Assistant Professor @ Michigan
+
+- id: choudhury
+  name: Sanjiban Choudhury
+  role: postdoc
+  status: alumni
+  start_year: 2018
+  end_year: 2019
+  current_position: Assistant Professor @ Cornell
+
+- id: barnes
+  name: Matthew Barnes
+  role: postdoc
+  status: alumni
+  start_year: 2018
+  end_year: 2019
+  current_position: Researcher @ Google
+
+- id: bhattacharjee
+  name: Tapomayukh Bhattacharjee
+  role: postdoc
+  status: alumni
+  start_year: 2017
+  end_year: 2021
+  current_position: Assistant Professor @ Cornell
+
+- id: salzman
+  name: Oren Salzman
+  role: postdoc
+  status: alumni
+  start_year: 2016
+  end_year: 2019
+  current_position: Assistant Professor @ Technion
+
+- id: yi
+  name: Daqing Yi
+  role: postdoc
+  status: alumni
+  start_year: 2016
+  end_year: 2018
+  current_position: Researcher @ Google
+
+- id: admoni
+  name: Henny Admoni
+  role: postdoc
+  status: alumni
+  start_year: 2015
+  end_year: 2017
+  current_position: Assistant Professor @ CMU
+
+- id: johnson
+  name: Aaron Johnson
+  role: postdoc
+  status: alumni
+  start_year: 2015
+  end_year: 2016
+  current_position: Assistant Professor @ CMU
+
+- id: velagapudi
+  name: Prasanna Velagapudi
+  role: postdoc
+  status: alumni
+  start_year: 2012
+  end_year: 2014
+  current_position: CTO @ Agility
+
+# Alumni PhD Students
+- id: nanavati
+  name: Amal Nanavati
+  role: phd_student
+  status: alumni
+  start_year: 2019
+  end_year: 2025
+  co_advisor: Maya Cakmak
+  thesis_title: "Towards In-Home Deployments of Physically Assistive Robots: Insights from Robot-Assisted Feeding for People with Motor Impairments"
+  current_position: Researcher @ Zoox
+
+- id: schmittle
+  name: Matthew Schmittle
+  role: phd_student
+  status: alumni
+  start_year: 2018
+  end_year: 2025
+  thesis_title: Off-Road Navigation Under Sensing Uncertainty
+  current_position: Researcher @ Overland AI
+
+- id: gordon
+  name: Ethan Gordon
+  role: phd_student
+  status: alumni
+  start_year: 2018
+  end_year: 2024
+  thesis_title: Tractably Adaptable Food Manipulation for Robot-Assisted Feeding
+  current_position: Postdoc @ Penn
+
+- id: ke
+  name: Liyiming Ke
+  role: phd_student
+  status: alumni
+  start_year: 2017
+  end_year: 2024
+  co_advisor: Abhishek Gupta
+  thesis_title: "Teach Robot to Use Chopsticks: a Test Bed for Robotic Learning via Fine Manipulation"
+  current_position: Researcher @ Physical Intelligence
+
+- id: agnew
+  name: William Agnew
+  role: phd_student
+  status: alumni
+  start_year: 2017
+  end_year: 2023
+  thesis_title: Human Priors for Reinforcement Learning
+  current_position: Postdoc @ CMU
+
+- id: niyaz
+  name: Sherdil Niyaz
+  role: phd_student
+  status: alumni
+  start_year: 2017
+  end_year: 2022
+  thesis_title: Optimizing the Design of Robot Environments via Interleaved Optimization and White-Box Motion-Planning
+  current_position: Researcher @ Waymo
+
+- id: hou
+  name: Brian Hou
+  role: phd_student
+  status: alumni
+  start_year: 2016
+  end_year: 2022
+  thesis_title: Robot Motion Planning with Uncertainty and Urgency
+  current_position: Researcher @ Aurora
+
+- id: ainsworth
+  name: Samuel Ainsworth
+  role: phd_student
+  status: alumni
+  start_year: 2016
+  end_year: 2022
+  thesis_title: Perspectives on Policy Learning
+  current_position: Researcher @ Waymo
+
+- id: lancaster
+  name: Patrick Lancaster
+  role: phd_student
+  status: alumni
+  start_year: 2014
+  end_year: 2022
+  co_advisor: Josh Smith
+  thesis_title: Towards Dexterous In-Hand Manipulation via Electrostatic Braking and Pre-touch Sensing
+  current_position: Postdoc @ Meta
+
+- id: vamsikrishna
+  name: Aditya Vamsikrishna
+  role: phd_student
+  status: alumni
+  start_year: 2016
+  end_year: 2021
+  thesis_title: Efficient Robot Motion Planning in Cluttered Environments
+  current_position: Researcher @ Aurora
+
+- id: lee
+  name: Gilwoo Lee
+  role: phd_student
+  status: alumni
+  start_year: 2015
+  end_year: 2020
+  thesis_title: Scalable Bayesian Reinforcement Learning
+  current_position: Founder @ Zordi
+
+- id: nikolaidis
+  name: Stefanos Nikolaidis
+  role: phd_student
+  status: alumni
+  start_year: 2014
+  end_year: 2018
+  thesis_title: Mathematical Models of Adaptation in Human-Robot Collaboration
+  current_position: Assistant Professor @ USC
+
+- id: herlant
+  name: Laura Herlant
+  role: phd_student
+  status: alumni
+  start_year: 2013
+  end_year: 2018
+  thesis_title: Algorithms and Implementation and Studies on Eating with a Shared Control Robot Arm
+  current_position: Director of Robot Perception @ Robotics and AI Institute
+
+- id: marinho
+  name: Zita Marinho
+  role: phd_student
+  status: alumni
+  start_year: 2012
+  end_year: 2018
+  co_advisor: Geoff Gordon
+  thesis_title: Moment-based Algorithms for Structured Prediction
+  current_position: Research Scientist @ DeepMind
+
+- id: javdani
+  name: Shervin Javdani
+  role: phd_student
+  status: alumni
+  start_year: 2011
+  end_year: 2017
+  co_advisor: Drew Bagnell
+  thesis_title: Acting under Uncertainty for Information Gathering and Shared Autonomy
+  current_position: Researcher @ Aurora
+
+- id: klingensmith
+  name: Matt Klingensmith
+  role: phd_student
+  status: alumni
+  start_year: 2013
+  end_year: 2016
+  co_advisor: Michael Kaess
+  thesis_title: Tracking and Calibrating Robot Arms using SLAM Techniques
+  current_position: Autonomy Engineer @ Wayve
+
+- id: king
+  name: Jennifer King
+  role: phd_student
+  status: alumni
+  start_year: 2012
+  end_year: 2016
+  thesis_title: Robust Rearrangement Planning using Nonprehensile Interaction
+  current_position: Researcher @ Berkshire Grey
+
+- id: koval
+  name: Michael Koval
+  role: phd_student
+  status: alumni
+  start_year: 2012
+  end_year: 2016
+  co_advisor: Nancy Pollard
+  thesis_title: Robust Manipulation via Contact Sensing
+  current_position: Researcher @ Waymo
+
+- id: dellin
+  name: Christopher Dellin
+  role: phd_student
+  status: alumni
+  start_year: 2009
+  end_year: 2016
+  thesis_title: Completing Manipulation Tasks Efficiently in Complex Environments
+  current_position: Roboticist @ Nuro
+
+- id: dragan
+  name: Anca Dragan
+  role: phd_student
+  status: alumni
+  start_year: 2009
+  end_year: 2015
+  thesis_title: Legible Robot Motion Planning
+  current_position: Associate Professor @ Berkeley
+
+- id: dogar
+  name: Mehmet Dogar
+  role: phd_student
+  status: alumni
+  start_year: 2008
+  end_year: 2013
+  thesis_title: A Framework for Manipulation in Cluttered Environments
+  current_position: Associate Professor @ Leeds
+
+- id: collet
+  name: Alvaro Collet
+  role: phd_student
+  status: alumni
+  start_year: 2009
+  end_year: 2012
+  co_advisor: Martial Hebert
+  thesis_title: Lifelong Robotic Object Perception
+  current_position: Engineering Lead @ Facebook
+
+- id: berenson
+  name: Dmitry Berenson
+  role: phd_student
+  status: alumni
+  start_year: 2006
+  end_year: 2011
+  co_advisor: James Kuffner
+  thesis_title: Constrained Manipulation Planning
+  current_position: Associate Professor @ Michigan
+
+# Alumni MS Students
+- id: pradhan
+  name: Atharva Pradhan
+  role: ms_student
+  status: alumni
+  start_year: 2023
+  end_year: 2025
+  thesis_title: Insights from Developing a Robotic Bimanual Manipulation System
+  current_position: Engineer @ Third Wave Automation
+
+- id: jeongseok-lee
+  name: Jeongseok Lee
+  role: ms_student
+  status: alumni
+  start_year: 2016
+  end_year: 2018
+  thesis_title: A Linear-Time Variational Integrator for Multibody Systems
+  current_position: Researcher @ Meta
+
+- id: jin
+  name: Pengju Jin
+  role: ms_student
+  status: alumni
+  start_year: 2017
+  end_year: 2017
+  thesis_title: Highly Robust Pose Estimation from Single Frame RGBD
+  current_position: Researcher @ Aurora
+
+- id: shushman-choudhury
+  name: Shushman Choudhury
+  role: ms_student
+  status: alumni
+  start_year: 2015
+  end_year: 2017
+  thesis_title: Anytime Geometric Motion Planning on Large Dense Roadmaps
+  current_position: AI Software Engineer @ Google Research
+
+- id: scalise
+  name: Rosario Scalise
+  role: ms_student
+  status: alumni
+  start_year: 2015
+  end_year: 2017
+  co_advisor: Stephanie Rosenthal
+  thesis_title: Human-Centered Design of Robot Explanations
+  current_position: Ph.D. @ UW
+
+- id: shen-li
+  name: Shen Li
+  role: ms_student
+  status: alumni
+  start_year: 2015
+  end_year: 2017
+  co_advisor: Stephanie Rosenthal
+  thesis_title: Automatically Evaluating and Generating Clear Robot Explanations
+  current_position: Ph.D. @ MIT
+
+- id: shapiro
+  name: Evan Shapiro
+  role: ms_student
+  status: alumni
+  start_year: 2013
+  end_year: 2015
+  thesis_title: A Hierarchical Framework for Configuration Space Task Planning
+  current_position: CEO @ Mina Foundation
+
+- id: walsman
+  name: Aaron Walsman
+  role: ms_student
+  status: alumni
+  start_year: 2013
+  end_year: 2015
+  thesis_title: "ROCK: Robust Object Constellation for Kinematic Pose"
+  current_position: Postdoc @ Harvard
+
+- id: cha
+  name: Elizabeth Cha
+  role: ms_student
+  status: alumni
+  start_year: 2012
+  end_year: 2014
+  co_advisor: Jodi Forlizzi
+  thesis_title: "Robots in the Home: Qualitative and Quantitative Insights into Kitchen Organization"
+  current_position: Researcher @ Waymo
+
+- id: strabala
+  name: Kyle Strabala
+  role: ms_student
+  status: alumni
+  start_year: 2010
+  end_year: 2012
+  thesis_title: Learning the Communication of Intent Prior to Physical Collaboration
+  current_position: Scientist @ Near Earth Autonomy
+
+- id: herrmann
+  name: Martin Herrmann
+  role: ms_student
+  status: alumni
+  start_year: 2009
+  end_year: 2009
+  co_advisor: Dr.-Inf. Uwe Hanebeck @ Universitat Karlsruhe
+  thesis_title: Active scene and object reconstruction for robotic manipulation from vision and laser
+  current_position: TU Braunschweig
+
+- id: gallagher
+  name: Garratt Gallagher
+  role: ms_student
+  status: alumni
+  start_year: 2007
+  end_year: 2009
+  co_advisor: Drew Bagnell
+  thesis_title: "GATMO: A Generalized Approach to Tracking Movable Objects"
+  current_position: Google Robotics

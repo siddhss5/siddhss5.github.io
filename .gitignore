@@ -8,6 +8,8 @@ jekyll.log
 
 # Generated data files
 site/_data/lab.yml
+site/_data/awards.yml
+site/_data/press.yml
 
 # Local configuration with API keys
 site/_data/videos_config.yaml

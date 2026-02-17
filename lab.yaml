@@ -23,3 +23,5 @@ bib_files:
 pdf_base_url: "https://personalrobotics.cs.washington.edu/publications"
 people_file: "data/people.yaml"
 projects_file: "data/projects.yaml"
+awards_file: "data/awards.yaml"
+press_file: "data/press.yaml"

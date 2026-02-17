@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/miscellaneous%20tricks/an-untangled-web/</loc>
+<loc>/miscellaneous-tricks/an-untangled-web/</loc>
 <lastmod>2022-09-26T14:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/academic%20advice/writing-good-reviews/</loc>
+<loc>/academic-advice/writing-good-reviews/</loc>
 <lastmod>2018-08-27T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/academic%20advice/academic-research-flywheel/</loc>
+<loc>/academic-advice/academic-research-flywheel/</loc>
 <lastmod>2020-01-07T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -49,10 +49,7 @@
 <loc>/posts/</loc>
 </url>
 <url>
-<loc>/SETUP/</loc>
-</url>
-<url>
 <loc>/assets/SiddharthaSrinivasaCV.pdf</loc>
-<lastmod>2025-10-22T17:05:25+00:00</lastmod>
+<lastmod>2026-02-17T03:27:55+00:00</lastmod>
 </url>
 </urlset>

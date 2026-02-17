@@ -1,0 +1,20 @@
+lab:
+  name: "Siddhartha Srinivasa"
+  description: "Professor at University of Washington - Full-stack roboticist working on motion planning, manipulation, and human-robot interaction"
+  university: "University of Washington"
+  department: "Paul G. Allen School of Computer Science & Engineering"
+  website: "https://goodrobot.ai"
+  github: "https://github.com/siddhss5"
+
+bib_dir: "data/pubs"
+bib_files:
+  - name: "siddpubs-journal.bib"
+    category: "Journal Papers"
+  - name: "siddpubs-conf.bib"
+    category: "Conference Papers"
+  - name: "siddpubs-misc.bib"
+    category: "Other Publications"
+
+pdf_base_url: "https://personalrobotics.cs.washington.edu/publications"
+people_file: "data/people.yaml"
+projects_file: "data/projects.yaml"

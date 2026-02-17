@@ -1,10 +1,15 @@
+# Lab configuration (also update site/_config.yml when changing name/description/links)
 lab:
   name: "Siddhartha Srinivasa"
-  description: "Professor at University of Washington - Full-stack roboticist working on motion planning, manipulation, and human-robot interaction"
+  description: "Professor at University of Washington, full-stack roboticist"
   university: "University of Washington"
   department: "Paul G. Allen School of Computer Science & Engineering"
   website: "https://goodrobot.ai"
+  lab_website: "https://personalrobotics.cs.washington.edu/"
+  google_scholar: "https://scholar.google.com/citations?user=RCi98EAAAAAJ&hl=en"
+  twitter: "https://twitter.com/siddhss5"
   github: "https://github.com/siddhss5"
+  email: "siddh@cs.washington.edu"
 
 bib_dir: "data/pubs"
 bib_files:

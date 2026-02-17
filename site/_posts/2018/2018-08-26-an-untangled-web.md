@@ -3,7 +3,7 @@ title: "A Tangled Web, Slightly Untangled"
 last_modified_at: 2022-09-26T14:00:00
 excerpt_separator: "<!--more-->"
 categories:
-  - Miscellaneous tricks
+  - miscellaneous-tricks
 tags:
   - web
   - jekyll

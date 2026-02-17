@@ -48,7 +48,7 @@ jobs:
         bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
-      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/minimal-mistakes' || github.ref == 'refs/heads/labdata-rebase')
+      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/minimal-mistakes')
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

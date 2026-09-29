@@ -58,8 +58,11 @@ header:
       {% include author_list.html authors=pub.authors %}
     {% endif %}
     {% if pub.venue %} — {% include venue.html work=pub %}{% endif %}
+    {% for award in pub.awards %}
+    <br><strong>{{ award.name | escape }}</strong>
+    {% endfor %}
     {% if pub.note %}
-    <br><strong>{{ pub.note | escape }}</strong>
+    <br>{{ pub.note | escape }}
     {% endif %}
   </div>
 

@@ -14,8 +14,8 @@ Siddhartha Srinivasa is a Professor at The Paul G. Allen School of Computer Scie
 
 ## Awards
 
-| Year(s)   |Award           | Paper  |
-|----------:|:---------------|:-------|
-{% for award in site.data.awards %}|{{ award.year }}|{{ award.award }}|{% if award.pub_title %}[{{ award.pub_title }}]({{ award.pub_link }}){% endif %}|
+| Year(s)   |Award           | Conference | Paper  |
+|----------:|:---------------|:-----------|:-------|
+{% for award in site.data.awards %}|{{ award.year }}|{{ award.award }}|{{ award.conference }}|{% if award.pub_title %}[{{ award.pub_title }}]({{ award.pub_link }}){% endif %}|
 {% endfor %}
 

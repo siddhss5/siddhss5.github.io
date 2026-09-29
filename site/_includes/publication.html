@@ -23,7 +23,8 @@
   </div>
   <div style="margin-bottom: 0.3em;">
     {{ venue }}
-    {% if include.pub.note %}<br><strong>{{ include.pub.note | escape }}</strong>{% endif %}
+    {% for award in include.pub.awards %}<br><strong>{{ award.name | escape }}{% if award.year and award.year != include.pub.year %}, {{ award.year }}{% endif %}</strong>{% endfor %}
+    {% if include.pub.note %}<br>{{ include.pub.note | escape }}{% endif %}
   </div>
   <div>
     {% if doi %}

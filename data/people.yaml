@@ -11,6 +11,12 @@
   website: https://goodrobot.ai
 
 # Current PhD Students
+- id: mesbahi
+  name: Milad Mesbahi
+  role: phd_student
+  status: current
+  start_year: 2026
+
 - id: pronovost
   name: Ethan Pronovost
   role: phd_student

@@ -17,7 +17,7 @@ header:
   <div id="pub-search-count" style="margin-top: 0.3em; font-size: 0.85em; color: #666;"></div>
 </div>
 
-{% assign pubs = site.data.lab.publications %}
+{% assign pubs = site.data.lab.works %}
 {% assign years = pubs | map: "year" | uniq | sort | reverse %}
 
 {% for year in years %}

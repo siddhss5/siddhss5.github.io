@@ -23,5 +23,6 @@ bib_files:
 pdf_base_url: "https://personalrobotics.cs.washington.edu/publications"
 people_file: "data/people.yaml"
 projects_file: "data/projects.yaml"
-awards_file: "data/awards.yaml"
-press_file: "data/press.yaml"
+
+# data/awards.yaml and data/press.yaml are not sslabdata inputs;
+# scripts/sync_config.py copies them straight to site/_data/.

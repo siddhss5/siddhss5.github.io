@@ -4,6 +4,7 @@
 # Faculty
 - id: srinivasa
   name: Siddhartha Srinivasa
+  aliases: ["S. Srinivasa", "S. S. Srinivasa", "Siddhartha S. Srinivasa"]
   role: professor
   status: current
   website: https://goodrobot.ai
@@ -24,12 +25,14 @@
 
 - id: talia
   name: Sidharth Talia
+  aliases: ["S. Talia"]
   role: phd_student
   status: current
   start_year: 2022
 
 - id: helen-wang
   name: Helen Wang
+  aliases: ["Yi Ru Wang", "YR. Wang", "Y.R. Wang"]
   role: phd_student
   status: current
   start_year: 2022
@@ -45,6 +48,7 @@
 # Alumni Postdocs
 - id: faulkner
   name: Taylor Kessler Faulkner
+  aliases: ["T.A.K. Faulkner", "Taylor A. Kessler Faulkner"]
   role: postdoc
   status: alumni
   start_year: 2022
@@ -53,6 +57,7 @@
 
 - id: mavrogiannis
   name: Christoforos Mavrogiannis
+  aliases: ["C. Mavrogiannis"]
   role: postdoc
   status: alumni
   start_year: 2019
@@ -69,6 +74,7 @@
 
 - id: barnes
   name: Matthew Barnes
+  aliases: ["M. Barnes"]
   role: postdoc
   status: alumni
   start_year: 2018
@@ -77,6 +83,7 @@
 
 - id: bhattacharjee
   name: Tapomayukh Bhattacharjee
+  aliases: ["T. Bhattacharjee"]
   role: postdoc
   status: alumni
   start_year: 2017
@@ -85,6 +92,7 @@
 
 - id: salzman
   name: Oren Salzman
+  aliases: ["O. Salzman"]
   role: postdoc
   status: alumni
   start_year: 2016
@@ -93,6 +101,7 @@
 
 - id: yi
   name: Daqing Yi
+  aliases: ["D. Yi"]
   role: postdoc
   status: alumni
   start_year: 2016
@@ -101,6 +110,7 @@
 
 - id: admoni
   name: Henny Admoni
+  aliases: ["H. Admoni"]
   role: postdoc
   status: alumni
   start_year: 2015
@@ -109,6 +119,7 @@
 
 - id: johnson
   name: Aaron Johnson
+  aliases: ["A. Johnson"]
   role: postdoc
   status: alumni
   start_year: 2015
@@ -117,6 +128,7 @@
 
 - id: velagapudi
   name: Prasanna Velagapudi
+  aliases: ["P. Velagapudi"]
   role: postdoc
   status: alumni
   start_year: 2012
@@ -126,6 +138,7 @@
 # Alumni PhD Students
 - id: nanavati
   name: Amal Nanavati
+  aliases: ["A. Nanavati"]
   role: phd_student
   status: alumni
   start_year: 2019
@@ -136,6 +149,7 @@
 
 - id: schmittle
   name: Matthew Schmittle
+  aliases: ["M. Schmittle"]
   role: phd_student
   status: alumni
   start_year: 2018
@@ -145,6 +159,7 @@
 
 - id: gordon
   name: Ethan Gordon
+  aliases: ["E. Gordon", "E.K. Gordon", "Ethan K. Gordon"]
   role: phd_student
   status: alumni
   start_year: 2018
@@ -154,6 +169,7 @@
 
 - id: ke
   name: Liyiming Ke
+  aliases: ["L. Ke", "Ke Liyiming"]
   role: phd_student
   status: alumni
   start_year: 2017
@@ -164,6 +180,7 @@
 
 - id: agnew
   name: William Agnew
+  aliases: ["W. Agnew"]
   role: phd_student
   status: alumni
   start_year: 2017
@@ -173,6 +190,7 @@
 
 - id: niyaz
   name: Sherdil Niyaz
+  aliases: ["S. Niyaz"]
   role: phd_student
   status: alumni
   start_year: 2017
@@ -182,6 +200,7 @@
 
 - id: hou
   name: Brian Hou
+  aliases: ["B. Hou"]
   role: phd_student
   status: alumni
   start_year: 2016
@@ -191,6 +210,7 @@
 
 - id: ainsworth
   name: Samuel Ainsworth
+  aliases: ["S. Ainsworth", "Samuel K. Ainsworth"]
   role: phd_student
   status: alumni
   start_year: 2016
@@ -200,6 +220,7 @@
 
 - id: lancaster
   name: Patrick Lancaster
+  aliases: ["P. Lancaster", "P.E. Lancaster"]
   role: phd_student
   status: alumni
   start_year: 2014
@@ -210,6 +231,7 @@
 
 - id: vamsikrishna
   name: Aditya Vamsikrishna
+  aliases: ["A. Mandalika"]
   role: phd_student
   status: alumni
   start_year: 2016
@@ -219,6 +241,7 @@
 
 - id: lee
   name: Gilwoo Lee
+  aliases: ["G. Lee"]
   role: phd_student
   status: alumni
   start_year: 2015
@@ -228,6 +251,7 @@
 
 - id: nikolaidis
   name: Stefanos Nikolaidis
+  aliases: ["S. Nikolaidis"]
   role: phd_student
   status: alumni
   start_year: 2014
@@ -237,6 +261,7 @@
 
 - id: herlant
   name: Laura Herlant
+  aliases: ["L. Herlant"]
   role: phd_student
   status: alumni
   start_year: 2013
@@ -246,6 +271,7 @@
 
 - id: marinho
   name: Zita Marinho
+  aliases: ["Z. Marinho"]
   role: phd_student
   status: alumni
   start_year: 2012
@@ -256,6 +282,7 @@
 
 - id: javdani
   name: Shervin Javdani
+  aliases: ["S. Javdani"]
   role: phd_student
   status: alumni
   start_year: 2011
@@ -266,6 +293,7 @@
 
 - id: klingensmith
   name: Matt Klingensmith
+  aliases: ["M. Klingensmith", "M.K. Klingensmith"]
   role: phd_student
   status: alumni
   start_year: 2013
@@ -276,6 +304,7 @@
 
 - id: king
   name: Jennifer King
+  aliases: ["J. King"]
   role: phd_student
   status: alumni
   start_year: 2012
@@ -285,6 +314,7 @@
 
 - id: koval
   name: Michael Koval
+  aliases: ["M. Koval", "M.C. Koval", "M.K. Koval"]
   role: phd_student
   status: alumni
   start_year: 2012
@@ -295,6 +325,7 @@
 
 - id: dellin
   name: Christopher Dellin
+  aliases: ["C. Dellin", "C.M. Dellin"]
   role: phd_student
   status: alumni
   start_year: 2009
@@ -304,6 +335,7 @@
 
 - id: dragan
   name: Anca Dragan
+  aliases: ["A. Dragan", "A.D. Dragan"]
   role: phd_student
   status: alumni
   start_year: 2009
@@ -313,6 +345,7 @@
 
 - id: dogar
   name: Mehmet Dogar
+  aliases: ["M. Dogar", "M.R. Dogar"]
   role: phd_student
   status: alumni
   start_year: 2008
@@ -322,6 +355,7 @@
 
 - id: collet
   name: Alvaro Collet
+  aliases: ["A. Collet"]
   role: phd_student
   status: alumni
   start_year: 2009
@@ -332,6 +366,7 @@
 
 - id: berenson
   name: Dmitry Berenson
+  aliases: ["D. Berenson"]
   role: phd_student
   status: alumni
   start_year: 2006
@@ -352,6 +387,7 @@
 
 - id: jeongseok-lee
   name: Jeongseok Lee
+  aliases: ["J. Lee", "J.S. Lee"]
   role: ms_student
   status: alumni
   start_year: 2016
@@ -361,6 +397,7 @@
 
 - id: jin
   name: Pengju Jin
+  aliases: ["P. Jin"]
   role: ms_student
   status: alumni
   start_year: 2017
@@ -379,6 +416,7 @@
 
 - id: scalise
   name: Rosario Scalise
+  aliases: ["R. Scalise"]
   role: ms_student
   status: alumni
   start_year: 2015
@@ -389,6 +427,7 @@
 
 - id: shen-li
   name: Shen Li
+  aliases: ["S. Li"]
   role: ms_student
   status: alumni
   start_year: 2015
@@ -408,6 +447,7 @@
 
 - id: walsman
   name: Aaron Walsman
+  aliases: ["A. Walsman"]
   role: ms_student
   status: alumni
   start_year: 2013
@@ -417,6 +457,7 @@
 
 - id: cha
   name: Elizabeth Cha
+  aliases: ["E. Cha"]
   role: ms_student
   status: alumni
   start_year: 2012
@@ -427,6 +468,7 @@
 
 - id: strabala
   name: Kyle Strabala
+  aliases: ["K. Strabala"]
   role: ms_student
   status: alumni
   start_year: 2010
@@ -436,6 +478,7 @@
 
 - id: herrmann
   name: Martin Herrmann
+  aliases: ["M. Herrmann"]
   role: ms_student
   status: alumni
   start_year: 2009
@@ -446,6 +489,7 @@
 
 - id: gallagher
   name: Garratt Gallagher
+  aliases: ["G. Gallagher"]
   role: ms_student
   status: alumni
   start_year: 2007

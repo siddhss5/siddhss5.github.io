@@ -8,7 +8,7 @@ header:
 ---
 
 {% assign projects = site.data.lab.projects %}
-{% assign pubs = site.data.lab.publications %}
+{% assign pubs = site.data.lab.works %}
 
 {% for project in projects %}
 <div id="{{ project.id }}" class="project-section" style="margin-top: 2.5em;">
@@ -32,33 +32,34 @@ header:
 <p style="margin-top: 0.8em;">{{ project.description }}</p>
 {% endif %}
 
-{% if project.publication_ids.size > 0 %}
+{% if project.work_ids.size > 0 %}
 <details style="margin-top: 1em;">
 <summary style="cursor: pointer; font-weight: bold; font-size: 1.1em; padding: 0.5em 0;">
-  Publications ({{ project.publication_ids.size }})
+  Publications ({{ project.work_ids.size }})
 </summary>
 
 <div style="margin-top: 1em;">
-{% for pub_id in project.publication_ids %}
-  {% assign pub = pubs | where: "bib_id", pub_id | first %}
+{% for work_id in project.work_ids %}
+  {% assign pub = pubs | where: "bib_id", work_id | first %}
   {% if pub %}
+  {% assign pdf = pub.links.pdf | first %}
 <div class="publication-entry" style="margin-bottom: 1.2em; padding-left: 0.5em;">
 
   <div class="publication-title" style="margin-bottom: 0.2em;">
-    {% if pub.pdf_url %}
-      <a href="{{ pub.pdf_url }}">{{ pub.title }}</a>
+    {% if pdf %}
+      <a href="{{ pdf.url }}">{{ pub.title | escape }}</a>
     {% else %}
-      {{ pub.title }}
+      {{ pub.title | escape }}
     {% endif %}
   </div>
 
   <div class="publication-meta" style="font-size: 0.9em; color: #666;">
     {% if pub.authors %}
-      {% for author in pub.authors %}{{ author.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      {% include author_list.html authors=pub.authors %}
     {% endif %}
-    {% if pub.venue %} — {{ pub.venue | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}
+    {% if pub.venue %} — {% include venue.html work=pub %}{% endif %}
     {% if pub.note %}
-    <br><strong>{{ pub.note | markdownify | remove: "<p>" | remove: "</p>" }}</strong>
+    <br><strong>{{ pub.note | escape }}</strong>
     {% endif %}
   </div>
 

@@ -59,7 +59,7 @@ header:
     {% endif %}
     {% if pub.venue %} — {% include venue.html work=pub %}{% endif %}
     {% if pub.note %}
-    <br>{{ pub.note | escape }}
+    <br><strong>{{ pub.note | escape }}</strong>
     {% endif %}
   </div>
 

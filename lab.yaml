@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/siddhss5/sslabdata/input-schema-v1/schema/input/v1/lab.schema.json
 # Lab configuration (also update site/_config.yml when changing name/description/links)
 lab:
   name: "Siddhartha Srinivasa"

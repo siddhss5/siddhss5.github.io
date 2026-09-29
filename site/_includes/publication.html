@@ -2,6 +2,13 @@
 {%- assign doi = include.pub.links.doi | first -%}
 {%- assign arxiv = include.pub.links.arxiv | first -%}
 {%- assign video = include.pub.links.video | first -%}
+{%- comment -%} a url that just repeats the pdf/doi/arxiv/video link is not a website {%- endcomment -%}
+{%- assign website = include.pub.links.url | first -%}
+{%- if website -%}
+{%- if website.url == pdf.url or website.url == doi.url or website.url == arxiv.url or website.url == video.url -%}
+{%- assign website = false -%}
+{%- endif -%}
+{%- endif -%}
 {%- capture venue -%}{% include venue.html work=include.pub %}{%- endcapture -%}
 <div class="pub-entry" id="{{ include.pub.bib_id }}" style="margin-bottom: 1.5em;" data-searchable="{{ include.pub.title | downcase | escape }} {{ include.pub.authors | map: 'name' | join: ' ' | downcase | escape }} {{ include.pub.venue.name | downcase | escape }} {{ include.pub.bib_id | downcase }}">
   <div style="margin-bottom: 0.3em;">
@@ -16,7 +23,7 @@
   </div>
   <div style="margin-bottom: 0.3em;">
     {{ venue }}
-    {% if include.pub.note %}<br><strong>{{ include.pub.note | escape }}</strong>{% endif %}
+    {% if include.pub.note %}<br>{{ include.pub.note | escape }}{% endif %}
   </div>
   <div>
     {% if doi %}
@@ -24,6 +31,9 @@
     {% endif %}
     {% if arxiv %}
       <a href="{{ arxiv.url }}" class="btn btn--inverse btn--small" target="_blank">arXiv</a>
+    {% endif %}
+    {% if website %}
+      <a href="{{ website.url }}" class="btn btn--inverse btn--small" target="_blank">Website</a>
     {% endif %}
     {% if include.pub.abstract %}
       <button class="btn btn--inverse btn--small" onclick="this.parentElement.parentElement.querySelector('.pub-abstract').toggleAttribute('open')">Abstract</button>

@@ -48,6 +48,12 @@ cd site && bundle exec jekyll serve
 Check the inputs without writing output: `sslabdata --config lab.yaml --validate`
 (unmatched author names: `--unresolved`).
 
+`lab.yaml`, `data/people.yaml` and `data/projects.yaml` each name their JSON
+Schema on the first line, so an editor running the YAML language server (the
+VS Code YAML extension, among others) checks and completes them as you type.
+The schemas are served from sslabdata's `input-schema-v1` tag, which never
+moves.
+
 ## Editing Content
 
 ### Profile & Links

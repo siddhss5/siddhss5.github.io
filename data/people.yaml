@@ -10,6 +10,13 @@
   status: current
   website: https://goodrobot.ai
 
+# Current Postdocs
+- id: loew
+  name: Tobias Löw
+  role: postdoc
+  status: current
+  start_year: 2026
+
 # Current PhD Students
 - id: mesbahi
   name: Milad Mesbahi

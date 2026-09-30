@@ -93,6 +93,26 @@ so it must run *after* sslabdata.
 **Auto-updated:** Weekly via GitHub Actions
 **Manual:** `python scripts/generate_videos.py`
 
+### CV
+
+**Edit:** the LaTeX sources in [siddhss5/sidd-cv](https://github.com/siddhss5/sidd-cv)
+**Build:** that repo compiles and commits `sidd-cv.pdf`, then tells this one to
+rebuild; deploy fetches it to `site/assets/SiddharthaSrinivasaCV.pdf`, so the
+PDF is not committed here.
+
+The two repos notify each other, each needing its own fine-grained PAT:
+
+| when | who tells whom | event | secret |
+|------|----------------|-------|--------|
+| `data/{people,awards,press}.yaml` changes here | this repo → sidd-cv | `yaml-updated` | `CV_REPO_PAT` here |
+| the CV PDF is rebuilt there | sidd-cv → this repo | `cv-updated` | `SITE_REPO_PAT` there | A local `jekyll serve` has no copy and the link on
+`/cv/` 404s until you fetch one:
+
+```bash
+curl -fsSL -o site/assets/SiddharthaSrinivasaCV.pdf \
+  https://raw.githubusercontent.com/siddhss5/sidd-cv/main/sidd-cv.pdf
+```
+
 ## Deployment
 
 Push to `main` or `minimal-mistakes` triggers:

@@ -1,0 +1,35 @@
+name: Trigger CV Build
+
+# The CV in siddhss5/sidd-cv builds its mentoring, honours and press sections
+# from these files. Tell it when they change, so the PDF does not sit stale
+# until someone pushes there.
+#
+# A paper's awards are not here: they live in the `award` field of the paper's
+# BibTeX entry, and sidd-cv picks those up when it syncs pubs.
+#
+# Needs a fine-grained PAT with Actions: write on siddhss5/sidd-cv, stored here
+# as the secret CV_REPO_PAT. Sending the dispatch is all this workflow does, so
+# it fails loudly when the token is missing or expired - there is no other work
+# in the run to protect.
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/people.yaml'
+      - 'data/awards.yaml'
+      - 'data/press.yaml'
+  workflow_dispatch:
+
+jobs:
+  trigger-cv-build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Trigger CV repository build
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.CV_REPO_PAT }}
+        repository: siddhss5/sidd-cv
+        event-type: yaml-updated
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'

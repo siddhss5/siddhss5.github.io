@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  # siddhss5/sidd-cv sends this when it commits a rebuilt CV PDF
+  repository_dispatch:
+    types: [ cv-updated ]
   workflow_dispatch:
 
 jobs:
@@ -42,13 +45,19 @@ jobs:
       run: |
         python scripts/sync_config.py
 
+    - name: Fetch the latest CV
+      run: |
+        curl -fsSL -o site/assets/SiddharthaSrinivasaCV.pdf \
+          https://raw.githubusercontent.com/siddhss5/sidd-cv/main/sidd-cv.pdf
+        ls -l site/assets/SiddharthaSrinivasaCV.pdf
+
     - name: Build Jekyll site
       run: |
         cd site
         bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
-      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch') && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

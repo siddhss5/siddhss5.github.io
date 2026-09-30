@@ -6,6 +6,9 @@ site/jekyll.log
 site/Gemfile.lock
 jekyll.log
 
+# Fetched at build time from siddhss5/sidd-cv
+site/assets/SiddharthaSrinivasaCV.pdf
+
 # Generated data files
 site/_data/lab.yml
 site/_data/awards.yml

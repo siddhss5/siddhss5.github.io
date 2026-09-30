@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Sync site/_config.yml and data files from source (single source of truth)."""
 
-import yaml
+import re
 import shutil
+
+import yaml
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -73,10 +75,76 @@ def sync_config():
     print(f"✅ Synced {JEKYLL_CONFIG.name} from {LAB_CONFIG.name}")
 
 
+def assemble_awards():
+    """Build site/_data/awards.yml from the two places an award can come from.
+
+    A paper's awards live in its BibTeX `award` field and reach us through
+    sslabdata, in site/_data/lab.yml. An award a person holds - a fellowship, a
+    chair - is not a property of any paper and lives in data/awards.yaml. The
+    site shows one table, so they are merged here, newest first, with the
+    conference taken from the work's own venue rather than repeated in the
+    award's name.
+    """
+
+    honours_file = DATA_DIR / "awards.yaml"
+    lab_file = SITE_DATA_DIR / "lab.yml"
+
+    if not lab_file.exists():
+        raise SystemExit(
+            f"{lab_file} is missing: run sslabdata before this script "
+            "(paper awards are read from it)"
+        )
+
+    with open(honours_file) as f:
+        honours = yaml.safe_load(f) or []
+    with open(lab_file) as f:
+        lab = yaml.safe_load(f)
+
+    rows = []
+    for honour in honours:
+        if honour.get("pub_link"):
+            raise SystemExit(
+                f"{honours_file}: '{honour['award']}' has a pub_link, so it is a "
+                "paper award - put it in that entry's BibTeX award field instead"
+            )
+        rows.append({
+            "year": str(honour["year"]),
+            "award": honour["award"],
+            "conference": "",
+            "pub_title": "",
+            "pub_link": "",
+        })
+
+    paper_awards = 0
+    for work in lab["works"]:
+        for award in work.get("awards") or []:
+            rows.append({
+                "year": str(award["year"]) if award["year"] else "",
+                "award": award["name"],
+                "conference": (work.get("venue") or {}).get("name") or "",
+                "pub_title": work["title"],
+                "pub_link": f"/publications/#{work['bib_id']}",
+            })
+            paper_awards += 1
+
+    def newest_first(row):
+        match = re.match(r"(\d{4})", row["year"])
+        return int(match.group(1)) if match else 0
+
+    rows.sort(key=newest_first, reverse=True)
+
+    dest = SITE_DATA_DIR / "awards.yml"
+    with open(dest, "w") as f:
+        yaml.dump(rows, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+
+    print(f"✅ Assembled site/_data/awards.yml: {len(honours)} honours + "
+          f"{paper_awards} paper awards")
+
+
 def sync_data_files():
     """Copy static data files from data/ to site/_data/ for Jekyll."""
 
-    files_to_sync = ['awards.yaml', 'press.yaml']
+    files_to_sync = ['press.yaml']
 
     for filename in files_to_sync:
         src = DATA_DIR / filename
@@ -94,3 +162,4 @@ def sync_data_files():
 if __name__ == "__main__":
     sync_config()
     sync_data_files()
+    assemble_awards()

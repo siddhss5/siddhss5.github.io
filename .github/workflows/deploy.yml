@@ -32,15 +32,15 @@ jobs:
 
     - name: Install sslabdata
       run: |
-        pip install sslabdata==3.1.0
-
-    - name: Sync config from lab.yaml
-      run: |
-        python scripts/sync_config.py
+        pip install sslabdata==4.0.0
 
     - name: Generate site data with sslabdata
       run: |
         sslabdata --config lab.yaml --output site/_data/lab.yml
+
+    - name: Sync config and assemble awards
+      run: |
+        python scripts/sync_config.py
 
     - name: Build Jekyll site
       run: |

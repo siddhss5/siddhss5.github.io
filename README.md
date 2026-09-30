@@ -73,8 +73,13 @@ moves.
 **Build:** Automatic (sslabdata links publications via the `project` BibTeX field)
 
 ### Awards & Honors
-**Edit:** `data/awards.yaml`
-**Build:** Automatic (copied to site/_data/)
+**Paper awards:** the `award` field of the paper's BibTeX entry, e.g.
+`award = {Best Paper Award Winner}` — the name only, since the conference comes
+from the entry's own venue. Use `award = {2026: Test of Time Award}` when the
+award year differs from the paper's.
+**Awards you hold** (fellowships, chairs): `data/awards.yaml`
+**Build:** `scripts/sync_config.py` merges both into `site/_data/awards.yml`,
+so it must run *after* sslabdata.
 
 ### Press Coverage
 **Edit:** `data/press.yaml`
@@ -91,8 +96,9 @@ moves.
 ## Deployment
 
 Push to `main` or `minimal-mistakes` triggers:
-1. `sync_config.py` - Sync config & copy data files (lab.yaml → _config.yml, data/*.yaml → site/_data/)
-2. `sslabdata` - Create site/_data/lab.yml (schema v5 document)
+1. `sslabdata` - Create site/_data/lab.yml (schema v6 document)
+2. `sync_config.py` - Sync config, copy press.yaml, and merge paper awards with
+   data/awards.yaml into site/_data/awards.yml
 3. `jekyll build` - Generate static site
 4. Deploy to GitHub Pages
 

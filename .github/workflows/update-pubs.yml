@@ -53,7 +53,27 @@ jobs:
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add data/pubs
         git commit -m "Update pubs submodule to personalrobotics/pubs@${{ steps.bump.outputs.sha }}"
-        git push
+
+        # Anything merged between the checkout above and this push makes the
+        # push non-fast-forward, which used to fail the run and leave the
+        # submodule behind until the next one. The commit only moves the
+        # submodule pointer, so replaying it on top of whatever landed is
+        # safe; a conflict means someone moved the same pointer, and the push
+        # is not needed.
+        for attempt in 1 2 3; do
+          if git push; then
+            exit 0
+          fi
+          echo "push rejected, rebasing on origin/main (attempt $attempt)"
+          git fetch origin main
+          if ! git rebase origin/main; then
+            git rebase --abort
+            echo "data/pubs was moved by someone else; nothing to push"
+            exit 0
+          fi
+        done
+        echo "could not push after 3 attempts"
+        exit 1
 
     - name: Rebuild the site
       if: steps.bump.outputs.changed == 'true'

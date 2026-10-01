@@ -50,8 +50,9 @@ Check the inputs without writing output: `sslabdata --config lab.yaml --validate
 `lab.yaml`, `data/pubs/people.yaml` and `data/pubs/projects.yaml` each name their JSON
 Schema on the first line, so an editor running the YAML language server (the
 VS Code YAML extension, among others) checks and completes them as you type.
-The schemas are served from sslabdata's `input-schema-v1` tag, which never
-moves.
+The schemas are served from sslabdata's `input-schema-v2` tag, which never
+moves. v2 adds a person's `bio`, a short biography in plain text — not Markdown
+or HTML, and line breaks are kept as written.
 
 ## Editing Content
 
@@ -121,7 +122,7 @@ curl -fsSL -o site/assets/SiddharthaSrinivasaCV.pdf \
 ## Deployment
 
 Push to `main` or `minimal-mistakes` triggers:
-1. `sslabdata` - Create site/_data/lab.yml (schema v6 document)
+1. `sslabdata` - Create site/_data/lab.yml (schema v7 document)
 2. `sync_config.py` - Sync config, copy press.yaml, and merge paper awards with
    data/awards.yaml into site/_data/awards.yml
 3. `jekyll build` - Generate static site

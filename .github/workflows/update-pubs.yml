@@ -1,0 +1,62 @@
+name: Update pubs
+
+# Moves the data/pubs submodule to the tip of personalrobotics/pubs master -
+# the bibs, people.yaml and projects.yaml - and rebuilds the site if it moved.
+#
+# personalrobotics/pubs sends `pubs-updated` when its master changes, so most
+# updates land within minutes; the daily run is the backstop if that dispatch
+# is missed.
+#
+# A push made with GITHUB_TOKEN does not trigger other workflows, so this one
+# starts deploy.yml itself.
+
+on:
+  repository_dispatch:
+    types: [ pubs-updated ]
+  schedule:
+    - cron: '30 9 * * *'  # Every day at 9:30am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency: update-pubs
+
+jobs:
+  update-pubs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Move data/pubs to pubs master
+      id: bump
+      run: |
+        git submodule update --remote data/pubs
+        if git diff --quiet data/pubs; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "data/pubs already at pubs master"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "sha=$(git -C data/pubs rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          git -C data/pubs log --oneline "$(git rev-parse HEAD:data/pubs)..HEAD"
+        fi
+
+    - name: Commit and push
+      if: steps.bump.outputs.changed == 'true'
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add data/pubs
+        git commit -m "Update pubs submodule to personalrobotics/pubs@${{ steps.bump.outputs.sha }}"
+        git push
+
+    - name: Rebuild the site
+      if: steps.bump.outputs.changed == 'true'
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: gh workflow run deploy.yml --ref main

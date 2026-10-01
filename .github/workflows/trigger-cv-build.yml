@@ -4,8 +4,10 @@ name: Trigger CV Build
 # from these files. Tell it when they change, so the PDF does not sit stale
 # until someone pushes there.
 #
-# A paper's awards are not here: they live in the `award` field of the paper's
-# BibTeX entry, and sidd-cv picks those up when it syncs pubs.
+# People are not here: people.yaml lives in personalrobotics/pubs, which tells
+# sidd-cv itself when it changes. A paper's awards are not here either: they
+# live in the `award` field of the paper's BibTeX entry, and sidd-cv picks those
+# up when it syncs pubs.
 #
 # Needs a fine-grained PAT with Actions: write on siddhss5/sidd-cv, stored here
 # as the secret CV_REPO_PAT. Sending the dispatch is all this workflow does, so
@@ -16,7 +18,6 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'data/people.yaml'
       - 'data/awards.yaml'
       - 'data/press.yaml'
   workflow_dispatch:

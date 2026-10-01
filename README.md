@@ -11,11 +11,10 @@ Clean, maintainable academic website built with [Jekyll](https://jekyllrb.com/) 
 ```
 ├── lab.yaml                    # Profile, links, site config (EDIT THIS)
 ├── data/
-│   ├── people.yaml            # Lab members (EDIT THIS)
-│   ├── projects.yaml          # Projects (EDIT THIS)
 │   ├── awards.yaml            # Awards & honors (EDIT THIS)
 │   ├── press.yaml             # Press coverage (EDIT THIS)
-│   └── pubs/                  # BibTeX files (EDIT THIS - submodule)
+│   └── pubs/                  # personalrobotics/pubs (submodule): BibTeX,
+│                              #   people.yaml, projects.yaml (EDIT THERE)
 ├── site/                      # Jekyll site
 │   ├── _config.yml            # ← Auto-generated from lab.yaml
 │   ├── _data/
@@ -48,7 +47,7 @@ cd site && bundle exec jekyll serve
 Check the inputs without writing output: `sslabdata --config lab.yaml --validate`
 (unmatched author names: `--unresolved`).
 
-`lab.yaml`, `data/people.yaml` and `data/projects.yaml` each name their JSON
+`lab.yaml`, `data/pubs/people.yaml` and `data/pubs/projects.yaml` each name their JSON
 Schema on the first line, so an editor running the YAML language server (the
 VS Code YAML extension, among others) checks and completes them as you type.
 The schemas are served from sslabdata's `input-schema-v1` tag, which never
@@ -61,16 +60,19 @@ moves.
 **Sync:** `python scripts/sync_config.py` (or let CI/CD do it)
 
 ### Publications
-**Edit:** Add/update BibTeX in `data/pubs/*.bib`
-**Build:** Automatic (sslabdata emits data; `site/_includes/publication.html` renders it)
+**Edit:** BibTeX in [personalrobotics/pubs](https://github.com/personalrobotics/pubs)
+**Build:** Automatic. `update-pubs.yml` moves the `data/pubs` submodule to pubs
+master and redeploys, when pubs sends `pubs-updated` and daily as a backstop
+(sslabdata emits data; `site/_includes/publication.html` renders it)
 
 ### People (Students/Postdocs/Alumni)
-**Edit:** `data/people.yaml`
-**Build:** Automatic (sslabdata generates site data)
+**Edit:** `people.yaml` in [personalrobotics/pubs](https://github.com/personalrobotics/pubs),
+shared with the lab website and the CV
+**Build:** Automatic, as for publications (sslabdata generates site data)
 
 ### Projects
-**Edit:** `data/projects.yaml`
-**Build:** Automatic (sslabdata links publications via the `project` BibTeX field)
+**Edit:** `projects.yaml` in [personalrobotics/pubs](https://github.com/personalrobotics/pubs)
+**Build:** Automatic, as for publications (sslabdata links publications via the `project` BibTeX field)
 
 ### Awards & Honors
 **Paper awards:** the `award` field of the paper's BibTeX entry, e.g.
@@ -104,8 +106,11 @@ The two repos notify each other, each needing its own fine-grained PAT:
 
 | when | who tells whom | event | secret |
 |------|----------------|-------|--------|
-| `data/{people,awards,press}.yaml` changes here | this repo → sidd-cv | `yaml-updated` | `CV_REPO_PAT` here |
-| the CV PDF is rebuilt there | sidd-cv → this repo | `cv-updated` | `SITE_REPO_PAT` there | A local `jekyll serve` has no copy and the link on
+| `data/{awards,press}.yaml` changes here | this repo → sidd-cv | `yaml-updated` | `CV_REPO_PAT` here |
+| the CV PDF is rebuilt there | sidd-cv → this repo | `cv-updated` | `SITE_REPO_PAT` there |
+| pubs master changes (bibs, people, projects) | pubs → sidd-cv and this repo | `yaml-updated`, `pubs-updated` | `CV_REPO_PAT`, `SITE_REPO_PAT` in pubs |
+
+A local `jekyll serve` has no copy of the CV and the link on
 `/cv/` 404s until you fetch one:
 
 ```bash

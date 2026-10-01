@@ -35,7 +35,7 @@ jobs:
 
     - name: Install sslabdata
       run: |
-        pip install sslabdata==4.0.0
+        pip install sslabdata==5.0.0
 
     - name: Generate site data with sslabdata
       run: |

@@ -12,6 +12,7 @@ site/assets/SiddharthaSrinivasaCV.pdf
 # Generated data files
 site/_data/lab.yml
 site/_data/awards.yml
+site/_data/mentoring.yml
 site/_data/press.yml
 
 # Local configuration with API keys

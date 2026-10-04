@@ -10,7 +10,8 @@ header:
 
 ![PRL Team 2024](/assets/images/PRL-2024.jpg)
 
-{% assign people = site.data.lab.people %}
+{% comment %}One row per role each person held, earlier roles included (scripts/sync_config.py writes it).{% endcomment %}
+{% assign people = site.data.mentoring %}
 {% assign current_postdocs = people | where: "role", "postdoc" | where: "status", "current" %}
 {% assign current_phd = people | where: "role", "phd_student" | where: "status", "current" %}
 {% assign current_ms = people | where: "role", "ms_student" | where: "status", "current" %}

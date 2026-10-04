@@ -141,6 +141,36 @@ def assemble_awards():
           f"{paper_awards} paper awards")
 
 
+# The fields that belong to one role a person held, rather than to the person.
+ROLE_FIELDS = ("role", "start_year", "end_year", "degree", "thesis_title", "co_advisor")
+
+
+def assemble_mentoring():
+    """Build site/_data/mentoring.yml: one row for each role each person held.
+
+    A person's `earlier_roles` (sslabdata, schema_version 8) are the roles they
+    held before their current or last one. The mentoring page lists people by
+    role, so it reads these rows rather than the people: a postdoc who became
+    faculty still appears among the alumni postdocs. An earlier role is over,
+    so its row is `alumni`; a field it leaves out is empty, not the person's.
+    """
+    lab_file = SITE_DATA_DIR / "lab.yml"
+    with open(lab_file) as f:
+        people = (yaml.safe_load(f) or {}).get('people') or []
+
+    rows = []
+    for person in people:
+        for earlier in person.get('earlier_roles') or []:
+            rows.append({**person, **{k: earlier.get(k) for k in ROLE_FIELDS}, 'status': 'alumni'})
+        rows.append(person)
+    for row in rows:
+        row.pop('earlier_roles', None)
+
+    with open(SITE_DATA_DIR / "mentoring.yml", 'w') as f:
+        yaml.safe_dump(rows, f, allow_unicode=True, sort_keys=False)
+    print(f"✅ Assembled site/_data/mentoring.yml: {len(rows)} roles of {len(people)} people")
+
+
 def sync_data_files():
     """Copy static data files from data/ to site/_data/ for Jekyll."""
 
@@ -163,3 +193,4 @@ if __name__ == "__main__":
     sync_config()
     sync_data_files()
     assemble_awards()
+    assemble_mentoring()

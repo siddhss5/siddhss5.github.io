@@ -21,7 +21,7 @@ bib_files:
   - name: "siddpubs-misc.bib"
     category: "Other Publications"
 
-pdf_base_url: "https://personalrobotics.cs.washington.edu/publications"
+pdf_base_url: "https://personalrobotics-files.cs.washington.edu"
 people_file: "data/pubs/people.yaml"
 projects_file: "data/pubs/projects.yaml"
 

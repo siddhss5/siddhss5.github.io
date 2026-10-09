@@ -1013,7 +1013,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page__content dd { margin-inline-start: 1em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.75em; }
 .page__content .small { font-size: 0.75em; }
 .page__content blockquote + .small { margin-top: -1.5em; padding-inline-start: 1.25rem; }
-.page__content :first-child, .page__content aside + :nth-child(2) { margin-top: 0em; }
+.page__content > :first-child, .page__content > aside + :nth-child(2) { margin-top: 0em; }
 
 .page__hero { position: relative; margin-bottom: 2em; clear: both; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.25s; animation-delay: 0.25s; }
 .page__hero::after { clear: both; content: ""; display: table; }

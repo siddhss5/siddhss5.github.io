@@ -3,16 +3,10 @@ main:
     url: /cv/
   - title: "Contact"
     url: /contact/
-  - title: "Publications"
-    url: /publications/
-  - title: "Projects"
-    url: /projects/
   - title: "Mentoring"
     url: /mentoring/
   - title: "Press"
     url: /press/
-  - title: "Videos"
-    url: /videos/
   - title: "Teaching"
     url: /teaching/
   - title: "Posts"

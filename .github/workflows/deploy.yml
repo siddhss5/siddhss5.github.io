@@ -45,12 +45,6 @@ jobs:
       run: |
         python scripts/sync_config.py
 
-    - name: Fetch the latest CV
-      run: |
-        curl -fsSL -o site/assets/SiddharthaSrinivasaCV.pdf \
-          https://raw.githubusercontent.com/siddhss5/sidd-cv/main/sidd-cv.pdf
-        ls -l site/assets/SiddharthaSrinivasaCV.pdf
-
     - name: Build Jekyll site
       run: |
         cd site

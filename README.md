@@ -97,8 +97,10 @@ so it must run *after* sslabdata.
 
 **Edit:** the LaTeX sources in [siddhss5/sidd-cv](https://github.com/siddhss5/sidd-cv)
 **Build:** that repo compiles and commits `sidd-cv.pdf`, then tells this one to
-rebuild; deploy fetches it to `site/assets/SiddharthaSrinivasaCV.pdf`, so the
-PDF is not committed here.
+rebuild. `scripts/sync_config.py` fetches it to
+`site/assets/SiddharthaSrinivasaCV.pdf` from the `cv_url` in `lab.yaml`, so the
+PDF is not committed here and a local build has it too. It fetches only when
+the file is absent — delete it to pull a newer one.
 
 The two repos notify each other, each needing its own fine-grained PAT:
 
@@ -107,14 +109,6 @@ The two repos notify each other, each needing its own fine-grained PAT:
 | `data/{awards,press}.yaml` changes here | this repo → sidd-cv | `yaml-updated` | `CV_REPO_PAT` here |
 | the CV PDF is rebuilt there | sidd-cv → this repo | `cv-updated` | `SITE_REPO_PAT` there |
 | pubs master changes (bibs, people, projects) | pubs → sidd-cv and this repo | `yaml-updated`, `pubs-updated` | `CV_REPO_PAT`, `SITE_REPO_PAT` in pubs |
-
-A local `jekyll serve` has no copy of the CV and the link on
-`/cv/` 404s until you fetch one:
-
-```bash
-curl -fsSL -o site/assets/SiddharthaSrinivasaCV.pdf \
-  https://raw.githubusercontent.com/siddhss5/sidd-cv/main/sidd-cv.pdf
-```
 
 ## Deployment
 

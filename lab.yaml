@@ -13,6 +13,9 @@ lab:
   # each award's paper link as <publications_url><bib_id>/.
   publications_url: "https://personalrobotics.cs.washington.edu/publications/"
   x: "https://x.com/siddhss5"
+  # The CV is built from LaTeX in siddhss5/sidd-cv. sync_config.py fetches it
+  # into site/assets/, so it is not committed here.
+  cv_url: "https://raw.githubusercontent.com/siddhss5/sidd-cv/main/sidd-cv.pdf"
   github: "https://github.com/siddhss5"
   email: "siddh@cs.washington.edu"
 

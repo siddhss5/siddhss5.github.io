@@ -3,13 +3,16 @@
 
 import re
 import shutil
+from pathlib import Path
+from urllib.error import HTTPError, URLError
+from urllib.request import urlopen
 
 import yaml
-from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 LAB_CONFIG = ROOT / "lab.yaml"
 JEKYLL_CONFIG = ROOT / "site/_config.yml"
+SITE_DIR = ROOT / "site"
 DATA_DIR = ROOT / "data"
 SITE_DATA_DIR = ROOT / "site/_data"
 
@@ -174,6 +177,38 @@ def assemble_mentoring():
     print(f"✅ Assembled site/_data/mentoring.yml: {len(rows)} roles of {len(people)} people")
 
 
+def fetch_cv():
+    """Fetch the CV PDF that /cv/ links to.
+
+    It is built from LaTeX in siddhss5/sidd-cv and is not committed here, so a
+    fresh checkout has none and CI always gets the current one. A local serve
+    used to 404 on that link until someone ran a curl by hand, which is why
+    this lives in the script both CI and a local build run rather than in the
+    workflow. Delete the file to pull a newer one.
+    """
+
+    with open(LAB_CONFIG) as f:
+        cv_url = yaml.safe_load(f)["lab"].get("cv_url")
+
+    dest = SITE_DIR / "assets" / "SiddharthaSrinivasaCV.pdf"
+    if not cv_url:
+        print(f"⚠️  lab.yaml has no cv_url; {dest.name} not fetched")
+        return
+    if dest.exists():
+        print(f"✅ {dest.name} already present ({dest.stat().st_size} bytes); "
+              "delete it to refresh")
+        return
+
+    try:
+        with urlopen(cv_url) as response:
+            pdf = response.read()
+    except (HTTPError, URLError) as error:
+        raise SystemExit(f"could not fetch the CV from {cv_url}: {error}")
+
+    dest.write_bytes(pdf)
+    print(f"✅ Fetched {dest.name} ({len(pdf)} bytes) from sidd-cv")
+
+
 def sync_data_files():
     """Copy static data files from data/ to site/_data/ for Jekyll."""
 
@@ -197,3 +232,4 @@ if __name__ == "__main__":
     sync_data_files()
     assemble_awards()
     assemble_mentoring()
+    fetch_cv()

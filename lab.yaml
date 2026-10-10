@@ -8,7 +8,11 @@ lab:
   website: "https://goodrobot.ai"
   lab_website: "https://personalrobotics.cs.washington.edu/"
   google_scholar: "https://scholar.google.com/citations?user=RCi98EAAAAAJ&hl=en"
-  twitter: "https://twitter.com/siddhss5"
+  # Publications, projects and videos live on the lab site, which builds from
+  # the same data. scripts/sync_config.py links the sidebar here, and builds
+  # each award's paper link as <publications_url><bib_id>/.
+  publications_url: "https://personalrobotics.cs.washington.edu/publications/"
+  x: "https://x.com/siddhss5"
   github: "https://github.com/siddhss5"
   email: "siddh@cs.washington.edu"
 
